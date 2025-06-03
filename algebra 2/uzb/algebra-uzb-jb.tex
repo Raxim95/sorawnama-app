@@ -1,0 +1,2886 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+% \usepackage{amssymbol}
+\usepackage{amsfonts}
+\usepackage{setspace}
+
+
+
+\renewcommand{\baselinestretch}{1} 
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. Noldan pariqli haqiyqiy sonlar multiplikativ gruppasi \(R\backslash\{ 0\}\) ning o\textquotesingle ng haqiyqiy sonlar qism gruppasi \(R_{+}\) boyisha faktor gruppasin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. {[}-1; 1{]} kesmasinda uzliksiz bo`lgan funksiyalarning halqasinda nolning bo`luvchilariga misollar keltiring. \\
+C3. Bir o`zgariwshili ko`phadlar to`plami \(f(x)\) ko`phadlardi qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Aytaylik \(f:\ G \rightarrow G_{1}\) akslantirishshi epimorfizm bo\textquotesingle lsin . Agar \(H\) \(G\) ning normal qism gruppasi bolsa, unda \(f(H)\) ta \(G_{1}\) ning normal qism gruppasi bolishin isbotlang. \\
+C3. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining barcha endomorfizmlarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. Kolsoning Ixtiyoriy sondagi ideallarining keshishmasi da uchbu halqaning ideali bo\textquotesingle lishin isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+4 & 5
+\end{pmatrix} \in S_{5}\) \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 2.\) \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Aytaylik \(R = \left\{ \left. \ a + b\sqrt{2} \right|\ \ a,b \in Z \right\}\) va \(R' = \left\{ \left. \ \begin{pmatrix}
+a & 2b \\
+b & a
+\end{pmatrix} \right|\ \ a,b \in Z \right\}\) halqalar berilgan bo\textquotesingle lsin . \(\varphi:R \rightarrow R'\) akslantirish izomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. Aytaylik \(K\) halqaning \(K'\) halqasiga \(f:K \rightarrow K'\) gomomorfizmi berilgan bo\textquotesingle lsin . \(Kerf\) qism halqasi \(K\) halqaning ideali bo\textquotesingle lishin va \(K/Kerf\) faktor halqaning \(f(K)\) halqasiga izomorf bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. \(\left( Z_{9}, \cdot \right)\) gruppa elementlarining tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. \(< Z,\ \  + >\) gruppasining \(nZ\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. Har qanday siklli gruppa abellik(kommutativ) gruppa bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining o\textquotesingle z-o\textquotesingle ziga gomomorfizm bo`lishini ko`rsating. \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 1;\) \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. \(\mathbb{Z}\) Butun sonlar to`plamida \(x \oplus y = x + y - 1\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus )\)-- gruppa tashkil qiluvchi va uning \((\mathbb{Z}, + )\) gruppasina izomorf bo`lishinii isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(M_{2}(R)\) halqa regulyar halqa bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. Faktor gruppasin toping. \(\frac{3Z}{9Z}\), \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. \(\mathbb{Z}\) butun sonlar to`plamida qo`shish va ko`paytirish amallari \(x \oplus y = x + y - 1\) va \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus , \otimes )\) -- halqa bo`lishini va uning \((\mathbb{Z}, + , \cdot )\) halqasina izomorf bo`lishini isbotlang. \\
+C3. Aytaylik \(R\) va \(C\) xos haqiyqiy va kompleks sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ \ \ a\ \ \ \ \ \ \ \ b \\
+ - b\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|a,\ b \in R \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|;\) \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. Tartibi 24 ga teng bo`lgan \(< a >\) sikl gruppasining tartibi 4 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{R}, + ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = 2^{a}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. \(C\) kompleks sonlarning additiv gruppasining \(R\) haqiyqiy sonlarning qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 1 \\
+ - 1 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Aytaylik gruppalarning \(f:G_{1} \rightarrow G_{2}\) epimorfizmi berilgan bo\textquotesingle lsin. \(G_{1}/Kerf\underline{\sim}\ G_{2}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(n\) natural soniga karrali qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(f(n) = n^{2}\) akslantirishi \(Z\) gruppasining endomorfizmlarini bo`ladimi ? \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi \(n \geq 2\ \ \) bo`lgan haqiyqiy elementli diogonal matrisalar, matrisalarni qo`shish va ko`paytirish amallariga nisbatan kommutativ halqa bolishini isbotlang va uchbu halqadaǵi nolning bo`luvchilarin toping:\(\begin{pmatrix}
+\ a_{11} & 0\ \  & 0 & ... & 0\ \  \\
+0\ \  & a_{22} & 0 & ... & 0\ \  \\
+... & ... & ... & ... & ... \\
+0\ \  & 0\ \  & 0 & ... & a_{nn}
+\end{pmatrix}.\) \\
+C3. Siklli gruppaning qism gruppasi siklli bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. \(S_{3}\) simmetriyalik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi bola\textquotesingle di. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{C}\backslash\{ 0\}, \cdot ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(z) = |z|.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. Tartibi 6 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning tartibi 18 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Tartibi \emph{n} ga teng bo`lgan ixtiyoriy siklli gruppa \((\mathbb{Z}_{n},\ \  +_{n})\) gruppaga, ixtiyoriy sheksiz siklli gruppa \((\mathbb{Z},\ \  + )\) gruppaga izomorf boladi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. Tartibi \(n \geq 2\ \ \) bo`lgan haqiyqiy elementli diogonal matrisalar, matrisalarni qo`shish va ko`paytirish amallariga nisbatan kommutativ halqa bolishini isbotlang va uchbu halqadaǵi nolning bo`luvchilarin toping:\(\begin{pmatrix}
+\ a_{11} & 0\ \  & 0 & ... & 0\ \  \\
+0\ \  & a_{22} & 0 & ... & 0\ \  \\
+... & ... & ... & ... & ... \\
+0\ \  & 0\ \  & 0 & ... & a_{nn}
+\end{pmatrix}.\) \\
+C3. Aytaylik, \(R\) va \(C\) xos rasional va haqiyqiy sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ a\ \ \ \ \ \ \ \ b \\
+\ 0\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|\ \ \ \ \ \ a,\ \ b \in R\  \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Aytaylik \(S_{n}\)- simmetrik gruppa va \(\varphi:S_{n} \rightarrow \mathbb{Z}_{2}\) akslantirish quyidagisha aniqlansa.\(\varphi(\sigma) = \left\{ \begin{matrix}
+0,\ \ \ eger\ \ \sigma\ juft\ orniga\ \ qoy\imath sh\ \ bolsa, \\
+1,\ \ eger\ \ \sigma\ toq\ orniga\ \ qoy\imath sh\ bolsa
+\end{matrix} \right.\ \) unda \(\varphi\) akslantirish gomomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|;\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. \(f:nZ \rightarrow nZ\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. Tartibi 6 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning tartibi 18 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping. \(G = \left( \mathbb{R}^{+}, \cdot \right),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = a^{2}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(n\) natural soniga karrali qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. Butun sonlar gruppasi \(Z\) ning o\textquotesingle z-o\textquotesingle ziga izomorfizm bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. Faktor gruppasin toping. \(\frac{3Z}{9Z}\), \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. \(\{\ a + b\sqrt{3}\left| \ \ \ \ \ a,\ \ b\  \in \ Q\ \ \} \right.\ \) to`plami maydon bo\textquotesingle lishin ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. \(< Z,\ \  + >\) gruppasining \(nZ\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. Aytaylik \(f:\ G \rightarrow G_{1}\) akslantirishshi epimorfizm bo\textquotesingle lsin . Agar \(H\) \(G\) ning normal qism gruppasi bolsa, unda \(f(H)\) ta \(G_{1}\) ning normal qism gruppasi bolishin isbotlang. \\
+C3. \(S_{3}\) gruppaning \(H = \left\{ e,\ \ (123),\ (132) \right\}\) qism gruppasi normal qism gruppa bo`ladimi, Agar bolsa \(\frac{S_{3}}{H}\) faktor gruppasin aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. \(\mathbb{Z}\) butun sonlar to`plamida qo`shish va ko`paytirish amallari \(x \oplus y = x + y - 1\) va \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus , \otimes )\) -- halqa bo`lishini va uning \((\mathbb{Z}, + , \cdot )\) halqasina izomorf bo`lishini isbotlang. \\
+C3. Agar \(|G:H| = 2\) bolsa, Unda \(H\underline{\vartriangleleft}\ G\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 1;\) \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(f(n) = n^{2}\) akslantirishi \(Z\) gruppasining endomorfizmlarini bo`ladimi ? \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(\left( Z_{9}, \cdot \right)\) gruppa elementlarining tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining barcha endomorfizmlarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 1 \\
+ - 1 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Siklli gruppaning qism gruppasi siklli bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 2.\) \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. \(\mathbb{Z}\) Butun sonlar to`plamida \(x \oplus y = x + y - 1\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus )\)-- gruppa tashkil qiluvchi va uning \((\mathbb{Z}, + )\) gruppasina izomorf bo`lishinii isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+4 & 5
+\end{pmatrix} \in S_{5}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. {[}-1; 1{]} kesmasinda uzliksiz bo`lgan funksiyalarning halqasinda nolning bo`luvchilariga misollar keltiring. \\
+C3. Aytaylik, \(R\) va \(C\) xos rasional va haqiyqiy sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ a\ \ \ \ \ \ \ \ b \\
+\ 0\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|\ \ \ \ \ \ a,\ \ b \in R\  \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. \(C\) kompleks sonlarning additiv gruppasining \(R\) haqiyqiy sonlarning qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. Tartibi 24 ga teng bo`lgan \(< a >\) sikl gruppasining tartibi 4 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+C3. Tartibi \emph{n} ga teng bo`lgan ixtiyoriy siklli gruppa \((\mathbb{Z}_{n},\ \  +_{n})\) gruppaga, ixtiyoriy sheksiz siklli gruppa \((\mathbb{Z},\ \  + )\) gruppaga izomorf boladi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. \(S_{3}\) simmetriyalik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi bola\textquotesingle di. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. \(S_{3}\) gruppaning \(H = \left\{ e,\ \ (123),\ (132) \right\}\) qism gruppasi normal qism gruppa bo`ladimi, Agar bolsa \(\frac{S_{3}}{H}\) faktor gruppasin aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. Aytaylik \(K\) halqaning \(K'\) halqasiga \(f:K \rightarrow K'\) gomomorfizmi berilgan bo\textquotesingle lsin . \(Kerf\) qism halqasi \(K\) halqaning ideali bo\textquotesingle lishin va \(K/Kerf\) faktor halqaning \(f(K)\) halqasiga izomorf bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. Noldan pariqli haqiyqiy sonlar multiplikativ gruppasi \(R\backslash\{ 0\}\) ning o\textquotesingle ng haqiyqiy sonlar qism gruppasi \(R_{+}\) boyisha faktor gruppasin toping. \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining o\textquotesingle z-o\textquotesingle ziga gomomorfizm bo`lishini ko`rsating. \\
+C3. Aytaylik \(S_{n}\)- simmetrik gruppa va \(\varphi:S_{n} \rightarrow \mathbb{Z}_{2}\) akslantirish quyidagisha aniqlansa.\(\varphi(\sigma) = \left\{ \begin{matrix}
+0,\ \ \ eger\ \ \sigma\ juft\ orniga\ \ qoy\imath sh\ \ bolsa, \\
+1,\ \ eger\ \ \sigma\ toq\ orniga\ \ qoy\imath sh\ bolsa
+\end{matrix} \right.\ \) unda \(\varphi\) akslantirish gomomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 1 \\
+ - 1 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. Noldan pariqli haqiyqiy sonlar multiplikativ gruppasi \(R\backslash\{ 0\}\) ning o\textquotesingle ng haqiyqiy sonlar qism gruppasi \(R_{+}\) boyisha faktor gruppasin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. Tartibi 6 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning tartibi 18 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping. \(G = \left( \mathbb{R}^{+}, \cdot \right),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = a^{2}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(< Z,\ \  + >\) gruppasining \(nZ\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. Butun sonlar gruppasi \(Z\) ning o\textquotesingle z-o\textquotesingle ziga izomorfizm bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|;\) \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining o\textquotesingle z-o\textquotesingle ziga gomomorfizm bo`lishini ko`rsating. \\
+C3. \(\{\ a + b\sqrt{3}\left| \ \ \ \ \ a,\ \ b\  \in \ Q\ \ \} \right.\ \) to`plami maydon bo\textquotesingle lishin ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(S_{3}\) simmetriyalik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi bola\textquotesingle di. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. Har qanday siklli gruppa abellik(kommutativ) gruppa bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. Faktor gruppasin toping. \(\frac{3Z}{9Z}\), \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Aytaylik \(R = \left\{ \left. \ a + b\sqrt{2} \right|\ \ a,b \in Z \right\}\) va \(R' = \left\{ \left. \ \begin{pmatrix}
+a & 2b \\
+b & a
+\end{pmatrix} \right|\ \ a,b \in Z \right\}\) halqalar berilgan bo\textquotesingle lsin . \(\varphi:R \rightarrow R'\) akslantirish izomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+4 & 5
+\end{pmatrix} \in S_{5}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{C}\backslash\{ 0\}, \cdot ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(z) = |z|.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Agar \(|G:H| = 2\) bolsa, Unda \(H\underline{\vartriangleleft}\ G\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. {[}-1; 1{]} kesmasinda uzliksiz bo`lgan funksiyalarning halqasinda nolning bo`luvchilariga misollar keltiring. \\
+C3. Bir o`zgariwshili ko`phadlar to`plami \(f(x)\) ko`phadlardi qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. Aytaylik gruppalarning \(f:G_{1} \rightarrow G_{2}\) epimorfizmi berilgan bo\textquotesingle lsin. \(G_{1}/Kerf\underline{\sim}\ G_{2}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(\left( Z_{9}, \cdot \right)\) gruppa elementlarining tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(n\) natural soniga karrali qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. Tartibi 24 ga teng bo`lgan \(< a >\) sikl gruppasining tartibi 4 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{R}, + ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = 2^{a}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. Kolsoning Ixtiyoriy sondagi ideallarining keshishmasi da uchbu halqaning ideali bo\textquotesingle lishin isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi \(n \geq 2\ \ \) bo`lgan haqiyqiy elementli diogonal matrisalar, matrisalarni qo`shish va ko`paytirish amallariga nisbatan kommutativ halqa bolishini isbotlang va uchbu halqadaǵi nolning bo`luvchilarin toping:\(\begin{pmatrix}
+\ a_{11} & 0\ \  & 0 & ... & 0\ \  \\
+0\ \  & a_{22} & 0 & ... & 0\ \  \\
+... & ... & ... & ... & ... \\
+0\ \  & 0\ \  & 0 & ... & a_{nn}
+\end{pmatrix}.\) \\
+C3. \(f:nZ \rightarrow nZ\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 2.\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{51-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Aytaylik \(R\) va \(C\) xos haqiyqiy va kompleks sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ \ \ a\ \ \ \ \ \ \ \ b \\
+ - b\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|a,\ b \in R \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{52-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 1;\) \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. Aytaylik \(f:\ G \rightarrow G_{1}\) akslantirishshi epimorfizm bo\textquotesingle lsin . Agar \(H\) \(G\) ning normal qism gruppasi bolsa, unda \(f(H)\) ta \(G_{1}\) ning normal qism gruppasi bolishin isbotlang. \\
+C3. \(M_{2}(R)\) halqa regulyar halqa bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{53-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. \(\mathbb{Z}\) butun sonlar to`plamida qo`shish va ko`paytirish amallari \(x \oplus y = x + y - 1\) va \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus , \otimes )\) -- halqa bo`lishini va uning \((\mathbb{Z}, + , \cdot )\) halqasina izomorf bo`lishini isbotlang. \\
+C3. \(f(n) = n^{2}\) akslantirishi \(Z\) gruppasining endomorfizmlarini bo`ladimi ? \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{54-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. Aytaylik gruppalarning \(f:G_{1} \rightarrow G_{2}\) epimorfizmi berilgan bo\textquotesingle lsin. \(G_{1}/Kerf\underline{\sim}\ G_{2}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{55-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. \(< Z,\ \  + >\) gruppasining \(nZ\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining barcha endomorfizmlarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{56-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|;\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. Tartibi \(n \geq 2\ \ \) bo`lgan haqiyqiy elementli diogonal matrisalar, matrisalarni qo`shish va ko`paytirish amallariga nisbatan kommutativ halqa bolishini isbotlang va uchbu halqadaǵi nolning bo`luvchilarin toping:\(\begin{pmatrix}
+\ a_{11} & 0\ \  & 0 & ... & 0\ \  \\
+0\ \  & a_{22} & 0 & ... & 0\ \  \\
+... & ... & ... & ... & ... \\
+0\ \  & 0\ \  & 0 & ... & a_{nn}
+\end{pmatrix}.\) \\
+C3. Aytaylik \(R = \left\{ \left. \ a + b\sqrt{2} \right|\ \ a,b \in Z \right\}\) va \(R' = \left\{ \left. \ \begin{pmatrix}
+a & 2b \\
+b & a
+\end{pmatrix} \right|\ \ a,b \in Z \right\}\) halqalar berilgan bo\textquotesingle lsin . \(\varphi:R \rightarrow R'\) akslantirish izomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{57-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(S_{3}\) simmetriyalik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi bola\textquotesingle di. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. Aytaylik \(f:\ G \rightarrow G_{1}\) akslantirishshi epimorfizm bo\textquotesingle lsin . Agar \(H\) \(G\) ning normal qism gruppasi bolsa, unda \(f(H)\) ta \(G_{1}\) ning normal qism gruppasi bolishin isbotlang. \\
+C3. Har qanday siklli gruppa abellik(kommutativ) gruppa bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{58-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(n\) natural soniga karrali qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{C}\backslash\{ 0\}, \cdot ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(z) = |z|.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{59-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 1 \\
+ - 1 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(M_{2}(R)\) halqa regulyar halqa bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{60-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. Noldan pariqli haqiyqiy sonlar multiplikativ gruppasi \(R\backslash\{ 0\}\) ning o\textquotesingle ng haqiyqiy sonlar qism gruppasi \(R_{+}\) boyisha faktor gruppasin toping. \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. \(C\) kompleks sonlarning additiv gruppasining \(R\) haqiyqiy sonlarning qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{61-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Siklli gruppaning qism gruppasi siklli bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{62-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi 6 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning tartibi 18 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Butun sonlar gruppasi \(Z\) ning o\textquotesingle z-o\textquotesingle ziga izomorfizm bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{63-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 2.\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Aytaylik \(S_{n}\)- simmetrik gruppa va \(\varphi:S_{n} \rightarrow \mathbb{Z}_{2}\) akslantirish quyidagisha aniqlansa.\(\varphi(\sigma) = \left\{ \begin{matrix}
+0,\ \ \ eger\ \ \sigma\ juft\ orniga\ \ qoy\imath sh\ \ bolsa, \\
+1,\ \ eger\ \ \sigma\ toq\ orniga\ \ qoy\imath sh\ bolsa
+\end{matrix} \right.\ \) unda \(\varphi\) akslantirish gomomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{64-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. Kolsoning Ixtiyoriy sondagi ideallarining keshishmasi da uchbu halqaning ideali bo\textquotesingle lishin isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{65-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{66-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining o\textquotesingle z-o\textquotesingle ziga gomomorfizm bo`lishini ko`rsating. \\
+C3. \(\mathbb{Z}\) Butun sonlar to`plamida \(x \oplus y = x + y - 1\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus )\)-- gruppa tashkil qiluvchi va uning \((\mathbb{Z}, + )\) gruppasina izomorf bo`lishinii isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{67-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(\left( Z_{9}, \cdot \right)\) gruppa elementlarining tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. {[}-1; 1{]} kesmasinda uzliksiz bo`lgan funksiyalarning halqasinda nolning bo`luvchilariga misollar keltiring. \\
+C3. Tartibi \emph{n} ga teng bo`lgan ixtiyoriy siklli gruppa \((\mathbb{Z}_{n},\ \  +_{n})\) gruppaga, ixtiyoriy sheksiz siklli gruppa \((\mathbb{Z},\ \  + )\) gruppaga izomorf boladi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{68-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+4 & 5
+\end{pmatrix} \in S_{5}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Aytaylik, \(R\) va \(C\) xos rasional va haqiyqiy sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ a\ \ \ \ \ \ \ \ b \\
+\ 0\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|\ \ \ \ \ \ a,\ \ b \in R\  \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{69-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. Aytaylik \(K\) halqaning \(K'\) halqasiga \(f:K \rightarrow K'\) gomomorfizmi berilgan bo\textquotesingle lsin . \(Kerf\) qism halqasi \(K\) halqaning ideali bo\textquotesingle lishin va \(K/Kerf\) faktor halqaning \(f(K)\) halqasiga izomorf bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{70-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(\left( Z_{9}, \cdot \right)\) gruppa elementlarining tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. Faktor gruppasin toping. \(\frac{3Z}{9Z}\), \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. \(f:nZ \rightarrow nZ\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{71-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(\mathbb{Z}\) butun sonlar to`plamida qo`shish va ko`paytirish amallari \(x \oplus y = x + y - 1\) va \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus , \otimes )\) -- halqa bo`lishini va uning \((\mathbb{Z}, + , \cdot )\) halqasina izomorf bo`lishini isbotlang. \\
+C3. Bir o`zgariwshili ko`phadlar to`plami \(f(x)\) ko`phadlardi qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{72-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 1;\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. Tartibi 24 ga teng bo`lgan \(< a >\) sikl gruppasining tartibi 4 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+C3. Agar \(|G:H| = 2\) bolsa, Unda \(H\underline{\vartriangleleft}\ G\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{73-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. Faktor gruppasin toping. \(\frac{3Z}{9Z}\), \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 1 \\
+ - 1 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping. \(G = \left( \mathbb{R}^{+}, \cdot \right),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = a^{2}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{74-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{75-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. \(S_{3}\) gruppaning \(H = \left\{ e,\ \ (123),\ (132) \right\}\) qism gruppasi normal qism gruppa bo`ladimi, Agar bolsa \(\frac{S_{3}}{H}\) faktor gruppasin aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{76-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. Aytaylik \(R\) va \(C\) xos haqiyqiy va kompleks sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ \ \ a\ \ \ \ \ \ \ \ b \\
+ - b\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|a,\ b \in R \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{77-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{27}\) \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. \(S_{3}\) simmetriyalik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi bola\textquotesingle di. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. \(\{\ a + b\sqrt{3}\left| \ \ \ \ \ a,\ \ b\  \in \ Q\ \ \} \right.\ \) to`plami maydon bo\textquotesingle lishin ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{78-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 1;\) \\
+C1. \(\mathbb{Q}\left\lbrack \sqrt{2} \right\rbrack = \{ a + b\sqrt{2}|\ a,b\mathbb{\in Q}\}\) to`plam \(+\) amalga nisbatan kommutativ gruppa bo`lishini ko`rsating. \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{R}, + ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = 2^{a}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{79-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 2 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 6
+\end{pmatrix} \in S_{7}\). \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(\mathbb{Z}\) Butun sonlar to`plamida \(x \oplus y = x + y - 1\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus )\)-- gruppa tashkil qiluvchi va uning \((\mathbb{Z}, + )\) gruppasina izomorf bo`lishinii isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{80-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Unda \(a*b = b*a^{- 1}\) va \(b*a = a*b^{- 1}\) bo\textquotesingle lsin . Unda \(a^{4} = b^{4} = e\) bolishin isbotlang. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Kolsoning Ixtiyoriy sondagi ideallarining keshishmasi da uchbu halqaning ideali bo\textquotesingle lishin isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{81-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni ko`paytirish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|;\) \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Aytaylik \(f:\ G \rightarrow G_{1}\) akslantirishshi epimorfizm bo\textquotesingle lsin . Agar \(H\) \(G\) ning normal qism gruppasi bolsa, unda \(f(H)\) ta \(G_{1}\) ning normal qism gruppasi bolishin isbotlang. \\
+C3. Har qanday siklli gruppa abellik(kommutativ) gruppa bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{82-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{18},\ \ \ \mathbb{Z}_{30}\) \\
+B1. \(\{\ a + b\sqrt{7}\left| \ \ \ \ \ a,\ \ b\  \in \ R\ \ \} \right.\ \) to`plami halqa bo`ladimi? \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. Tartibi 6 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning tartibi 18 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Bir o`zgariwshili ko`phadlar to`plami \(f(x)\) ko`phadlardi qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{83-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. Quyidagi to`plam halqa tuzadimi. \(G = \{ a + b\sqrt[3]{2}|a,b \in Q\}\) \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 2.\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. \(C\) kompleks sonlarning additiv gruppasining \(R\) haqiyqiy sonlarning qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{84-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+4 & 5
+\end{pmatrix} \in S_{5}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \(G = \{ a\mathbb{\in R}|\ \  - 1 < a < 1\}\) bo\textquotesingle lsin . \(G\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(a*b = \frac{a + b}{1 + ab}.\)unda \((G,*)\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. Tartibi 24 ga teng bo`lgan \(< a >\) sikl gruppasining tartibi 4 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+C3. \(f(n) = n^{2}\) akslantirishi \(Z\) gruppasining endomorfizmlarini bo`ladimi ? \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{85-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. \(Z_{3}\) maydoninda quyidagi sistemani yeshing \(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. \(\left\{ \left. \ Z,\ \  + ,\ \  \cdot \right\} \right.\ \) to`plami butun sonlardi qo`shish va ko`paytirishga nisbatan halqa tuzishini ko`rsating. \\
+B2. \(Z_{6}\) gruppasining barcha qism gruppalarin toping. \\
+B3. Noldan pariqli haqiyqiy sonlar multiplikativ gruppasi \(R\backslash\{ 0\}\) ning o\textquotesingle ng haqiyqiy sonlar qism gruppasi \(R_{+}\) boyisha faktor gruppasin toping. \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{R}, + ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = 2^{a}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{86-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. \(Z_{7}\) halqaning multivlikativ gruppasidagi 5 elementning tartibin toping \\
+A2. \(M^{2}\) to`plamida \(\circ\) amali \((x,y) \circ (z,t) = (x,t)\) qoidasi bilan aniqlangan. \(M^{2}\) to`plam uchbu amalga nisbatan yarimgruppa bo`ladimi? \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{36}\) \\
+B1. \(\{(a*\ b) = a + b/\ \ \ a,\ \ b \in Z\}\) sonlar to`plami kommutativ gruppa bolishini ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \((\mathbb{Q}, + )\) ni siklik gruppa emasligini isbotlang. \\
+C2. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining o\textquotesingle z-o\textquotesingle ziga gomomorfizm bo`lishini ko`rsating. \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping. \(G = \left( \mathbb{R}^{+}, \cdot \right),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(a) = a^{2}.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{87-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & - 1 \\
+1 & - 1
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(A = \begin{pmatrix}
+a & b \\
+2b & a
+\end{pmatrix}\ \ \ (a,\ \ b \in R)\) qo`shish va ko`paytirishga nisbatan matritsa halqa bo`lishini aniqlang. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \right|a,b,c\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. Tartibi \(n\) ga teng bo`lgan \(< a >\) sikl gruppasining barcha endomorfizmlarin toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{88-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Bull va regulyar halqalar. \\
+A1. Gruppaning elementlar tartibini toping: \(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i \in \mathbb{C}^{*}\) \\
+A2. \(Z_{5}\) maydoninda quyidagi sistemani yeshing.\(\left\{ \begin{matrix}
+x + 2z = 1 \\
+y + 2z = 2 \\
+2x + z = 1
+\end{matrix} \right.\ \) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(n\) natural soniga karrali qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. \(\mathbb{Z}\) butun sonlar to`plamida qo`shish va ko`paytirish amallari \(x \oplus y = x + y - 1\) va \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \((\mathbb{Z},\ \  \oplus , \otimes )\) -- halqa bo`lishini va uning \((\mathbb{Z}, + , \cdot )\) halqasina izomorf bo`lishini isbotlang. \\
+C3. \(S_{3}\) gruppaning \(H = \left\{ e,\ \ (123),\ (132) \right\}\) qism gruppasi normal qism gruppa bo`ladimi, Agar bolsa \(\frac{S_{3}}{H}\) faktor gruppasin aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{89-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Bull va regulyar halqalar. \\
+A1. \(Z_{5}\) halqaning additiv gruppasidagi 3 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M = \mathbb{R}^{*},\ \ x*y = x \cdot y^{\frac{x}{|x|}}\) \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(n -\)tártipli orniga qoyishlar to`plami ko`paytirishga nisbatan gruppa tuzishini ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(< Z,\ \  + >\) gruppasining \(nZ\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. Tartibi \(n \geq 2\ \ \) bo`lgan haqiyqiy elementli diogonal matrisalar, matrisalarni qo`shish va ko`paytirish amallariga nisbatan kommutativ halqa bolishini isbotlang va uchbu halqadaǵi nolning bo`luvchilarin toping:\(\begin{pmatrix}
+\ a_{11} & 0\ \  & 0 & ... & 0\ \  \\
+0\ \  & a_{22} & 0 & ... & 0\ \  \\
+... & ... & ... & ... & ... \\
+0\ \  & 0\ \  & 0 & ... & a_{nn}
+\end{pmatrix}.\) \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{90-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping. \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} \\
+\mathbf{2} & \mathbf{3} & \mathbf{1} & \mathbf{5} & \mathbf{4}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{5}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{6}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{16}\) \\
+B1. Ixtiyoriy \(a \in G\) uchun \(a^{2} = e\) sharti orinli bolsa, Unda \(G\) gruppasining kommutativ gruppa bo`lishini isbotlang: \\
+B2. \(Z_{12}\) gruppasining barcha qism gruppalarin toping. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. \(\left( \mathbb{Q}\backslash\{ 1\},\ \  \otimes \right)\)algabralik sistema \(\otimes\) amalga nisbatan gruppa tashkil etadimi? Bunda \(x \otimes y = x + y - xy\) ko`rinishida aniqlangan. \\
+C2. {[}-1; 1{]} kesmasinda uzliksiz bo`lgan funksiyalarning halqasinda nolning bo`luvchilariga misollar keltiring. \\
+C3. Aytaylik, \(R\) va \(C\) xos rasional va haqiyqiy sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ a\ \ \ \ \ \ \ \ b \\
+\ 0\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|\ \ \ \ \ \ a,\ \ b \in R\  \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{91-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 7
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= R},\ \ x*y = \sin x \cdot \sin y\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{6},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(M_{n}(R) -\)xosmas matrisalar to`plami matrisalarni qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(S_{3}\) gruppaning \(T = \left\{ x \in S_{3}|x^{2} = e \right\}\)qism to`plami qism gruppa bo`ladimi bo`ladimi? \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami maydon bo`ladimi? \\
+C2. \emph{G} gruppa va uning \emph{H} normal qism gruppasi uchun faktor gruppa elementlarin toping.\(G = (\mathbb{Z}_{12}, + )\) hám \(H = \left\langle \overline{4} \right\rangle\) \\
+C3. Berilgan \(f\) akslantirish \(G\) gruppani \(G_{1}\) gruppaga o\textquotesingle tkazuvchi gomomorfizm bo`ladimi? Agar gomomorfizm bolsa, Unda uning yadrosin toping.\(G = (\mathbb{C}\backslash\{ 0\}, \cdot ),G_{1} = \left( \mathbb{R}^{+}, \cdot \right),f(z) = |z|.\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{92-variant}
+\newline
+
+T1. Simmetrik va ishora almashinuvchi gruppalar. Qism gruppalar. Tsiklli gruppalar. \\
+T2. Chegirmalar sinflarining halqasi. Chekli maydonlar. Maydonning xarakteristikasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 2 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 6
+\end{pmatrix} \in S_{6}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3 & 5 & 7
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 4 & 8
+\end{pmatrix} \circ \begin{pmatrix}
+1 & 3 & 6
+\end{pmatrix} \in S_{8}\). \\
+B1. \(\left\{ a + b\sqrt{7}|a,b \in R \right\}\) to`plami halqa bo`ladimi? \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b\sqrt{3} \\
+ - b\sqrt{3} & a
+\end{pmatrix} \right|a,b\mathbb{\in Q} \right\}\) \\
+B3. Quyidagi \(G\) gruppaning \(H\) qism gruppasi boyisha o\textquotesingle ng qo\textquotesingle shni gruppalarni toping. \(G = S_{3}\) va \(H = \{ e,(1\ 2\ 3),(1\ 3\ 2)\}\) \\
+C1. \(G\) gruppasining ixtiyoriy \(a\) va \(b\) elementleri uchun \(|ab| = |ba|\) bo`lishini ko`rsating. \\
+C2. Butun sonlar juftlarining to`plami \(K = \{(a,\ \ b)\left| \ \ \ a,\ \ b \in Z \right.\ \}\) quyidagi \(\begin{matrix}
+(a_{1},\ \ \ b_{1}) + (a_{2},\ \ b_{2}) = (a_{1} + a_{2},\ \ \ \ \ \ b_{1} + b_{2}), \\
+(a_{1},\ \ b_{1}) \cdot (a_{2},\ \ b_{2}) = (a_{1} \cdot a_{2},\ \ \ \ \ b_{1} \cdot b_{2})
+\end{matrix}\)berilgan qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini ko`rsating va uchbu halqadagi barcha nolning bo`luvchilarin toping. \\
+C3. Agar \(|G:H| = 2\) bolsa, Unda \(H\underline{\vartriangleleft}\ G\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{93-variant}
+\newline
+
+T1. Gruppalarning gomomorfizmlari va izomorfizmlari. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. \(Z_{12}\) halqaning additiv gruppasidagi 8 elementning tartibin toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x - y\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{12},\ \ \ \mathbb{Z}_{15}\) \\
+B1. Tartibi 15 ga teng bo`lgan \(< a >\) sikl gruppasining tártibi 5 ga teng bo`lgan barcha elementlarin ko`rsating. \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in R} \right\}\) \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = |z|^{2};\) \\
+C1. \(S_{3}\) simmetrik gruppa. \(H = \left\{ e,\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 3 & 1
+\end{pmatrix},\begin{pmatrix}
+1 & 2 & 3 \\
+3 & 1 & 2
+\end{pmatrix} \right\}\) \(S_{3}\) ning qism gruppasi boladi. \(S_{3}\) ning \(H\) qism gruppasi yordaminda barcha chap qo\textquotesingle shni sinflarin tuzing. \\
+C2. Tartibi \(n\) ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning o\textquotesingle z-o\textquotesingle ziga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Butun sonlar gruppasi \(Z\) ning o\textquotesingle z-o\textquotesingle ziga izomorfizm bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{94-variant}
+\newline
+
+T1. O`ng va chap qo`shmalik sinflari. Lagranj teoremasi. \\
+T2. Halqalarning gomomorfizmlari haqida teoremalar. \\
+A1. \(Z_{5}\) maydonning multiplikativ gruppasidagi 2 elementning tartibin toping \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= Z},\ \ x*y = x^{2} + y^{2}\) \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{5},\ \ \mathbb{Z}_{14}\) \\
+B1. Juft sonlar to`plami \(2Z\) qo`shish amalga nisbatan gruppa tuzishini ko`rsating. \\
+B2. \(S_{3}\) gruppasining \(H = \left\{ e,\ \ (12) \right\}\) qism gruppasi normal qism gruppa bo`ladimi. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 3 + |z|;\) \\
+C1. \(\left( \mathbb{Z}_{8}, +_{8} \right)\) chegirmalar sinfi bo\textquotesingle lsin . \(H = \left\{ \overline{0},\overline{4} \right\}\) normal qism gruppasi bolsa, Unda \(S_{3}/H\)ni toping. \\
+C2. Tartibi 12 ga teng \(< a >\) elementidan hosil bo\textquotesingle lgan siklli gruppaning Tartibi 15 ga teng \(< b >\) elementidan hosil bo\textquotesingle lgan siklli gruppaga bo`lgan barcha gomomorf akslantirishlarin toping. \\
+C3. Aytaylik \(R\) va \(C\) xos haqiyqiy va kompleks sonlar halqalari va\(M = \left\{ \left. \ \begin{pmatrix}
+\ \ \ a\ \ \ \ \ \ \ \ b \\
+ - b\ \ \ \ \ \ \ \ a
+\end{pmatrix}\ \  \right|a,\ b \in R \right\}\)bo\textquotesingle lsin . \(M\underline{\sim}\ C\) bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{95-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqalar, jismlar va maydonlar. Qism halqalar va qism maydonlar. \\
+A1. \(\left( \begin{matrix}
+ - 1 & a \\
+\ \ 0 & 1
+\end{matrix}\  \right) \in GL_{2}(C)\) gruppaning elementlar tartibini toping. \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = EKUB(x,y)\) \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{8},\ \ \ \mathbb{Z}_{22}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. \(Z_{12}\) siklli gruppani o`zining qism gruppalarining tog\textquotesingle ri kopaytmaga yoying. \\
+B3. Faktor gruppasin toping. \(\frac{5Z}{25Z}\) \\
+C1. \((\mathbb{R},*) -\)haqiyqiy sonlar to`plamida binar amal \(a*b = \frac{a + b}{2}\) ko`rinishida aniqlangan bolsa, Unda bul to`plam * amalga nisbatan gruppa bolishin isbotlang. \\
+C2. Quyidagi matricalar to`plami \((GL_{2}^{\ }\ (R), \cdot )\) gruppaning qism gruppasi bo`lishini isbotlang. \(S = \left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix},a \neq 0 \right\}\) \\
+C3. Aytaylik \(K\) halqaning \(K'\) halqasiga \(f:K \rightarrow K'\) gomomorfizmi berilgan bo\textquotesingle lsin . \(Kerf\) qism halqasi \(K\) halqaning ideali bo\textquotesingle lishin va \(K/Kerf\) faktor halqaning \(f(K)\) halqasiga izomorf bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{96-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+0 & i \\
+1 & 0
+\end{pmatrix} \in GL_{2}(\mathbb{C})\) \\
+A2. Aytaylik \(R\) xarakteristikasi 4 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{4}\) hisoblang va soddalashtiring. \\
+A3. \(\alpha\ va\ \beta\ orin\ almashtirishlar\ ushun\ \ \alpha \circ \beta \circ \alpha^{- 1}\) ipodani toping:\(\alpha = \begin{pmatrix}
+1 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+5 & 8
+\end{pmatrix},\ \beta = \begin{pmatrix}
+2 & 3 & 6 & 7
+\end{pmatrix} \in S_{8}\). \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) normal qism gruppa ekenin isbotlang. \\
+B3. \(f:\ \ C^{*} \rightarrow R^{*}\) akslantirish gomomorfizm bo`ladimi: \(f(z) = 5|z|;\) \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . \(a^{2} = e\) va \(a*b^{4}*a = b^{7}\) bo\textquotesingle lsin . Unda \(b^{33} = e\) bolishin isbotlang. \\
+C2. Aytaylik \(G_{1}\) va \(G_{2}\) gruppalarining \(f:G_{1} \rightarrow G_{2}\) gomomorfizmi berilgan bo\textquotesingle lsin . Agar \(H \leq G_{1}\) bolsa, \(f(H) = H \leq G_{2}\) bo`lishini isbotlang. \\
+C3. \(\frac{GL_{n}(\mathbb{C})}{SL_{n}(\mathbb{C})} \cong \mathbb{C}^{*}\) bo`lishini isbotlang.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{97-variant}
+\newline
+
+T1. Gomomorfizmlar haqida teoremalar. \\
+T2. Gruppalarning avtomorfizmlari va ichki avtomorfizm. \\
+A1. Gruppaning elementlar tartibini toping. \(\left( \begin{matrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0
+\end{matrix}\  \right) \in GL_{2}(R)\) \\
+A2. \(M\) to`plamida * amalga nisbatan associativ bo`ladimi: \(M\mathbb{= N},\ \ x*y = 2xy\) \\
+A3. Quyidagi halqalarning barcha nilpotent elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{16}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{3}/\ \ \ a,\ \ b \in R\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirish nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi to`plamning \(M_{2}(\mathbb{R})\)matricalar halqaning qism halqasi bo`lishini isbotlang. \(A = \left\{ \left. \ \begin{pmatrix}
+a + b & b \\
+ - b & a
+\end{pmatrix} \right|a,b\mathbb{\in Z} \right\}\) \\
+B3. \(Z\) Butun sonlarning additiv gruppasining \(nZ\ \ (n \in N)\) qism gruppasi boyisha qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \(GL(2,\mathbb{R}) = \left\{ \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}|\ a,b,c,d\mathbb{\in R},\ \ \ ad - bc \neq 0 \right\}\) bo\textquotesingle lsin . \(GL(2,\mathbb{R})\) dagi \(*\) binar amal quyidagi ko\textquotesingle rinishta aniqlangan bo\textquotesingle lsin \(\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}*\begin{bmatrix}
+u & v \\
+w & s
+\end{bmatrix} = \begin{bmatrix}
+au + bw & av + bs \\
+cu + dw & cv + ds
+\end{bmatrix}\).unda \(GL(2,\mathbb{R})\) \(*\) amalga nisbatan gruppa tashkil etishin isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Tartibi \emph{n} ga teng bo`lgan ixtiyoriy siklli gruppa \((\mathbb{Z}_{n},\ \  +_{n})\) gruppaga, ixtiyoriy sheksiz siklli gruppa \((\mathbb{Z},\ \  + )\) gruppaga izomorf boladi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{98-variant}
+\newline
+
+T1. Gomomorfizm va izomorfizmlarning hossalari. Keli teoremasi. \\
+T2. Halqaning ideallari. Faktor halqalar. Bosh ideallar halqasi. \\
+A1. Gruppaning elementlar tartibini toping. \(- \frac{\sqrt{3}}{2} + \frac{1}{2}i \in C^{*}\) \\
+A2. Halqaning barcha teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{15}\) \\
+A3. Quyidagi halqalarning teskarilanuvchi elementlarin toping: \(\mathbb{Z}_{12},\ \ \mathbb{Z}_{15},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(x + \sqrt[3]{2}y\) ko`rinisindagi haqiyqiy sonlar to`plami, bunda\(x,y\mathbb{\in Q}\) qo`shish va ko`paytirish amallariga nisbatan halqa tuzishini isbotlang. \\
+B2. \(Z_{3}\) maydoninda \(f(x) = 5x^{3} + 3x^{2} - x + 1\) va \(g(x) = 5x^{2} + 3x + 1\) ko`phadlarining eng katta uminiy bo`liwshisin toping. \\
+B3. \(M_{2}(Z)\) Halqada \(I = \left\{ \begin{bmatrix}
+a & 0 \\
+b & 0
+\end{bmatrix}|a,b\mathbb{\in Z} \right\}\) ideal bo`ladimi? \\
+C1. \(\left( \mathbb{Z}, + \right)\) ti \(\left( \mathbb{Z}_{n}, +_{n} \right)\) ga o\textquotesingle tkazuvchi\(f(a) = \overline{a},\ \ \ \forall a\mathbb{\in Z}\) akslantirish gomomorfizm bolishin isbotlang va uning yadrosin toping. \\
+C2. \(f:a^{n} \rightarrow a^{n}\) \((a \neq 0,\  \pm 1 \in R,\ \ \ n \in Z)\) gruppaning o\textquotesingle z-o\textquotesingle ziga izomorf bo`lishini isbotlang. \\
+C3. \(M_{2}(R)\) halqa regulyar halqa bo`lishini ko`rsating. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{99-variant}
+\newline
+
+T1. Normal bo`luvchilari. Faktor gruppalar. \\
+T2. Halqalarning gomomorfizlari va izomorfizmlari. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+\mathbf{1} & \mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{6} \\
+\mathbf{2} & \mathbf{3} & \mathbf{4} & \mathbf{5} & \mathbf{1} & \mathbf{6}
+\end{pmatrix}\mathbf{\in}\mathbf{S}_{\mathbf{6}}\) \\
+A2. Aytaylik \(R\) xarakteristikasi 3 ga teng biri bor kommutativ halqa bo\textquotesingle lsin . Unda \((a + b)^{9}\) hisoblang va soddalashtiring. \\
+A3. Quyidagi halqalarda nolning bo`luvchilarin toping: \(\mathbb{Z}_{5},\ \ \ \mathbb{Z}_{24}\) \\
+B1. \(\left\{ \left. \ a + b\sqrt{2}/\ \ \ a,\ \ b \in Z\  \right\} \right.\ \) ko`rinisindagi sonlar to`plami sonlardi qo`shish va ko`paytirishga nisbatan halqa bolishini ko`rsating \\
+B2. Quyidagi gruppalarning barcha qism gruppalarin toping: \(S_{3},\) \\
+B3. \(\frac{3Z}{15Z}\) boyisha faktor halqasin toping. \\
+C1. Bo`sh bo`lmagan\(X\) to`plamining barcha qism to`plamlarinen tuzilgan \(P(X)\) sistema berilgan bo\textquotesingle lsin . Unda \((P(x),\Delta)\) gruppa bolishin isbotlang. Bunda\(\Delta\) amal simmetrik ayirma amali. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+0 & - 2 \\
+ - 2 & 0
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Siklli gruppaning qism gruppasi siklli bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{100-variant}
+\newline
+
+T1. Akslantirishlar.Yarim gruppalar. Monoidlar. Gruppalar. \\
+T2. Gruppaning to`plamga ta'siri. \\
+A1. Gruppaning elementlar tartibini toping: \(\begin{pmatrix}
+1 & 7 & 4 & 3
+\end{pmatrix} \circ \begin{pmatrix}
+2 & 6 & 5
+\end{pmatrix} \in S_{7}\) \\
+A2. \(Q(\sqrt{13})\) maydoninda \(3x^{2} - 5x + 7 = 0\) tenglamasin yeshing. \\
+A3. Quyidagi halqalarning barcha idempotent elementlarin toping: \(\mathbb{Z}_{8},\ \ \mathbb{Z}_{14}\) \\
+B1. Butun sonlar to`plami \(Z\) ayirish amalga nisbatan gruppa dúzbeytuǵinin ko`rsating. \\
+B2. \(\mathbf{Z}_{\mathbf{5}}\) maydoninda \(x^{4} + 3x^{3} + 2x^{2} + x + 4\) ko`phadsin keltirilmas ko`phadlarga yoying. \\
+B3. \(A_{3}\) Juft orniga qoyishlar gruppasining \(S_{3}\) boyisha o\textquotesingle ng qo\textquotesingle shni sinflarin toping. \\
+C1. Aytaylik \((G,*)\) gruppa va \(a,b \in G\) bo\textquotesingle lsin . Agar \((a*b)^{2} = a^{2}*b^{2}\), \(a,b \in G\) bolsa, Unda \((G,*)\) ning komutativ bo`lishini isbotlang. \\
+C2. \(GL(2,\mathbb{\ \ R})\) gruppasining \(\begin{pmatrix}
+3 & 0 \\
+0 & 2
+\end{pmatrix}\) elementi bilan tuzilgan siklli qism gruppasining barcha elelmentlarin toping. \\
+C3. Aytaylik \(R = \left\{ \left. \ a + b\sqrt{2} \right|\ \ a,b \in Z \right\}\) va \(R' = \left\{ \left. \ \begin{pmatrix}
+a & 2b \\
+b & a
+\end{pmatrix} \right|\ \ a,b \in Z \right\}\) halqalar berilgan bo\textquotesingle lsin . \(\varphi:R \rightarrow R'\) akslantirish izomorfizm bo`lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}

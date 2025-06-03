@@ -1,0 +1,2333 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}[Weight=900]
+% Set the math font and adjust weight to 600 (semi-bold)
+\setmainfont{Latin Modern Roman}[Weight=600]
+\setmathfont{Latin Modern Math}[Weight=600]
+
+
+
+% \renewcommand{\baselinestretch}{1}
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\ctg}{ctg}
+\DeclareMathOperator{\arctg}{arctg}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 1;\ 5\rbrack\) и \(\lbrack 1;\ 2) \cup \lbrack 7;10\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 7.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\ \)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [7;10].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 9\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \((0;6\rbrack\) и \((2;4) \cup \lbrack 7;11\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 2.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = cos5t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4x^{2} + 9y^{2} \geq 36\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;5)\) и \(\lbrack - 2;0) \cup \lbrack 1;4)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 8,\ 10\rbrack\), в десятичной записи которых отсутствует цифра 0.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 4;3\rbrack\), \(B = \lbrack - 4;10\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \lbrack x\rbrack - 1\), \(A = \lbrack - 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-11;-8].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 3;\ 7\rbrack\) и \(\lbrack 2;5) \cup \lbrack 8;15\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 8,\ 10\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = sin4t,\ y = cos2t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 5;4)\), \(B = \lbrack - 3;11\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (3;6)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-6;-3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x + 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 1;\ 3\rbrack\) и \(\lbrack - 4; - 1) \cup \lbrack 2;3\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 1,\ 3\rbrack\), в десятичной записи которых отсутствует цифра 4.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;4)\), \(B = \lbrack - 1;7\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [9;12].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 3\},B = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;5\rbrack\) и \(\lbrack - 2;2) \cup \lbrack 3;4\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 2,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 4.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 7;3)\), \(B = \lbrack - 5;7\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [6;9].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x + 1)^{2} + (y + 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(( - 4;1\rbrack\) и \(( - 1;3) \cup \lbrack 8;9\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = sin2t,\ y = cos4t\).
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 2;4)\), \(B = \lbrack 2;10)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-7;-4].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;6)\) и \(\lbrack - 2;1) \cup \lbrack 4;5)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 1.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 2;4\rbrack\), \(B = ( - 5;5)\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-10;-7].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \leq 4 - x^{2}\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;4)\) и \(\lbrack 0;4) \cup \lbrack 5;7)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 4,\ 6\rbrack\), в десятичной записи которых отсутствует цифра 7.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = cos3t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;5)\), \(B = \lbrack - 8;6)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2\lbrack x\rbrack\), \(A = ( - 3;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [3;6].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 4y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;\ 5\rbrack\) и \(\lbrack 0;1) \cup \lbrack 3;\ 5\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 9.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 2;4\rbrack\), \(B = ( - 1;9)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [4;7].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y - 2| \geq 1\}\), то определить и описать следующие множества:\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;6\rbrack\) и \(\lbrack 0;5) \cup \lbrack 7;8\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = sin2t,\ y = cos4t\).
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;3)\), \(B = \lbrack - 10;3\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-2;1].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y + 1)^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;\ 3)\) и \(\lbrack 2;4) \cup \lbrack 5;6)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\ \)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 6;2\rbrack\), \(B = ( - 7;3)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-4;-1].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества\(\ A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \((3;6\rbrack\) и \(( - 3; - 1) \cup \lbrack 2;3\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 2,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 5.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-3;0].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 1;\ 7)\) и \(\lbrack - 2;4) \cup \lbrack 7;9)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 6,\ 8\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\). \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-1;2].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 1 \leq y\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 3;1\rbrack\) и \(\lbrack - 2;1) \cup \lbrack 4;5\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 1,\ 3\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = cos5t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;3)\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-5;-2].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 36\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 4;\ 1)\) и \(\lbrack - 3; - 1) \cup \lbrack 3;6)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 1\rbrack\), в десятичной записи которых отсутствует цифра 1.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 4;6\rbrack\), \(B = \lbrack - 2;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [10;13].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;6\rbrack\) и \(\lbrack 2;4) \cup \lbrack 11;13\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 6,\ 8\rbrack\), в десятичной записи которых отсутствует цифра 9.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 2;3\rbrack\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x - 1)\), \(A = \lbrack - 1;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-12;-9]
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;\ 2)\) и \(\lbrack 1;3\rbrack \cup (5;7)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 0.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = cos3t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x)\), \(A = \lbrack - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [5;8].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \geq 9\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 3;\ 2\rbrack\) и \(\lbrack 2;4) \cup \lbrack 5;8\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 4,\ 6\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;4)\) и \(\lbrack - 2;0) \cup \lbrack 7;9)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 5.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = sin4t,\ y = cos2t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;3)\), \(B = \lbrack - 1;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(2x + 1)\), \(A = ( - 1;1\rbrack\).
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [8;11].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ 4 - x^{2} \geq y\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 1;6\rbrack\) и \(\lbrack 1;4) \cup \lbrack 7;9\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 9.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 2;3\rbrack\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2\lbrack x\rbrack\), \(A = ( - 3;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-9;-6].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} = 1\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;3)\) и \(\lbrack - 3;1) \cup \lbrack 2;3)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 7.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x)\), \(A = \lbrack - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 2)^{2} + (y + 3)^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 1;7\rbrack\) и \(\lbrack - 1;4) \cup \lbrack 6;7\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 6,\ 8\rbrack\), в десятичной записи которых отсутствует цифра 9.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [1;4].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\) \(B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 4;0)\) и \(\lbrack 0;3) \cup \lbrack 5;6)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 1.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-8;-5].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y - 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;5\rbrack\) и \(\lbrack 2;4\rbrack \cup (7;12\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 5.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = cos5t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 6;2\rbrack\), \(B = ( - 7;3)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \lbrack x\rbrack - 1\), \(A = \lbrack - 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [2;5].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y - 2| \geq 1\}\), то определить и описать следующие множества:\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(( - 2;6\rbrack\) и \(( - 3; - 1) \cup \lbrack 1;7\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 6,\ 8\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = sin4t,\ y = cos2t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 5;4)\), \(B = \lbrack - 3;11\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(2x + 1)\), \(A = ( - 1;1\rbrack\).
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-7;-4].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;\ 4\rbrack\) и \(\lbrack - 2;1) \cup \lbrack 2;5\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 2.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\ \)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [4;7].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\) \(B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \((1;\ 7\rbrack\) и \((2;4) \cup \lbrack 9;13\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 0.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = sin2t,\ y = cos4t\).
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;3)\), \(B = \lbrack - 10;3\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [3;6].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y - 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(( - 3;\ 4\rbrack\) и \((1;4\rbrack \cup (6;10\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 2,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 5.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\). \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-11;-8].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 1;\ 5)\) и \(\lbrack - 1;4) \cup \lbrack 7;8)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 4,\ 6\rbrack\), в десятичной записи которых отсутствует цифра 7.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = cos3t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;5)\), \(B = \lbrack - 8;6)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-4;-1].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x + 1)^{2} + (y + 1)^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 3;\ 3)\) и \(\lbrack 0;4) \cup \lbrack 7;9)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 1,\ 3\rbrack\), в десятичной записи которых отсутствует цифра 4.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;3)\), \(B = \lbrack - 1;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [7;10].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 3\},B = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;\ 7)\) и \(\lbrack - 2; - 1) \cup \lbrack 2;4)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 1,\ 3\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = sin4t,\ y = cos2t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 2;4\rbrack\), \(B = ( - 5;5)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [2;5].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;\ 1)\) и \(\lbrack 1;2) \cup \lbrack 3;5)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 8,\ 10\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 4;3\rbrack\), \(B = \lbrack - 4;10\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [5;8].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y + 1)^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(( - 1;5\rbrack\) и \(( - 1;\ 1\rbrack \cup (3;\ 7\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 1\rbrack\), в десятичной записи которых отсутствует цифра 1.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;3)\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 9\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 3;\ 7\rbrack\) и \(\lbrack 0;\ 2) \cup \lbrack 6;\ 8\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = sin2t,\ y = cos4t\).
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 7;3)\), \(B = \lbrack - 5;7\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-5;-2].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 4y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;\ 7)\) и \(\lbrack - 2; - 1) \cup \lbrack 2;4)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = cos5t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 2;4\rbrack\), \(B = ( - 1;9)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-8;-5].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества\(\ A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;6\rbrack\) и \(\lbrack 0;5) \cup \lbrack 7;8\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 2,\ 4\rbrack\), в десятичной записи которых отсутствует цифра 4.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 4;6\rbrack\), \(B = \lbrack - 2;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x - 1)\), \(A = \lbrack - 1;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [1;4].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} = 1\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 1;\ 3\rbrack\) и \(\lbrack - 4; - 1) \cup \lbrack 2;3\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 4,\ 6\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\ \)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;4)\), \(B = \lbrack - 1;7\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите меру пересечения прямоугольников \(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\) и \(Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-1;2].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 2)^{2} + (y + 3)^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;6)\) и \(\lbrack - 2;1) \cup \lbrack 4;5)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 8,\ 10\rbrack\), в десятичной записи которых отсутствует цифра 0.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = cos3t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 2;4)\), \(B = \lbrack 2;10)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [10;13].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 0;\ 3)\) и \(\lbrack 2;4) \cup \lbrack 5;6)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (3;6)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 36\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 1;\ 5)\) и \(\lbrack - 1;4) \cup \lbrack 7;8)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = cos5t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [6;9].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \geq 9\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;3)\) и \(\lbrack - 3;1) \cup \lbrack 2;3)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 5,\ 7\rbrack\), в десятичной записи которых отсутствует цифра 7.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = sin4t,\ y = cos2t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;3)\), \(B = \lbrack - 1;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-6;-3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Компактные метрические пространства.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ 4 - x^{2} \geq y\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \((0;6\rbrack\) и \((2;4) \cup \lbrack 7;11\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 6,\ 8\rbrack\), в десятичной записи которых отсутствует цифра 8.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-10;-7].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Открытые и закрытые множества в метрических пространствах.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x + 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(( - 2;6\rbrack\) и \(( - 3; - 1) \cup \lbrack 1;7\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 5.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\) на отрезке \(E = \lbrack 0,\ 1\rbrack\), если\(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\ \)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 1;4)\), \(B = \lbrack - 1;7\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x)\), \(A = \lbrack - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-2;1].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 1\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 1;\ 5\rbrack\) и \(\lbrack 1;\ 2) \cup \lbrack 7;10\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 1,\ 3\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-12;-9]
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Элементарные множества на плоскости и их измеримость.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4x^{2} + 9y^{2} \geq 36\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 4;\ 1)\) и \(\lbrack - 3; - 1) \cup \lbrack 3;6)\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 3,\ 5\rbrack\), в десятичной записи которых отсутствует цифра 6.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 5;4)\), \(B = \lbrack - 3;11\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [9;12].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Непрерывные отображения метрических пространств.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \leq 4 - x^{2}\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;5\rbrack\) и \(\lbrack 2;4\rbrack \cup (7;12\rbrack\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 2.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max_{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [8;11].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Метрическое пространство и примеры.
+ \\
+\textbf{T2.} 
+Измеримые функции и их свойства.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ max\{|x|,|y|\} \leq 2\},B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 1 \leq y\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack - 2;4)\) и \(\lbrack 0;4) \cup \lbrack 5;7)\)
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 9.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = cos3t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [0;3].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Множества и операции над ними.
+ \\
+\textbf{T2.} 
+Теорема Егоровa.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \(\lbrack 2;6\rbrack\) и \(\lbrack 2;4) \cup \lbrack 11;13\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 7,\ 9\rbrack\), в десятичной записи которых отсутствует цифра 0.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\). \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-9;-6].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-вариант}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Мощность множества и его свойства.
+ \\
+\textbf{T2.} 
+Теоремы Лебега и Риса.
+ \\
+\textbf{A1.} 
+Если даны множества \(A = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), то определить и описать следующие множества: \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\).
+ \\
+\textbf{A2.} 
+Установите однозначное соответствие между множествами \((1;\ 7\rbrack\) и \((2;4) \cup \lbrack 9;13\rbrack\).
+ \\
+\textbf{A3.} 
+Найдите меру Лебега множества всех чисел, расположенных на отрезке \(\lbrack 0,\ 2\rbrack\), в десятичной записи которых отсутствует цифра 3.
+ \\
+\textbf{B1.} 
+Вычислить интеграл Лебега\(\int_{E}^{}f(x)d\mu\), если \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Найдите расстояние между элементами \(x,y \in X\), используя данные, приведённые ниже: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max_{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = sin2t,\ y = cos4t\).
+ \\
+\textbf{B3.} 
+Установите взаимно однозначное соответствие между множествами \(A\) и \(B\).\(\ A = ( - 4;6\rbrack\), \(B = \lbrack - 2;6\rbrack\).
+ \\
+\textbf{C1.} 
+Найдите лебегову меру множества: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Вычислите интеграл Лебега (\(\int_{A}^{}{f(x)d\mu}\)), если \(f(x) = sign(x - 1)\), \(A = \lbrack - 1;2)\);
+ \\
+\textbf{C3.} 
+Приведите пример неизмеримого множества на отрезке [-3;0].
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}

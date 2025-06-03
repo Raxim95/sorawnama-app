@@ -1,0 +1,2335 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\setmainfont{Times New Roman}[Weight=900]
+% Set the math font and adjust weight to 600 (semi-bold)
+\setmainfont{Latin Modern Roman}[Weight=600]
+\setmathfont{Latin Modern Math}[Weight=600]
+
+
+
+% \renewcommand{\baselinestretch}{1}
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\ctg}{ctg}
+\DeclareMathOperator{\arctg}{arctg}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 2;\ 5\rbrack\) hám \(\lbrack 0;1) \cup \lbrack 3;\ 5\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 5,\ 7\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(7\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos3t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\);
+ \\
+\textbf{C3.} 
+[-10;-7] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} = y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;6\rbrack\) hám \(\lbrack 0;5) \cup \lbrack 7;8\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 8,\ 10\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(0\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 4;6\rbrack\), \(B = \lbrack - 2;6\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (3;6)\);
+ \\
+\textbf{C3.} 
+[-2;1] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x + 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 3;\ 7\rbrack\) hám \(\lbrack 2;5) \cup \lbrack 8;15\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 4,\ 6\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(7\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos5t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 2;4\rbrack\), \(B = ( - 1;9)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+[10;13] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 3;\ 4\rbrack\) hám \((1;4\rbrack \cup (6;10\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(9\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 2;4)\), \(B = \lbrack 2;10)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+[5;8] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 9\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 3;\ 3)\) hám \(\lbrack 0;4) \cup \lbrack 7;9)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(1\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;5)\), \(B = \lbrack - 8;6)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\);
+ \\
+\textbf{C3.} 
+[-8;-5] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 1;\ 7)\) hám \(\lbrack - 2;4) \cup \lbrack 7;9)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 2\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(2\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 2;4\rbrack\), \(B = ( - 5;5)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \lbrack x\rbrack - 1\), \(A = \lbrack - 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+[-3;0] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 1;\ 3\rbrack\) hám \(\lbrack - 4; - 1) \cup \lbrack 2;3\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 1\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(1\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ \ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin4t,\ y = \cos2t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x)\), \(A = \lbrack - 2;2)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 2)^{2} + (y + 3)^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;5)\) hám \(\lbrack - 2;0) \cup \lbrack 1;4)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = \sin2t,\ y = \cos4t\).
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+[-6;-3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y - 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;4)\) hám \(\lbrack - 2;0) \cup \lbrack 7;9)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 7,\ 9\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(9\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+[-12;-9] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 3\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 2;\ 7)\) hám \(\lbrack - 2; - 1) \cup \lbrack 2;4)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 2\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(3\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = \sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 5;4)\), \(B = \lbrack - 3;11\rbrack\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler kesilispesiniń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(2x + 1)\), \(A = ( - 1;1\rbrack\).
+ \\
+\textbf{C3.} 
+[1;4] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4x^{2} + 9y^{2} \geq 36\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 1;\ 5)\) hám \(\lbrack - 1;4) \cup \lbrack 7;8)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 5,\ 7\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ \ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin4t,\ y = \cos2t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 2;3\rbrack\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+[2;5] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 1 \leq y\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 2;6)\) hám \(\lbrack - 2;1) \cup \lbrack 4;5)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\);
+ \\
+\textbf{C3.} 
+[-1;2] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x + 1)^{2} + (y + 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;5\rbrack\) hám \(\lbrack 2;4\rbrack \cup (7;12\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 1,\ 3\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(4\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;3)\), \(B = \lbrack - 1;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2\lbrack x\rbrack\), \(A = ( - 3;3)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 2)\) hám \(\lbrack 1;3\rbrack \cup (5;7)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 8,\ 10\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = \sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 1;4)\), \(B = \lbrack - 1;7\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\);
+ \\
+\textbf{C3.} 
+[-5;-2] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 4\rbrack\) hám \(\lbrack - 2;1) \cup \lbrack 2;5\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 2,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(4\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 10;3\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+[9;12] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 4y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 3;\ 7\rbrack\) hám \(\lbrack 0;\ 2) \cup \lbrack 6;\ 8\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 2,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(5\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos3t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x - 1)\), \(A = \lbrack - 1;2)\);
+ \\
+\textbf{C3.} 
+[-11;-8] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 4;1\rbrack\) hám \(( - 1;3) \cup \lbrack 8;9\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 4,\ 6\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = \sin2t,\ y = \cos4t\).
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 4;3\rbrack\), \(B = \lbrack - 4;10\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\);
+ \\
+\textbf{C3.} 
+[-4;-1] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(\ A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\((3;6\rbrack\) hám \(( - 3; - 1) \cup \lbrack 2;3\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 7,\ 9\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(0\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos5t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 6;2\rbrack\), \(B = ( - 7;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y - 2| \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;4)\) hám \(\lbrack 0;4) \cup \lbrack 5;7)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 1,\ 3\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(3\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\);
+ \\
+\textbf{C3.} 
+[4;7] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \leq 4 - x^{2}\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 1;6\rbrack\) hám \(\lbrack 1;4) \cup \lbrack 7;9\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(5\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 7;3)\), \(B = \lbrack - 5;7\rbrack\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler kesilispesiniń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\);
+ \\
+\textbf{C3.} 
+[3;6] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} = 1\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;5\rbrack\) hám \(\lbrack - 2;2) \cup \lbrack 3;4\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 4,\ 6\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ \ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\);
+ \\
+\textbf{C3.} 
+[6;9] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4 - x^{2} \geq y\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 1;5\rbrack\) hám \(( - 1;\ 1\rbrack \cup (3;\ 7\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 8,\ 10\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = \sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 2;3\rbrack\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+[7;10] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y + 1)^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 4;0)\) hám \(\lbrack 0;3) \cup \lbrack 5;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 1\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(1\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 7;3)\), \(B = \lbrack - 5;7\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\);
+ \\
+\textbf{C3.} 
+[-7;-4] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 36\}\),\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\((1;\ 7\rbrack\) hám \((2;4) \cup \lbrack 9;13\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 2\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(3\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2\lbrack x\rbrack\), \(A = ( - 3;3)\);
+ \\
+\textbf{C3.} 
+[8;11] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \geq 9\}\),\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 3;1\rbrack\) hám \(\lbrack - 2;1) \cup \lbrack 4;5\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(9\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (3;6)\);
+ \\
+\textbf{C3.} 
+[-9;-6] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 2)^{2} + (y + 3)^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 4;\ 1)\) hám \(\lbrack - 3; - 1) \cup \lbrack 3;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 7,\ 9\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(9\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos5t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 2;4\rbrack\), \(B = ( - 5;5)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\);
+ \\
+\textbf{C3.} 
+[-11;-8] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \leq 4 - x^{2}\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 2;6\rbrack\) hám \(\lbrack 2;4) \cup \lbrack 11;13\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos3t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;5)\), \(B = \lbrack - 8;6)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 3\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\((0;6\rbrack\) hám \((2;4) \cup \lbrack 7;11\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 5,\ 7\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin4t,\ y = \cos2t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(2x + 1)\), \(A = ( - 1;1\rbrack\).
+ \\
+\textbf{C3.} 
+[6;9] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ y \geq x + 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 2;6\rbrack\) hám \(( - 3; - 1) \cup \lbrack 1;7\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(5\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = \sin2t,\ y = \cos4t\).
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \lbrack x\rbrack - 1\), \(A = \lbrack - 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+[-3;0] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;3)\) hám \(\lbrack - 3;1) \cup \lbrack 2;3)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 4,\ 6\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(7\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+[-1;2] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} = y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 3;\ 2\rbrack\) hám \(\lbrack 2;4) \cup \lbrack 5;8\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 8,\ 10\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(0\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos5t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 1;4)\), \(B = \lbrack - 1;7\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\);
+ \\
+\textbf{C3.} 
+[7;10] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 1 \leq y\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 1)\) hám \(\lbrack 1;2) \cup \lbrack 3;5)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 1,\ 3\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(3\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin4t,\ y = \cos2t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 4;3\rbrack\), \(B = \lbrack - 4;10\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\);
+ \\
+\textbf{C3.} 
+[-12;-9] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 1;\ 5\rbrack\) hám \(\lbrack 1;\ 2) \cup \lbrack 7;10\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(1\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos3t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;3)\), \(B = \lbrack - 1;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+[-8;-5] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = y\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;\ 3)\) hám \(\lbrack 2;4) \cup \lbrack 5;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 5,\ 7\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(7\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 5;4)\), \(B = \lbrack - 3;11\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+[2;5] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + 4y^{2} \geq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 1;7\rbrack\) hám \(\lbrack - 1;4) \cup \lbrack 6;7\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 10;3\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x - 1)\), \(A = \lbrack - 1;2)\);
+ \\
+\textbf{C3.} 
+[10;13] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y + 1)^{2} \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 2;6\rbrack\) hám \(( - 3; - 1) \cup \lbrack 1;7\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 2,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(4\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 2;4)\), \(B = \lbrack 2;10)\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\);
+ \\
+\textbf{C3.} 
+[-5;-2] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \geq 0\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y - 2| \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 3;\ 4\rbrack\) hám \((1;4\rbrack \cup (6;10\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 2,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(5\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = \sin2t,\ y = \cos4t\).
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ xy \leq 0\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \geq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 2)\) hám \(\lbrack 1;3\rbrack \cup (5;7)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 1,\ 3\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(4\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 2;4\rbrack\), \(B = ( - 1;9)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\);
+ \\
+\textbf{C3.} 
+[-6;-3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + (y - 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 4;\ 1)\) hám \(\lbrack - 3; - 1) \cup \lbrack 3;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 0,\ 2\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(2\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 4;6\rbrack\), \(B = \lbrack - 2;6\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\);
+ \\
+\textbf{C3.} 
+[9;12] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} = 1\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;\ 3)\) hám \(\lbrack 2;4) \cup \lbrack 5;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 7,\ 9\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(0\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ \ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = \sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 6;2\rbrack\), \(B = ( - 7;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(x)\), \(A = \lbrack - 2;2)\);
+ \\
+\textbf{C3.} 
+[3;6] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 1;6\rbrack\) hám \(\lbrack 1;4) \cup \lbrack 7;9\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 7)},\ x \in \mathbb{I} \cap \lbrack 1,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 1,\ 4\rbrack,\ E = \lbrack 1,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/3\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/3}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos5t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 3;4)\), \(B = \lbrack - 2;10)\).
+ \\
+\textbf{C1.} 
+\(P = \{ 0 \leq x \leq 1,\ 0 \leq y \leq 1\}\ hám\ Q = \{ 0.3 \leq x \leq 0.8,\ 0 \leq y \leq 1\}\) tuwrı múyeshlikler kesilispesiniń ólshewin tabıń.
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2 - \lbrack x\rbrack\), \(A = \lbrack - 2;3)\);
+ \\
+\textbf{C3.} 
+[1;4] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \geq 9\}\),\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;5)\) hám \(\lbrack - 2;0) \cup \lbrack 1;4)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(9\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 3)(x + 2)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(t + \pi/6),\ y = tg\ t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 4;4\rbrack\), \(B = ( - 11;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \lbrack x + 1\rbrack\), \(A = \lbrack - 2;1)\);
+ \\
+\textbf{C3.} 
+[-2;1] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(\ A = \{(x,y) \in \mathbb{R}^{2}:\ y = x^{2}\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x - 1)^{2} + (y - 1)^{2} \leq 4\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;5\rbrack\) hám \(\lbrack 2;4\rbrack \cup (7;12\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 1,\ 3\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(3\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 2,\ 4\rbrack \\
+4x^{3},\ x\mathbb{\in Q \cap}\lbrack 2,\ 4\rbrack,\ E = \lbrack 2,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0,\pi\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi}|x(t) - y(t)|,x(t) = \sin2t,\ y = \cos4t\).
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\);
+ \\
+\textbf{C3.} 
+[0;3] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńislik hám oǵan mısallar.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x^{2}\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ (x + 1)^{2} + (y + 1)^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;4)\) hám \(\lbrack 0;4) \cup \lbrack 5;7)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 8,\ 10\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(0\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{3} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{3}}|x(t) - y(t)|,x(t) = ctg(2t + \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 2;4\rbrack\), \(B = ( - 1;9)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\);
+ \\
+\textbf{C3.} 
+[4;7] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerdiń úzliksiz sáwlelendiriwleri.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ \max \{|x|,|y|\} \leq 2\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4 - x^{2} \geq y\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(( - 1;5\rbrack\) hám \(( - 1;\ 1\rbrack \cup (3;\ 7\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(1\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{\sqrt{x}},\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+\sin x,\ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin4t,\ y = \cos2t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 1;7)\), \(B = \lbrack - 3;9\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\);
+ \\
+\textbf{C3.} 
+[-7;-4] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Metrikalıq keńisliklerde ashıq hám tuyıq kóplikler.
+ \\
+\textbf{T2.} 
+Tegislikte elementar kóplikler hám olardıń ólshewi.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 4x^{2} + 9y^{2} \geq 36\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;3)\) hám \(\lbrack - 3;1) \cup \lbrack 2;3)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 2,\ 4\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(4\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 5)(x - 6)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctgt,\ y = tg(\ 2t - \frac{\pi}{6})\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = \lbrack - 6;2\rbrack\), \(B = ( - 7;3)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2\lbrack x\rbrack\), \(A = ( - 3;3)\);
+ \\
+\textbf{C3.} 
+[-4;-1] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} Kóplikler hám olar ústinde ámeller.
+ \\
+\textbf{T2.} 
+Ólshewli funkciyalar hám olardıń qásiyetleri.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x = - y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ |x| + |y| \leq 2\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 4\rbrack\) hám \(\lbrack - 2;1) \cup \lbrack 2;5\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 6,\ 8\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 1;1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 1;1\rbrack,\ E = \lbrack - 1;1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{6};\ \frac{\pi}{4} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{6} \leq t \leq \frac{\pi}{4}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ 2t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 1;4)\), \(B = \lbrack 2;12)\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\).
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\);
+ \\
+\textbf{C3.} 
+[5;8] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ y = - x\},\ B = \{(x,y) \in \mathbb{R}^{2}:\ x^{2} + y^{2} \leq 1\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 2;\ 1)\) hám \(\lbrack 1;2) \cup \lbrack 3;5)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 4,\ 6\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(6\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x + 2)(x + 4)},\ x \in \mathbb{I} \cap \lbrack 0,\ 4\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack 0,\ 4\rbrack,\ E = \lbrack 0,\ 4\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/6\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/6}|x(t) - y(t)|,x(t) = \sin3t,\ y = \cos t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 2;3\rbrack\), \(B = \lbrack - 2;8\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\).
+ \\
+\textbf{C3.} 
+[-9;-6] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kompakt metrikalıq keńislikler.
+ \\
+\textbf{T2.} 
+Lebeg hám Riss teoremaları.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \leq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 9\}\), \(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack 0;6\rbrack\) hám \(\lbrack 0;5) \cup \lbrack 7;8\rbrack\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 3,\ 5\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(5\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(E = \lbrack 0,\ 1\rbrack\), \(f(x) = \left\{ \begin{matrix}
+\frac{1}{(x + 1)^{3}}\ x \in \mathbb{I} \cap \lbrack 0,\ 1\rbrack \\
+7x,\ \ x\mathbb{\in Q}
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\lbrack 0;\ \pi/4\rbrack,\ \rho(x,y) = \max _{0 \leq t \leq \pi/4}|x(t) - y(t)|,x(t) = \sin t,\ y = \cos3t\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;3)\), \(B = \lbrack - 10;3\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = sign(2x + 1)\), \(A = ( - 1;1\rbrack\).
+ \\
+\textbf{C3.} 
+[8;11] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-bilet}
+
+\vspace{0.5cm}
+
+\textbf{T1.} 
+Kópliktiń quwatlıǵı hám onıń qásiyetleri.
+ \\
+\textbf{T2.} 
+Egorov teoreması.
+ \\
+\textbf{A1.} 
+\(A = \{(x,y) \in \mathbb{R}^{2}:\ x \geq y\},\) \(\ B = \{(x,y) \in \mathbb{R}^{2}:\ 9x^{2} + y^{2} \leq 36\}\),\(A,\ B,\ A \cup B,\ A \cap B,\ A \backslash B,\ B \backslash A,\ A \bigtriangleup B\) kópliklerin anıqlań hám súwretleń.
+ \\
+\textbf{A2.} 
+\(\lbrack - 4;0)\) hám \(\lbrack 0;3) \cup \lbrack 5;6)\) kóplikleri arasında óz ara bir mánisli sáykeslik ornatıń.
+ \\
+\textbf{A3.} 
+\(\lbrack 5,\ 7\rbrack\) kesindide jaylasqan sanlardıń onlıq bólshek jazılıwında \(8\) cifrı qatnaspaǵan barlıq sanlar kópliginiń Lebeg ólshewin tabıń.
+ \\
+\textbf{B1.} 
+\(\int_{E}^{}f(x)d\mu\) Lebeg integralın esaplań, \(f(x) = \left\{ \begin{matrix}
+\frac{x^{2}}{(x - 2)(x - 4)},\ x \in \mathbb{I} \cap \lbrack - 4; - 1\rbrack \\
+3x^{2} - 2,\ x\mathbb{\in Q \cap}\lbrack - 4; - 1\rbrack,E = \lbrack - 4; - 1\rbrack
+\end{matrix} \right.\ \)
+ \\
+\textbf{B2.} 
+Tómende berilgenler boyınsha \(x,y \in X\) elementler arasındaǵı aralıqtı tabıń: \(X = C\left\lbrack \frac{\pi}{4};\ \frac{\pi}{2} \right\rbrack,\ \rho(x,y) = \max _{\frac{\pi}{4} \leq t \leq \frac{\pi}{2}}|x(t) - y(t)|,x(t) = ctg(2t - \pi/6),\ y = tg(\ t - \pi/6)\)
+ \\
+\textbf{B3.} 
+\(A\ hám\ B\) kóplikleri arasında óz ara bir mánisli sáykeslik anıqlań. \(A = ( - 5;1\rbrack\), \(B = \lbrack - 4;6\rbrack\).
+ \\
+\textbf{C1.} 
+Kópliktiń Lebeg ólshewin tabıń: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\);
+ \\
+\textbf{C2.} 
+Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\);
+ \\
+\textbf{C3.} 
+[-10;-7] kóplikte ólshewsiz kóplikke missal keltiriń.
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}

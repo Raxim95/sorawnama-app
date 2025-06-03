@@ -1,0 +1,1036 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}[Weight=700]
+
+
+
+\renewcommand{\baselinestretch}{1} 
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-variant}
+\newline
+
+\textbf{T1.} Kóplikler quwatı [\textit{anıqlaması. continuum quwat, quwatlardı salıstırıw, mısallar}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler kesilispesiniń ólshewin tabıń. \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = \sqrt{|x - y|}\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\min\left\{ 1;\rho(x,y) \right\}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-variant}
+\newline
+
+\textbf{T1.} Elementar kóplikler ólshewi [\textit{sırtqı ólshew, sırtqı ólshew qásiyetleri, Lebeg ólshewi}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar ústine ámeller}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{2}\) kóplikte \(x = \left( x_{1},x_{2} \right)\) hám \(y = \left( y_{1},y_{2} \right)\) elementler ushın keltirilgen \(\rho(x,y) = \left| x_{1} - y_{1} \right| + \left| x_{2} - y_{2} \right|\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńisliklerdegi jıynaqlılıq [\textit{izbe-izlikler jıynaqlılıǵı hám limiti, berilgen noqattıń urınıw noqatı bolıwınıń zárúrli hám jetkilikli shárti haqqındaǵi teorema, dálilleniwi}]. \\
+\textbf{T2.} Ólshewli kóplikler [\textit{anıqlaması, teoretik-kópliklik operaciyalarǵa qarata ólshewli kópliklerdıń tuyıqlıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = arctg|x - y|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-variant}
+\newline
+
+\textbf{T1.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ekvivalentligi, mısal}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| |x| - |y| \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-variant}
+\newline
+
+\textbf{T1.} Kóplikler yarım kolcosı. [\textit{anıqlaması, mısallar, qásiyetler}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, derlik hámme jerde jıynaqlılıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = (x - y)^{2}\), \(x,y\mathbb{\in R}\) sáwlelendiriw metrikanıń qaysı shártin qanaatlandırmawın anıqlań. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R^{n}\) da metrika bolama: \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}}\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-variant}
+\newline
+
+\textbf{T1.} Kópliklerdi sáwlelendiriw. [\textit{sáwlelendiriw, obraz, proobraz, inyekciyam syurekciya, biekciya, misallar}]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń: \(\rho'(x,y) = \frac{\rho(x,y)}{1 + \rho(x,y)}\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-variant}
+\newline
+
+\textbf{T1.} Kóplikler [\textit{kóplik túsinigi, kóplikler ústinde ámeller, tolıqtırıwshısı, mısallar}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = |arctgx - arctgy|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-variant}
+\newline
+
+\textbf{T1.} Sanaqlı kóplikler [\textit{anıqlaması, mısallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| e^{x} - e^{y} \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) kóplik \(\rho(f,g) = \max_{a \leq t \leq b}\left| f(t) - g(t) \right|\) metrikaǵa qarata metrikalıq keńislik ekenin kórsetiw }]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\). \\
+\textbf{B2.} \(X = AC\lbrack 0,\pi\rbrack\), \(x(t) = \sin t\), \(y(t) = 0\) metrikalıq keńislikte \(x \in X\) hám \(y \in X\) elementler arasındaǵı aralıqtı tabıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(2x + 1)\), \(A = ( - 1;1\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = e^{\rho(x,y)} - 1\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-variant}
+\newline
+
+\textbf{T1.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ekvivalentligi, mısal}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(X = AC\lbrack 0,\pi\rbrack\), \(x(t) = \sin t\), \(y(t) = 0\) metrikalıq keńislikte \(x \in X\) hám \(y \in X\) elementler arasındaǵı aralıqtı tabıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = \ln\left( 1 + \rho(x,y) \right)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-variant}
+\newline
+
+\textbf{T1.} Kóplikler kolcosı. [\textit{anıqlaması, misallar, qásiyetleri}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\min\left\{ 1;\rho(x,y) \right\}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-variant}
+\newline
+
+\textbf{T1.} Kóplikler kolcosı. [\textit{anıqlaması, misallar, qásiyetleri}]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń: \(\rho'(x,y) = \frac{\rho(x,y)}{1 + \rho(x,y)}\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-variant}
+\newline
+
+\textbf{T1.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, derlik hámme jerde jıynaqlılıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń. \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = \sqrt{|x - y|}\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = arctg|x - y|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-variant}
+\newline
+
+\textbf{T1.} Elementar kóplikler ólshewi [\textit{sırtqı ólshew, sırtqı ólshew qásiyetleri, Lebeg ólshewi}]. \\
+\textbf{T2.} Ólshewli kóplikler [\textit{anıqlaması, teoretik-kópliklik operaciyalarǵa qarata ólshewli kópliklerdıń tuyıqlıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x - 1)\), \(A = \lbrack - 1;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = e^{\rho(x,y)} - 1\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńisliklerdegi jıynaqlılıq [\textit{izbe-izlikler jıynaqlılıǵı hám limiti, berilgen noqattıń urınıw noqatı bolıwınıń zárúrli hám jetkilikli shárti haqqındaǵi teorema, dálilleniwi}]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-variant}
+\newline
+
+\textbf{T1.} Kópliklerdi sáwlelendiriw. [\textit{sáwlelendiriw, obraz, proobraz, inyekciyam syurekciya, biekciya, misallar}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = (x - y)^{2}\), \(x,y\mathbb{\in R}\) sáwlelendiriw metrikanıń qaysı shártin qanaatlandırmawın anıqlań. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x)\), \(A = \lbrack - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R^{n}\) da metrika bolama: \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}}\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-variant}
+\newline
+
+\textbf{T1.} Kóplikler [\textit{kóplik túsinigi, kóplikler ústinde ámeller, tolıqtırıwshısı, mısallar}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar ústine ámeller}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{2}\) kóplikte \(x = \left( x_{1},x_{2} \right)\) hám \(y = \left( y_{1},y_{2} \right)\) elementler ushın keltirilgen \(\rho(x,y) = \left| x_{1} - y_{1} \right| + \left| x_{2} - y_{2} \right|\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = |arctgx - arctgy|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-variant}
+\newline
+
+\textbf{T1.} Sanaqlı kóplikler [\textit{anıqlaması, mısallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x - 1)\), \(A = \lbrack - 1;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| |x| - |y| \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-variant}
+\newline
+
+\textbf{T1.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ekvivalentligi, mısal}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń. \\
+\textbf{B2.} \(X = AC\lbrack 0,\pi\rbrack\), \(x(t) = \sin t\), \(y(t) = 0\) metrikalıq keńislikte \(x \in X\) hám \(y \in X\) elementler arasındaǵı aralıqtı tabıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| e^{x} - e^{y} \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-variant}
+\newline
+
+\textbf{T1.} Kóplikler quwatı [\textit{anıqlaması. continuum quwat, quwatlardı salıstırıw, mısallar}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = \sqrt{|x - y|}\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = \ln\left( 1 + \rho(x,y) \right)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) kóplik \(\rho(f,g) = \max_{a \leq t \leq b}\left| f(t) - g(t) \right|\) metrikaǵa qarata metrikalıq keńislik ekenin kórsetiw }]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| e^{x} - e^{y} \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-variant}
+\newline
+
+\textbf{T1.} Kóplikler yarım kolcosı. [\textit{anıqlaması, mısallar, qásiyetler}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar ústine ámeller}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = (x - y)^{2}\), \(x,y\mathbb{\in R}\) sáwlelendiriw metrikanıń qaysı shártin qanaatlandırmawın anıqlań. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = arctg|x - y|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-variant}
+\newline
+
+\textbf{T1.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler kesilispesiniń ólshewin tabıń. \\
+\textbf{B2.} \(\mathbb{R}^{2}\) kóplikte \(x = \left( x_{1},x_{2} \right)\) hám \(y = \left( y_{1},y_{2} \right)\) elementler ushın keltirilgen \(\rho(x,y) = \left| x_{1} - y_{1} \right| + \left| x_{2} - y_{2} \right|\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = \ln\left( 1 + \rho(x,y) \right)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-variant}
+\newline
+
+\textbf{T1.} Kóplikler quwatı [\textit{anıqlaması. continuum quwat, quwatlardı salıstırıw, mısallar}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(2x + 1)\), \(A = ( - 1;1\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = e^{\rho(x,y)} - 1\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) kóplik \(\rho(f,g) = \max_{a \leq t \leq b}\left| f(t) - g(t) \right|\) metrikaǵa qarata metrikalıq keńislik ekenin kórsetiw }]. \\
+\textbf{T2.} Ólshewli kóplikler [\textit{anıqlaması, teoretik-kópliklik operaciyalarǵa qarata ólshewli kópliklerdıń tuyıqlıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń: \(\rho'(x,y) = \frac{\rho(x,y)}{1 + \rho(x,y)}\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-variant}
+\newline
+
+\textbf{T1.} Sanaqlı kóplikler [\textit{anıqlaması, mısallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, derlik hámme jerde jıynaqlılıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x)\), \(A = \lbrack - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| |x| - |y| \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-variant}
+\newline
+
+\textbf{T1.} Kóplikler [\textit{kóplik túsinigi, kóplikler ústinde ámeller, tolıqtırıwshısı, mısallar}]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-variant}
+\newline
+
+\textbf{T1.} Kóplikler yarım kolcosı. [\textit{anıqlaması, mısallar, qásiyetler}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar ústine ámeller}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = \sqrt{|x - y|}\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R^{n}\) da metrika bolama: \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}}\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńisliklerdegi jıynaqlılıq [\textit{izbe-izlikler jıynaqlılıǵı hám limiti, berilgen noqattıń urınıw noqatı bolıwınıń zárúrli hám jetkilikli shárti haqqındaǵi teorema, dálilleniwi}]. \\
+\textbf{T2.} Ólshewli kóplikler [\textit{anıqlaması, teoretik-kópliklik operaciyalarǵa qarata ólshewli kópliklerdıń tuyıqlıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{2}\) kóplikte \(x = \left( x_{1},x_{2} \right)\) hám \(y = \left( y_{1},y_{2} \right)\) elementler ushın keltirilgen \(\rho(x,y) = \left| x_{1} - y_{1} \right| + \left| x_{2} - y_{2} \right|\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\min\left\{ 1;\rho(x,y) \right\}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-variant}
+\newline
+
+\textbf{T1.} Kóplikler kolcosı. [\textit{anıqlaması, misallar, qásiyetleri}]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = |arctgx - arctgy|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-variant}
+\newline
+
+\textbf{T1.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\min\left\{ 1;\rho(x,y) \right\}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-variant}
+\newline
+
+\textbf{T1.} Elementar kóplikler ólshewi [\textit{sırtqı ólshew, sırtqı ólshew qásiyetleri, Lebeg ólshewi}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, derlik hámme jerde jıynaqlılıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| e^{x} - e^{y} \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-variant}
+\newline
+
+\textbf{T1.} Kópliklerdi sáwlelendiriw. [\textit{sáwlelendiriw, obraz, proobraz, inyekciyam syurekciya, biekciya, misallar}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ekvivalentligi, mısal}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{3},k^{3} + 3^{- k} \right)\). \\
+\textbf{B2.} \(X = AC\lbrack 0,\pi\rbrack\), \(x(t) = \sin t\), \(y(t) = 0\) metrikalıq keńislikte \(x \in X\) hám \(y \in X\) elementler arasındaǵı aralıqtı tabıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack - 1}\), \(A = \lbrack 2;5\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = arctg|x - y|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-variant}
+\newline
+
+\textbf{T1.} Kóplikler quwatı [\textit{anıqlaması. continuum quwat, quwatlardı salıstırıw, mısallar}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler kesilispesiniń ólshewin tabıń. \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = |arctgx - arctgy|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-variant}
+\newline
+
+\textbf{T1.} Kóplikler yarım kolcosı. [\textit{anıqlaması, mısallar, qásiyetler}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 1},\frac{1}{k} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(2x + 1)\), \(A = ( - 1;1\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = e^{\rho(x,y)} - 1\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) kóplik \(\rho(f,g) = \max_{a \leq t \leq b}\left| f(t) - g(t) \right|\) metrikaǵa qarata metrikalıq keńislik ekenin kórsetiw }]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{3}{k(k + 1)} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = (x - y)^{2}\), \(x,y\mathbb{\in R}\) sáwlelendiriw metrikanıń qaysı shártin qanaatlandırmawın anıqlań. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack}\), \(A = (1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń: \(\rho'(x,y) = \frac{\rho(x,y)}{1 + \rho(x,y)}\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-variant}
+\newline
+
+\textbf{T1.} Elementar kóplikler ólshewi [\textit{sırtqı ólshew, sırtqı ólshew qásiyetleri, Lebeg ólshewi}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar ústine ámeller}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k - 2^{- k},k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack x\rbrack}\), \(A = ( - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-variant}
+\newline
+
+\textbf{T1.} Kóplikler kolcosı. [\textit{anıqlaması, misallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ekvivalentligi, mısal}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler simmetriyalıq ayırmasınıń ólshewin tabıń. \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = \sqrt{|x - y|}\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x - 1)\), \(A = \lbrack - 1;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R^{n}\) da metrika bolama: \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}}\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-variant}
+\newline
+
+\textbf{T1.} Kóplikler [\textit{kóplik túsinigi, kóplikler ústinde ámeller, tolıqtırıwshısı, mısallar}]. \\
+\textbf{T2.} Ólshewli kóplikler [\textit{anıqlaması, teoretik-kópliklik operaciyalarǵa qarata ólshewli kópliklerdıń tuyıqlıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2^{k + 1}},\frac{1}{2^{k}} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{( - 1)^{\lbrack x\rbrack}}{\lbrack x\rbrack}\), \(A = \lbrack 1;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| |x| - |y| \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńisliklerdegi jıynaqlılıq [\textit{izbe-izlikler jıynaqlılıǵı hám limiti, berilgen noqattıń urınıw noqatı bolıwınıń zárúrli hám jetkilikli shárti haqqındaǵi teorema, dálilleniwi}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{k + 2},\frac{1}{k} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = (x - y)^{2}\), \(x,y\mathbb{\in R}\) sáwlelendiriw metrikanıń qaysı shártin qanaatlandırmawın anıqlań. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = \ln\left( 1 + \rho(x,y) \right)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-variant}
+\newline
+
+\textbf{T1.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k^{2},k^{2} + 2^{- k} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{2}\) kóplikte \(x = \left( x_{1},x_{2} \right)\) hám \(y = \left( y_{1},y_{2} \right)\) elementler ushın keltirilgen \(\rho(x,y) = \left| x_{1} - y_{1} \right| + \left| x_{2} - y_{2} \right|\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{\lbrack 2x\rbrack}\), \(A = \lbrack 0;1)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-variant}
+\newline
+
+\textbf{T1.} Kópliklerdi sáwlelendiriw. [\textit{sáwlelendiriw, obraz, proobraz, inyekciyam syurekciya, biekciya, misallar}]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - \infty;0)\), \(B = \lbrack 0;2\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left\lbrack e^{- 2k},e^{- 2k + 1} \right)\). \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = 2^{( - 1)^{\lbrack x\rbrack}}\), \(A = \lbrack 0;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \sin x,\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń: \(\rho'(x,y) = \frac{\rho(x,y)}{1 + \rho(x,y)}\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-variant}
+\newline
+
+\textbf{T1.} Sanaqlı kóplikler [\textit{anıqlaması, mısallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, derlik hámme jerde jıynaqlılıǵı}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 0,1\rbrack\), \(B = \lbrack - \pi;3\pi\rbrack\). \\
+\textbf{A2.} Berilgen \(x(t),y(t) \in C\lbrack 0;\pi\rbrack\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = \sin t\), \(y(t) = \cos t\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( 2k - 2^{- k},2k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x)\), \(A = \lbrack - 2;2)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \arctan x,\ \ \ \ x\mathbb{\in Z} \\ \pi,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Z} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(x_{n}(t) = t^{n} - t^{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = arctg|x - y|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-variant}
+\newline
+
+\textbf{T1.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x(t),y(t)\in C_1[0,1]\) noqatlar arasındaǵı aralıqtı esaplań: \(x(t) = 1 + t\), \(y(t) = 2t\) \(\rho(x,y) = \int_{0}^{1}{\left| x(t) - y(t) \right|dt}\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack\lbrack x + 1\rbrack}\), \(A = \lbrack 1;3\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} \ln\left( 1 + |x| \right),\ \ \ \ e^{x}\mathbb{\in R}\backslash\mathbb{Q} \\ \sin x^{2},\ \ \ \ e^{x}\mathbb{\in Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\min\left\{ 1;\rho(x,y) \right\}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-variant}
+\newline
+
+\textbf{T1.} Kóplikler [\textit{kóplik túsinigi, kóplikler ústinde ámeller, tolıqtırıwshısı, mısallar}]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = ( - 1;3)\), \(B = \lbrack 0;9\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{2}{k(k + 1)} \right)\). \\
+\textbf{B2.} \(X = AC\lbrack 0,\pi\rbrack\), \(x(t) = \sin t\), \(y(t) = 0\) metrikalıq keńislikte \(x \in X\) hám \(y \in X\) elementler arasındaǵı aralıqtı tabıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x + 1\rbrack}\), \(A = \lbrack 1;5)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \sign\left( \cos\pi\left( x^{2} + y^{2} \right) \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = \ln\left( 1 + \rho(x,y) \right)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-variant}
+\newline
+
+\textbf{T1.} Kópliklerdi sáwlelendiriw. [\textit{sáwlelendiriw, obraz, proobraz, inyekciyam syurekciya, biekciya, misallar}]. \\
+\textbf{T2.} Tolıq metrikalıq keńislikler [\textit{anıqlaması, \(l_{2}\) keńisliktıń tolıq ekenin kórsetiw}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A\mathbb{= R}\), \(B = (0;1)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_{\infty}^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = ( - 1, - 2,3,0)\), \(y = (4,2,0, - 2)\) \(\rho_{\infty}(x,y) = \max_{1 \leq i \leq 4}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \sign \ x\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k + 1},\frac{1}{2k} \right)\). \\
+\textbf{B2.} Úlken radiuslı shar ózinen kishirek bolǵan shardıń úlesi bolıwı múmkinbe? Mısal keltiriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x\rbrack!}\), \(A = \lbrack 0;4)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \lbrack x\rbrack^{2} + \lbrack y\rbrack^{3}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| |x| - |y| \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-variant}
+\newline
+
+\textbf{T1.} Elementar kóplikler ólshewi [\textit{sırtqı ólshew, sırtqı ólshew qásiyetleri, Lebeg ólshewi}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshew boyınsha jıynaqlılıq}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack 1;3\rbrack\), \(B = \lbrack - 2;4)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \sign \ x + \chi_{\lbrack 1,\ 2\rbrack}(x)\), \(A = \lbrack - 1,\ 4\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{3^{k}},\frac{1}{3^{k - 1}} \right)\). \\
+\textbf{B2.} Eger haqıyqıy sanlar arasındaǵı aralıq \(\rho(x,y) = |x - y|\) kórinisinde anıqlansa, onda bul aralıq metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \sign(x + 1)\), \(A = \lbrack - 2;2\rbrack\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \ln\left( 1 + \left\lbrack x^{2} + y^{2} \right\rbrack \right)\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(u_{n}(t) = \frac{t^{n}}{n} - \frac{t^{n + 1}}{n + 1}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = \left| e^{x} - e^{y} \right|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńisliklerdegi jıynaqlılıq [\textit{izbe-izlikler jıynaqlılıǵı hám limiti, berilgen noqattıń urınıw noqatı bolıwınıń zárúrli hám jetkilikli shárti haqqındaǵi teorema, dálilleniwi}]. \\
+\textbf{T2.} Qısqartıp sáwlelendiriw principi [\textit{qısqartıp sáwlelendiriw, Qısqartıp sáwlelendiriw principi}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 2;3\rbrack\) \(B = \lbrack 10;111\rbrack\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}_1^{4}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (4,5,0,1)\), \(y = ( - 3,0,2,7)\) \(\rho_{1}(x,y) = \sum_{i = 1}^{3}\left| x_{i} - y_{i} \right|\). \\
+\textbf{A3.} \(f(x) = \lbrack 2x\rbrack\), \(A = \lbrack 0,\ 2)\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( \frac{1}{2k},\frac{1}{k} \right)\). \\
+\textbf{B2.} Natural sanlar kópliginde \(\rho(n,m) = \left\{ \begin{matrix} 1 + \frac{1}{n + m},\ \ \ \text{eger}\ n \neq m \\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \text{eger}\ n = m \end{matrix} \right.\) sáwlelendiriw metrika bolıwın kórsetiń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C^{(1)}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(y_{n}(t) = t^{n} - t^{2n}\). \\
+\textbf{C3.} Berilgen funkciya \(R\) da metrika bolama: \(\rho(x,y) = |arctgx - arctgy|\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-variant}
+\newline
+
+\textbf{T1.} Metrikalıq keńislikler [\textit{anıqlaması, \(C\lbrack a;b\rbrack\) kóplik \(\rho(f,g) = \max_{a \leq t \leq b}\left| f(t) - g(t) \right|\) metrikaǵa qarata metrikalıq keńislik ekenin kórsetiw }]. \\
+\textbf{T2.} Tegis kópliklerdıń Lebeg ólshewi [\textit{elementar kóplikler anıqlaması, olardıń ólshewi, ólshew qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 3;2\rbrack\), \(B = (1; + \infty)\). \\
+\textbf{A2.} Berilgen \(x,y \in \mathbb{R}^{3}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = (8,4,3)\), \(y = (6,0,1)\), \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{3}\left( x_{i} - y_{i} \right)^{2}}}\). \\
+\textbf{A3.} \(f(x) = \lbrack x\rbrack + \sign \ x\), \(A = \lbrack - 1,\ 2\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} Kópliktiń Lebeg ólshewin anıqlań: \(A = \bigcup_{k = 1}^{\infty}\left( k,k + \frac{1}{k!} \right)\). \\
+\textbf{B2.} \(\rho(x,y) = \sqrt{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}\), \(x,y \in \mathbb{R}^{n}\) sáwlelendiriwdiń metrika shártlerin qanaatlandırıwın tekseriń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R \rightarrow R}\) funkciya ushın sonday \(g:\mathbb{R \rightarrow R}\) funkciyanı tabıń, nátiyjede derlik barlıq \(x\mathbb{\in R}\) noqatlar ushın \(f(x) = g(x)\) bolsın: \(f(x) = \left\{ \begin{matrix} x^{2},\ \ \ \ x\mathbb{\in Q} \\ 0,\ \ \ \ x\mathbb{\in R}\backslash\mathbb{Q} \end{matrix} \right.\ \). \\
+\textbf{C2.} \(C_{1}\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Eger \((X,\rho)\) metrik keńislik bolsa, \(X\) kóplikte \(\rho'\) metrika bolıwın kórsetiń \(\rho'(x,y) = e^{\rho(x,y)} - 1\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-variant}
+\newline
+
+\textbf{T1.} Kóplikler kolcosı. [\textit{anıqlaması, misallar, qásiyetleri}]. \\
+\textbf{T2.} Ólshewli funkciyalar [\textit{anıqlaması, ólshewli funkciyalar izbe-izligi qásiyetleri}]. \\
+\textbf{A1.} \(A\) hám \(B\) kóplikler arasında óz ara bir mánisli sáykeslik ornatıń. \(A = \lbrack - 10;10\rbrack\),\(B = (10;10)\). \\
+\textbf{A2.} Berilgen \(x,y\mathbb{\in N}\) noqatlar arasındaǵı aralıqtı esaplań: \(x = 5\), \(y = 25\), \(\rho(x,y) = 0,1 \cdot |x - y|\). \\
+\textbf{A3.} \(f(x) = \chi_{\lbrack 0,\ 1\rbrack\backslash\mathbb{Q}}(x)\), \(A = \lbrack - 1,\ 3\rbrack\) berilgen \(f:A\rightarrow\mathbb{R}\) funkciyanıń ápiwayi ekenligin kórsetip, onıń integralın esaplań. \\
+\textbf{B1.} \(P = \{ 0 \leq x \leq 1,\ \ 0 \leq y \leq 1\}\ \ \ \ \text{hám}\ \ \ \ Q = \{ 0.3 \leq x \leq 0.8,\ \ 0 \leq y \leq 1\}\) tuwrı tórtmúyeshlikler kesilispesiniń ólshewin tabıń. \\
+\textbf{B2.} \(\mathbb{R}^{3}\) kóplikte \(\rho(x,y) = \sum_{i = 1}^{3}{sgn\left| x_{i} - y_{i} \right|}\) metrika kiritilgen. Orayı \((0,1,2)\)noqatta bolǵan, radiusı 1 ge teń bolǵan sferanı sızıń. \\
+\textbf{B3.} Lebeg integralın (\(\int_{A}^{}{f(x)d\mu}\)) esaplań: \(f(x) = \frac{1}{\lbrack x - 1\rbrack!}\), \(A = (1;3)\). \\
+\textbf{C1.} Berilgen \(f:\mathbb{R}^{2}\mathbb{\rightarrow R}\) funkciyanıń ólshewli ekenligin dálilleń: \(f(x,y) = \left( |x| + |y| \right)e^{\lbrack y\rbrack}\). \\
+\textbf{C2.} \(C\lbrack 0,1\rbrack\) metrikalıq keńislikte berilgen izbe izlik jıynaqlı bolama: \(z_{n}(t) = t^{n} - 2t^{n + 1} + t^{n + 2}\). \\
+\textbf{C3.} Berilgen funkciya \(R^{n}\) da metrika bolama: \(\rho(x,y) = \sqrt{{\sum_{i = 1}^{n}\left| x_{i} - y_{i} \right|^{2}}}\). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}

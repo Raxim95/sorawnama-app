@@ -1,0 +1,9 @@
+A = [...] // algebra questions (12 questions)
+G = [...] // geometry questions (15 questions)
+L = [...] // Literature questions (20 questions)
+
+R = new RandomQuestions([A,B,L], 2) // gives random two questions
+
+[q1, q2] = R.next() // maybe call "next" 100 times
+
+Doesn't allow to be two questions of same category

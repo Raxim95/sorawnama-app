@@ -1,0 +1,2045 @@
+\documentclass{article}
+\usepackage[fontsize=14pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{setspace}
+
+
+
+\renewcommand{\baselinestretch}{1} 
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{51-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{52-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{53-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{54-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{55-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{56-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{57-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{58-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{59-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{60-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{61-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{62-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{63-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{64-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{65-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{66-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{67-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{68-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{69-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{70-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{71-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{72-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{73-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{74-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{75-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{76-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{77-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{78-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{79-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{80-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{81-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{82-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{83-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{84-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{85-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{86-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{87-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{88-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{89-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{90-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 1. Доказать тоджество. \(A\bigcap(\overline{A}) = \varnothing\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{91-вариант}
+\newline
+
+T1. 1. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 10. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 3. Найти все подформулы. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+A3. 6. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+B1. 6. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 7. Доказать равносильность. \(x \vee \left( \overline{x\ } \land \overline{y} \right) \equiv x \vee \overline{y}\) \\
+C1. 9. Составить РКС для формулы \(x \rightarrow (x \rightarrow y) \rightarrow (\overline{x} \rightarrow y)\ \) \\
+C2. 4. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10100101)\) \\
+C3. 1. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xAЂ\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{92-вариант}
+\newline
+
+T1. 7. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+T2. 1. Некоторые приложения алгебры логики \emph{О.с. Реле контактные схемы, применения алгебры логики в решении логических задач} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 2. Найти все подформулы. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+A3. 9. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 2. Для следующих формул найти ДНФ и КНФ. \(\ x_{1} \land (x_{2} \vee (x_{1} \rightarrow x_{3}))\) \\
+B2. 8. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 9. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \leftrightarrow y\) и \(f^{*}(х) = \overline{x \leftrightarrow y}.\) \\
+C1. 7. Составить РКС для формулы \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+C2. 5. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01110001)\) \\
+C3. 6. Привести к предваренной нормальной форме \(\forall x(A(x) \supset B(y))Ђ\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{93-вариант}
+\newline
+
+T1. 8. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+T2. 2. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+A1. 3. Доказать тоджество. \(A\backslash(B\bigcup C) = (A\backslash B)\bigcup(A\backslash C)\) \\
+A2. 4. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+A3. 7. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 8. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 1. Доказать тождественно ложность формул. \(F\left( р_{1},р_{2} \right) = \overline{p_{1} \rightarrow (p_{2} \rightarrow p_{1})}\) \\
+B3. 8. Доказать равносильность. \(x \rightarrow \left( y \rightarrow \overline{z} \right) \equiv x \land y \rightarrow \overline{z}\) \\
+C1. 4. Составить РКС для формулы \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+C2. 7. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01101001)\) \\
+C3. 3. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{94-вариант}
+\newline
+
+T1. 3. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+T2. 9. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 5. Доказать тоджество. \(A\bigcup(B\bigcap C) = (A\bigcup B)\bigcap(A\bigcup C)\) \\
+A2. 9. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+A3. 8. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z)\) \\
+B1. 5. Для следующих формул найти СДНФ \(\overline{\overline{x \vee y} \rightarrow \overline{x \land y}}\) \\
+B2. 3. Упростить формулу алгебра логики. \(A(x,\ \ y) = (x \leftrightarrow y) \land (x \vee y)\) \\
+B3. 6. Доказать, что двойственные формулы. \(f(х,\ \ y) = x \land y\) и \(f^{*}(х) = x \vee y.\) \\
+C1. 6. Составить РКС для формулы \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+C2. 8. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10011011)\) \\
+C3. 5. Привести к предваренной нормальной форме \(\forall x(\neg A(x) \supset \exists yB(y)) \supset B(y) \vee A(x)\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{95-вариант}
+\newline
+
+T1. 2. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+T2. 7. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+A1. 2. Известно, что высказывание \(A \rightarrow B\) ложно. Что можно сказать обистинности \(A\) и \(B\) ? \\
+A2. 7. Найти все подформулы. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 10. Для следующих формул найти ДНФ и КНФ. \(\overline{x \vee (x_{2} \rightarrow x_{1})}\) \\
+B2. 9. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 2. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 2. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11101000)\) \\
+C3. 2. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xA \vee B \rightleftarrows \forall x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{96-вариант}
+\newline
+
+T1. 5. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+T2. 6. Логика предикатов. \emph{О.с. Понятие предиката, понятие формулы логики предикатов, равносильные формулы логики предикатов} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 10. Найти все подформулы. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \leftrightarrow \overline{y}\) \\
+A3. 2. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 1. Для следующих формул найти ДНФ и КНФ. \(х \land у \rightarrow (z \vee у \rightarrow z)\) \\
+B2. 6. Упростить формул. \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+B3. 2. Доказать равносильность.\(x_{1} \land x_{2} \land \ \ \ ...\ \  \land x_{n} \rightarrow y \equiv x_{1} \rightarrow (x_{2} \rightarrow (\ \ ...\ \  \rightarrow (x_{n} \rightarrow y)\ \ ,,.\ \ ))\) \\
+C1. 3. Составить РКС для формулы \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+C2. 1. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций.\(f = (00111100)\) \\
+C3. 7. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xA \vee B \rightleftarrows \exists x(A \vee B)\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{97-вариант}
+\newline
+
+T1. 6. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 3. Функции алгебры логики \emph{О.с. Алгебра Буля. Полная система функции} \\
+A1. 4. Доказать тоджество. \(A\bigcap(B\bigcup C) = (A\bigcap B)\bigcup(B\bigcap C)\) \\
+A2. 8. Найти все подформулы. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+A3. 5. Составить таблица истинности. \((x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B1. 9. Для следующих формул найти СКНФ \((z \rightarrow x \land y))\) \\
+B2. 7. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 4. Доказать равносильность. \((x \vee y) \land (x \vee \overline{y}) \equiv x\) \\
+C1. 5. Составить РКС для формулы \((x \land y \rightarrow z) \rightarrow (x \rightarrow (y \rightarrow z))\) \\
+C2. 6. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (00010101)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{98-вариант}
+\newline
+
+T1. 4. Исчисления высказываний и понятие формулы исчиления высказываний \emph{О.с. Определения доказуемой формулы. Аксиомы исчисления высказываний. Правыла выводимости} \\
+T2. 4. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 7. Доказать тоджество. \((A\bigcup B)\bigcap A = (A\bigcap B)\bigcup A = A\) \\
+A2. 6. Найти все подформулы. \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+A3. 1. Составить таблица истинности. \(\left( (р \land q) \vee q \right) \vee (q \rightarrow p)\) \\
+B1. 4. Для следующих формул найти КНФ. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\). \\
+B2. 4. Упростить формулу алгебра логики. \((х \rightarrow у) \rightarrow (\overline{х} \rightarrow \overline{у)}\) \\
+B3. 5. Найти двойственную формулу к формуле \(f(х,\ \ y,\ \ z) = xy \vee yz \vee xz\) \\
+C1. 10. Составить РКС для формулы \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+C2. 10 Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (11001000)\) \\
+C3. 9. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\exists xB \rightleftarrows B\)
+ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{99-вариант}
+\newline
+
+T1. 9. Алгебра высказываний и понятие формула алгебры высказываний \emph{О.с. Равносильные формулы алгебры логики и их свойтсва} \\
+T2. 8. Понятие выводимости формулы из совокупности формулы \emph{О.с. Теорема дедукции. Обобщенная теорема дедукции.} \\
+A1. 6. Доказать тождество. \(\overline{A\bigcap B} = \overline{A}\bigcup\overline{B}\) \\
+A2. 1. Найти все подформулы. \(((a_{0} \rightarrow a_{1}) \land ((a_{1} \rightarrow a_{2}) \rightarrow (\overline{a_{0}} \vee a_{2})).\) \\
+A3. 3. Составить таблица истинности. \((x \rightarrow z) \rightarrow (y \rightarrow z) \rightarrow ((x \vee y) \rightarrow z)\) \\
+B1. 7. Для следующих формул найти ДНФ и КНФ. \(\left( х_{1} \land \overline{х_{2}} \right) \vee х_{3}\) \\
+B2. 5. Упростить формулу алгебра логики. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x}\) \\
+B3. 3. Доказать, что двойственные формулы.\(f(х,\ \ y) = x \land y\) и \(f^{*}(х,\ \ y) = x \vee y.\) \\
+C1. 8. Составить РКС для формулы \(A(a,\ \ b,\ \ c) = (a \rightarrow b) \rightarrow (\overline{a}\  \land (b \vee c))\) \\
+C2. 3. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (01010111)\) \\
+C3. 4. Привести к предваренной нормальной форме \(\forall xB(x) \supset \exists y(A(y) \supset B(x))\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{100-вариант}
+\newline
+
+T1. 10. Производные правила вывода \emph{О.с. Правило силлогизма, правило контрпозиции,правило снятия двойного отрицания} \\
+T2. 5. Нормальные формы \emph{О.с. Дизъюнктивная, конъюнктивная и совершенная дизъюнктивная, совершенна конъюнктивная нормальная форма} \\
+A1. 8. Доказать тоджество. \(A\bigcap(B\backslash C) = (A\bigcap B)\backslash(A\bigcap C) = (A\bigcap B)\backslash C\) \\
+A2. 5. Найти все подформулы. \((х \vee у) \rightarrow \left( х \land \overline{у \vee х \rightarrow у} \right)\) \\
+A3. 4. Составить таблица истинности. \((x \rightarrow y) \land (x \rightarrow \overline{y}) \rightarrow \overline{x} \vee y\) \\
+B1. 3. Для следующих формул найти СКНФ \(\overline{(a \rightarrow c)} \rightarrow \left( (b \rightarrow c) \rightarrow (a \vee b \rightarrow c) \right)\) \\
+B2. 2. Упростить формулу алгебра логики. \(А(х,у,z) = (x \rightarrow y) \land z \rightarrow (x \rightarrow z)\) \\
+B3. 1. Найти \(x\), если \(\left( \overline{x \vee a} \right) \vee \left( \overline{x \vee \overline{a}} \right) \equiv b\) \\
+C1. 1. Составить РКС для формулы \(F(a,\ \ b,\ \ c) = (a \vee b) \rightarrow (a \land b) \vee c.\) \\
+C2. 9. Булевы функции заданы последовательностью их значений при лексикографическом упорядочении аргументов. Найти все базисы, которые можно составить из следующих функций. \(f = (10010110)\) \\
+C3. 8. Пусть \(A,\ \ B\)- некоторые формулы исчисления предикатов, причем переменная\(x\) не входит в \(B\). Доказать следующие соотношения. \(\forall xB \rightleftarrows B\); \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}

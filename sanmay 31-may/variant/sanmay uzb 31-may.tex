@@ -1,0 +1,3173 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+% \usepackage{amssymbol}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\onehalfspacing  % 1.5 line spacing
+
+
+
+\renewcommand{\baselinestretch}{1} 
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-variant}
+\newline
+
+\textbf{T1.} Maydonlarning avtomorfizmlari. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{7}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt[3]{3} \right) = \left\{ a + b\sqrt[3]{3} + c\sqrt[3]{9}:a,b,c \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+ - b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{28}\), \(I = \{\overline{0},\overline{7},\overline{14},\overline{21}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{5} + \sqrt{7}\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{5}\) da \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-variant}
+\newline
+
+\textbf{T1.} Bo'lish algoritmi. \\
+\textbf{T2.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3} + \sqrt{7}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi .
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\[\sqrt{2} + \sqrt{5}\] \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\[5\mathbb{Z}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-variant}
+\newline
+
+\textbf{T1.} Geometrik konstruksiyasi. \\
+\textbf{T2.} Maksimal va sodda ideallar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{24}\), \(I = \{\overline{0},\overline{8},\overline{16}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) da \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Q}\left( \sqrt{2},\sqrt{3} \right) = \left\{ a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}:a,b,c,d \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\omega\rbrack = \{ x + \omega \cdot y\ |\ \omega^{2} = 1\}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{3} - 3\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi? $\mathbb{Q}$ \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) da \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{2} + \sqrt{3}\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Z}_{18}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-variant}
+\newline
+
+\textbf{T1.} Ko'phadlarning halqasi. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{5}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Q(}\sqrt{3}) = \left\{ a + b\sqrt[3]{3}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\). \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{6 + 3\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & - a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 - \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{2} \right)\) da \(\mathbb{Q}\left( \sqrt{8} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{R} \right)\), elementleri \(\mathbb{R}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( i,\sqrt{2} + i,\sqrt{3} + i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-variant}
+\newline
+
+\textbf{T1.} p-adik kvadrat tenglamalar. \\
+\textbf{T2.} Integral sohalar va maydonlar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt{2} \right) = \left\{ a + b\sqrt{2}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Radikallarda yechilishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilar halqa bo'ladimi:
+\[\mathbb{Z}_{18}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-variant}
+\newline
+
+\textbf{T1.} Maydonlarning avtomorfizmlari. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 + \sqrt{3}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2} + \sqrt{5}\). \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\(\sqrt{3} + \sqrt{5}\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}\ :\ a,b \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica
+T1 Ko'phadlarning halqasi. \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} Maksimal va sodda ideallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Z}\left( \sqrt{5} \right) = \left\{ a + b\sqrt{5}:a,b \in \mathbb{Z} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\[\mathbb{Z\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\] \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{3} + 2x + 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-variant}
+\newline
+
+\textbf{T1.} Fundamental teoremalar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R\mathbb{= Z\lbrack}\sqrt{7}\rbrack\), \(I = \{ a + b\sqrt{7}\ |\ \ a,b \in \mathbb{Z,}a - b\ \ juft\ son\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(7\mathbb{Z}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-variant}
+\newline
+
+\textbf{T1.} Maydonlarning ajralishi. \\
+\textbf{T2.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi?
+\(\mathbb{Q}\left( \sqrt{5},\sqrt{7} \right) = \left\{ a + b\sqrt{5} + c\sqrt{7} + d\sqrt{35}:a,b,c,d \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{2}\) da \(x^{2} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + 2\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & a \\
+0 & 0
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q(}\sqrt[3]{2}) = \left\{ a + b\sqrt[3]{2}:a,b \in \mathbb{Q} \right\}\).
+B2 Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\).. \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Z}\left( \sqrt{3} \right) = \left\{ a + b\sqrt{3}:a,b \in \mathbb{Z} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & 0
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-variant}
+\newline
+
+\textbf{T1.} p-adik kvadrat tenglamalar. \\
+\textbf{T2.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{7}\) de \(5x^{4} + 2x^{2} - 3\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c \\
+ & 
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & b \\
+0 & c
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-variant}
+\newline
+
+\textbf{T1.} Bo'lish algoritmi. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3} + \sqrt{7}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+ - b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{2} \right)\) da \(\mathbb{Q}\left( \sqrt{8} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{28}\), \(I = \{\overline{0},\overline{7},\overline{14},\overline{21}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & a \\
+0 & 0
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Q(}\sqrt{3}) = \left\{ a + b\sqrt[3]{3}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Z}_{18}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{2} + \sqrt{3}\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Q}\left( \sqrt{2},\sqrt{3} \right) = \left\{ a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}:a,b,c,d \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\). \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi? $\mathbb{Q}$ \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c \\
+ & 
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & b \\
+0 & c
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-variant}
+\newline
+
+\textbf{T1.} Ko'phadlarning halqasi. \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\[\mathbb{Z\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\] \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Radikallarda yechilishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{6 + 3\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Z}\left( \sqrt{5} \right) = \left\{ a + b\sqrt{5}:a,b \in \mathbb{Z} \right\}\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{3} + 2x + 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & 0
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-variant}
+\newline
+
+\textbf{T1.} Bo'lish algoritmi. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt[3]{3} \right) = \left\{ a + b\sqrt[3]{3} + c\sqrt[3]{9}:a,b,c \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi .
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi?
+\(\mathbb{Q}\left( \sqrt{5},\sqrt{7} \right) = \left\{ a + b\sqrt{5} + c\sqrt{7} + d\sqrt{35}:a,b,c,d \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R\mathbb{= Z\lbrack}\sqrt{7}\rbrack\), \(I = \{ a + b\sqrt{7}\ |\ \ a,b \in \mathbb{Z,}a - b\ \ juft\ son\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Z}\left( \sqrt{3} \right) = \left\{ a + b\sqrt{3}:a,b \in \mathbb{Z} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{2}\) da \(x^{2} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{24}\), \(I = \{\overline{0},\overline{8},\overline{16}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\[5\mathbb{Z}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}\ :\ a,b \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) da \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 - \sqrt{2}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2} + \sqrt{5}\). \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\(\sqrt{3} + \sqrt{5}\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt{2} \right) = \left\{ a + b\sqrt{2}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & - a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Radikallarda yechilishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{7}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{5} + \sqrt{7}\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\omega\rbrack = \{ x + \omega \cdot y\ |\ \omega^{2} = 1\}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{3} - 3\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{7}\) de \(5x^{4} + 2x^{2} - 3\); \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\[\sqrt{2} + \sqrt{5}\] \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(7\mathbb{Z}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) da \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q(}\sqrt[3]{2}) = \left\{ a + b\sqrt[3]{2}:a,b \in \mathbb{Q} \right\}\).
+B2 Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\).. \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{5}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilar halqa bo'ladimi:
+\[\mathbb{Z}_{18}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{R} \right)\), elementleri \(\mathbb{R}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\[\mathbb{Z\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\] \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{5}\) da \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica
+T1 Ko'phadlarning halqasi. \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-variant}
+\newline
+
+\textbf{T1.} p-adik kvadrat tenglamalar. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + 2\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( i,\sqrt{2} + i,\sqrt{3} + i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-variant}
+\newline
+
+\textbf{T1.} Ko'phadlarning halqasi. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + 2\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\omega\rbrack = \{ x + \omega \cdot y\ |\ \omega^{2} = 1\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}\ :\ a,b \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{24}\), \(I = \{\overline{0},\overline{8},\overline{16}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( i,\sqrt{2} + i,\sqrt{3} + i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 - \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) da \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Q(}\sqrt{3}) = \left\{ a + b\sqrt[3]{3}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{2}\) da \(x^{2} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{6 + 3\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & a \\
+0 & 0
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Z}\left( \sqrt{5} \right) = \left\{ a + b\sqrt{5}:a,b \in \mathbb{Z} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & 0
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(7\mathbb{Z}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{5}\) da \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) da \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2} + \sqrt{5}\). \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q(}\sqrt[3]{2}) = \left\{ a + b\sqrt[3]{2}:a,b \in \mathbb{Q} \right\}\).
+B2 Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\).. \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi .
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{2} \right)\) da \(\mathbb{Q}\left( \sqrt{8} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{R} \right)\), elementleri \(\mathbb{R}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} Maksimal va sodda ideallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{7}\) de \(5x^{4} + 2x^{2} - 3\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c \\
+ & 
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & b \\
+0 & c
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt{2} \right) = \left\{ a + b\sqrt{2}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-variant}
+\newline
+
+\textbf{T1.} Fundamental teoremalar. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{28}\), \(I = \{\overline{0},\overline{7},\overline{14},\overline{21}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{51-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagilar halqa bo'ladimi:
+\[\mathbb{Z}_{18}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{52-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{5}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Q}\left( \sqrt{2},\sqrt{3} \right) = \left\{ a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}:a,b,c,d \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{53-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{7}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\[\sqrt{2} + \sqrt{5}\] \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Z}_{18}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{54-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R\mathbb{= Z\lbrack}\sqrt{7}\rbrack\), \(I = \{ a + b\sqrt{7}\ |\ \ a,b \in \mathbb{Z,}a - b\ \ juft\ son\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{55-variant}
+\newline
+
+\textbf{T1.} Maydonlarning avtomorfizmlari. \\
+\textbf{T2.} Maksimal va sodda ideallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\[5\mathbb{Z}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & - a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi? $\mathbb{Q}$ \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{56-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\(\sqrt{3} + \sqrt{5}\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi?
+\(\mathbb{Q}\left( \sqrt{5},\sqrt{7} \right) = \left\{ a + b\sqrt{5} + c\sqrt{7} + d\sqrt{35}:a,b,c,d \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+ - b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{57-variant}
+\newline
+
+\textbf{T1.} Maydonlarning ajralishi. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{58-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Radikallarda yechilishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{5} + \sqrt{7}\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{3} - 3\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{59-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3} + \sqrt{7}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt[3]{3} \right) = \left\{ a + b\sqrt[3]{3} + c\sqrt[3]{9}:a,b,c \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica
+T1 Ko'phadlarning halqasi. \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{60-variant}
+\newline
+
+\textbf{T1.} Geometrik konstruksiyasi. \\
+\textbf{T2.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{2} + \sqrt{3}\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Z}\left( \sqrt{3} \right) = \left\{ a + b\sqrt{3}:a,b \in \mathbb{Z} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{3} + 2x + 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\). \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{61-variant}
+\newline
+
+\textbf{T1.} Ko'phadlarning halqasi. \\
+\textbf{T2.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{6 + 3\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Z}_{18}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{62-variant}
+\newline
+
+\textbf{T1.} Geometrik konstruksiyasi. \\
+\textbf{T2.} Integral sohalar va maydonlar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Q(}\sqrt{3}) = \left\{ a + b\sqrt[3]{3}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{63-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Z}\left( \sqrt{5} \right) = \left\{ a + b\sqrt{5}:a,b \in \mathbb{Z} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{64-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) da \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\(\sqrt{3} + \sqrt{5}\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt[3]{3} \right) = \left\{ a + b\sqrt[3]{3} + c\sqrt[3]{9}:a,b,c \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\omega\rbrack = \{ x + \omega \cdot y\ |\ \omega^{2} = 1\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{65-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{24}\), \(I = \{\overline{0},\overline{8},\overline{16}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & a \\
+0 & 0
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{66-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R\mathbb{= Z\lbrack}\sqrt{7}\rbrack\), \(I = \{ a + b\sqrt{7}\ |\ \ a,b \in \mathbb{Z,}a - b\ \ juft\ son\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\[5\mathbb{Z}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & - a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{67-variant}
+\newline
+
+\textbf{T1.} Maydonlarning avtomorfizmlari. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) da \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\[\mathbb{Z\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\] \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{R} \right)\), elementleri \(\mathbb{R}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{68-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(7\mathbb{Z}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{3} + 2x + 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{69-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{7}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt{2} \right) = \left\{ a + b\sqrt{2}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{70-variant}
+\newline
+
+\textbf{T1.} p-adik kvadrat tenglamalar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{28}\), \(I = \{\overline{0},\overline{7},\overline{14},\overline{21}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{5}\) da \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{71-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Maksimal va sodda ideallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 + \sqrt{3}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2} + \sqrt{5}\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{72-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{7}\) de \(5x^{4} + 2x^{2} - 3\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Q}\left( \sqrt{2},\sqrt{3} \right) = \left\{ a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}:a,b,c,d \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{73-variant}
+\newline
+
+\textbf{T1.} Fundamental teoremalar. \\
+\textbf{T2.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3} + \sqrt{7}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{5} + \sqrt{7}\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}\ :\ a,b \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{74-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Z}\left( \sqrt{3} \right) = \left\{ a + b\sqrt{3}:a,b \in \mathbb{Z} \right\}\] \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{3} - 3\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{2} \right)\) da \(\mathbb{Q}\left( \sqrt{8} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica
+T1 Ko'phadlarning halqasi. \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{75-variant}
+\newline
+
+\textbf{T1.} Geometrik konstruksiyasi. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{5}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\[\sqrt{2} + \sqrt{5}\] \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi .
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( i,\sqrt{2} + i,\sqrt{3} + i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{76-variant}
+\newline
+
+\textbf{T1.} Maydonlarning ajralishi. \\
+\textbf{T2.} Integral sohalar va maydonlar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & 0
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = x^{2} + x\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{77-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} Maydonlarning avtomorfizmlari. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c \\
+ & 
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & b \\
+0 & c
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\). \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi? $\mathbb{Q}$ \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x + iy) = x \cdot y\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{78-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 - \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{2} + \sqrt{3}\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi?
+\(\mathbb{Q}\left( \sqrt{5},\sqrt{7} \right) = \left\{ a + b\sqrt{5} + c\sqrt{7} + d\sqrt{35}:a,b,c,d \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{2}\) da \(x^{2} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{79-variant}
+\newline
+
+\textbf{T1.} Bo'lish algoritmi. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + 2\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q(}\sqrt[3]{2}) = \left\{ a + b\sqrt[3]{2}:a,b \in \mathbb{Q} \right\}\).
+B2 Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\).. \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+ - b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{80-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Maydonlarning ajralishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilar halqa bo'ladimi:
+\[\mathbb{Z}_{18}\] \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{81-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{5} + \sqrt{7}\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt[3]{3} \right) = \left\{ a + b\sqrt[3]{3} + c\sqrt[3]{9}:a,b,c \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & 0
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{82-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q(}\sqrt[3]{2}) = \left\{ a + b\sqrt[3]{2}:a,b \in \mathbb{Q} \right\}\).
+B2 Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\).. \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\[\mathbb{Z\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\] \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{5}\) da \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{83-variant}
+\newline
+
+\textbf{T1.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) da \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2} + \sqrt{5}\). \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilar halqa bo'ladimi:
+\[\mathbb{Z}_{18}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{84-variant}
+\newline
+
+\textbf{T1.} Fundamental teoremalar. \\
+\textbf{T2.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) da \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Z}_{18}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{85-variant}
+\newline
+
+\textbf{T1.} Radikallarda yechilishi. \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R\mathbb{= Z\lbrack}\sqrt{7}\rbrack\), \(I = \{ a + b\sqrt{7}\ |\ \ a,b \in \mathbb{Z,}a - b\ \ juft\ son\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\omega\rbrack = \{ x + \omega \cdot y\ |\ \omega^{2} = 1\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{86-variant}
+\newline
+
+\textbf{T1.} Maydonlarning avtomorfizmlari. \\
+\textbf{T2.} Integral sohalar va maydonlar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{2}\) de \(x^{3} + x + 1\). \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a) = a^{n}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{87-variant}
+\newline
+
+\textbf{T1.} Bo'lish algoritmi. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{5}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{88-variant}
+\newline
+
+\textbf{T1.} Ko'phadlarning halqasi. \\
+\textbf{T2.} Halqalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & a \\
+0 & 0
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (R,} + , \cdot )\) hám \(R'\mathbb{= (R,} + , \cdot )\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f:\begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix} \rightarrow a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{89-variant}
+\newline
+
+\textbf{T1.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{T2.} p-adik kvadrat tenglamalar. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{28}\), \(I = \{\overline{0},\overline{7},\overline{14},\overline{21}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right) + \left( 4x^{2} - x + 9 \right)\). \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{12}\) de \(5x^{3} + 4x^{2} - x + 9\); \\
+\textbf{B1.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 6\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+b & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica
+T1 Ko'phadlarning halqasi. \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{90-variant}
+\newline
+
+\textbf{T1.} Maksimal va sodda ideallar. \\
+\textbf{T2.} Keltirilmaydigan ko'phadlar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}\ :\ a,b \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi? $\mathbb{Q}$ \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{91-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{6 + 3\sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(7\mathbb{Z}\). \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{3} - 3\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{25}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{92-variant}
+\newline
+
+\textbf{T1.} Maydonlarning ajralishi. \\
+\textbf{T2.} Radikallarda yechilishi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[3x^{5} - 4x^{3} - 6x^{2} + 6\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Z}\left( \sqrt{3} \right) = \left\{ a + b\sqrt{3}:a,b \in \mathbb{Z} \right\}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\) hám \(R' = (\mathbb{Z}_{10}, +_{10}, \cdot_{10})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\[M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & 0 \\
+0 & - a
+\end{pmatrix}\ :\ a \in \mathbb{R} \right\}\] \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2} + \sqrt{5} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( a + \sqrt{2}b \right) = a + bi\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{93-variant}
+\newline
+
+\textbf{T1.} Chekli maydonlarning strukturasi \\
+\textbf{T2.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{7}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{5}\) de \(3x^{3} - 4x^{2} - x + 4\); \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Q(}\sqrt{3}) = \left\{ a + b\sqrt[3]{3}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi, bunda \(i^{2} = - 1\):
+\(\mathbb{Q\lbrack}i\sqrt{n}\rbrack = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{2} + x + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( i,\sqrt{2} + i,\sqrt{3} + i \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{R} \right)\), elementleri \(\mathbb{R}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = \sqrt[3]{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{94-variant}
+\newline
+
+\textbf{T1.} Fundamental teoremalar. \\
+\textbf{T2.} Ratsional sonlar maydonini haqiqiy sonlar maydonigacha to'ldirish. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + 2\sqrt{2}}\). \\
+\textbf{A2.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\[\sqrt{2} + \sqrt{5}\] \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\[\sqrt{2} + \sqrt{3}\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi?
+\(\mathbb{Q}\left( \sqrt{5},\sqrt{7} \right) = \left\{ a + b\sqrt{5} + c\sqrt{7} + d\sqrt{35}:a,b,c,d \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R = (\mathbb{Z}_{4}, +_{4}, \cdot_{4})\) hám \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 5x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:x \rightarrow x^{p}\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{95-variant}
+\newline
+
+\textbf{T1.} p-adik sonlar maydoni va ular ustida amallar. \\
+\textbf{T2.} Geometrik konstruksiyasi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3} + \sqrt{7}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 2 \right)^{2}\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\[\mathbb{Q}\left( \sqrt[3]{5} \right) = \left\{ a + b\sqrt[3]{5}:a,b,c \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} \(R\) halqani \(R'\) halqaga o'tkazuvchi gomomorfizmini aniqlang.
+\(R\mathbb{= (Z,} + , \cdot )\) va \(R' = (\mathbb{Z}_{6}, +_{6}, \cdot_{6})\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi.
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+ - b & d
+\end{pmatrix}\ :\ a,b,c,d \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{6} \right)\). \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f\left( a - \sqrt{2}b \right) = a + \sqrt{2}b\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{96-variant}
+\newline
+
+\textbf{T1.} Keltirilmaydigan ko'phadlar. \\
+\textbf{T2.} Bo'lish algoritmi. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 + \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 2x - 4 \right) + \left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 2x^{3} + 2x^{2} + x + 4\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\[5\mathbb{Z}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Z(}i\sqrt{n}) = \{ x + iy\sqrt{n}\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = 5^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{97-variant}
+\newline
+
+\textbf{T1.} Maydonlarning kengaytmasi. Algebrik element. Algebraik yopilma. \\
+\textbf{T2.} Chekli maydonlarning strukturasi \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{2 - \sqrt{2}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadni toping.
+\(\sqrt{3} + \sqrt{5}\). \\
+\textbf{B1.} Quydagi maydon bo'ladimi:
+\(\mathbb{Z}\left( \sqrt{5} \right) = \left\{ a + b\sqrt{5}:a,b \in \mathbb{Z} \right\}\). \\
+\textbf{B2.} Quydagi maydon bo'ladimi:
+\(5\mathbb{Z}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Q}\) da \(x^{4} - 10x^{2} + 21\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{3} + \sqrt{5} \right)\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt{6} + \sqrt{10} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring.
+\[f:\begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix} \rightarrow a + bi\] \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{98-variant}
+\newline
+
+\textbf{T1.} Integral sohalar va maydonlar. \\
+\textbf{T2.} Fundamental teoremalar. \\
+\textbf{A1.} \(\mathbb{Q}\) Ratsianal sonlar maydoni ustida minimal ko'phadalrini toping.
+\(\sqrt{3 - \sqrt{3}}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{9}\) da \(\left( 7x^{3} + 3x^{2} - x \right) + \left( 6x^{2} - 8x + 4 \right)\) \\
+\textbf{A3.} Quydagi halqalarning qism to'plamlari ideal bo'lishini ko'rsating: \(R = \left\{ \begin{pmatrix}
+a & b \\
+0 & c \\
+ & 
+\end{pmatrix}\ |\ a,b,c \in \mathbb{Z} \right\}\), \(I = \left\{ \begin{pmatrix}
+0 & b \\
+0 & c
+\end{pmatrix}\ |\ a \in \mathbb{Z} \right\}\). \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\(\mathbb{Q}\left( \sqrt{2} \right) = \left\{ a + b\sqrt{2}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagilarning qaysi biri maydon bo'ladi, bunda \(i^{2} = - 1\):
+\(\mathbb{Z\lbrack}i\rbrack = \{ x + iy\ |\ x,y \in \mathbb{Z\}}\). \\
+\textbf{B3.} Quydagi maydonlarning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{2}\) da \(x^{2} + 1\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{2},\sqrt[3]{2} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Q}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f\left( \begin{pmatrix}
+a & 0 \\
+0 & a
+\end{pmatrix} \right) = a\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{99-variant}
+\newline
+
+\textbf{T1.} Maydonlarning ajralishi. \\
+\textbf{T2.} Ko'phadlarning halqasi. \\
+\textbf{A1.} Quydagi halqaning qism to'plamlari ideal bo'lishini ko'rsating.
+\(R = \mathbb{Z}_{24}\), \(I = \{\overline{0},\overline{8},\overline{16}\}\). \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{12}\) de \(\left( 5x^{2} + 3x - 4 \right)\left( 4x^{2} - x + 9 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[x^{4} - 5x^{3} + 3x - 2\] \\
+\textbf{B1.} Quydagi halqa bo'ladimi:
+\[\mathbb{Q}\left( \sqrt{2},\sqrt{3} \right) = \left\{ a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}:a,b,c,d \in \mathbb{Q} \right\}\] \\
+\textbf{B2.} Quydagilar halqa bo'ladimi bunda \(i^{2} = - 1\):
+\(\mathbb{Q(}i) = \{ x + iy\ |\ x,y \in \mathbb{Q\}}\). \\
+\textbf{B3.} Quydagi maydonning berilgan ko'phadlar orqali ajralish maydonini toping.
+\(\mathbb{Z}_{3}\) te \(x^{3} + 2x + 2\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\left( \sqrt{2} \right)\) da \(\mathbb{Q}\left( \sqrt{8} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\(\mathbb{M}_{2}\left( \mathbb{Z} \right)\), elementleri \(\mathbb{Z}\) bol\(g'\)an \(2 \times 2\) matrica \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(a + ib) = \begin{pmatrix}
+a & b \\
+ - b & a
+\end{pmatrix}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{100-variant}
+\newline
+
+\textbf{T1.} Halqalar. \\
+\textbf{T2.} Halqalarning gomomorfizmi va ideallar. \\
+\textbf{A1.} Quydagi ko'phadlarning barcha nollarini toping:
+\(\mathbb{Z}_{7}\) de \(5x^{4} + 2x^{2} - 3\); \\
+\textbf{A2.} Quydagini hisoblang:
+\(\mathbb{Z}_{5}\) te \(\left( 3x^{2} + 3x - 4 \right)\left( 4x^{2} + 2 \right)\) \\
+\textbf{A3.} \(\mathbb{Z}_{4}\lbrack x\rbrack\) da \(\deg\ p(x) > 1\) bo'ladigan \(p(x)\) birligini toping. Quydagi ko'phadlarning qaysilari \(\mathbb{Q\lbrack}x\rbrack\) da keltirilmaydigan?
+\[5x^{5} - 6x^{4} - 3x^{2} + 9x - 15\] \\
+\textbf{B1.} Quydagilarning qaysi biri maydon bo'ladi:
+\(\mathbb{Q}\left( \sqrt{11} \right) = \left\{ a + b\sqrt{11}:a,b \in \mathbb{Q} \right\}\). \\
+\textbf{B2.} Quydagi halqa bo'ladimi:
+\(\mathbb{R\lbrack}\sigma\rbrack = \{ x + \sigma \cdot y\ |\ \sigma^{2} = 0\}\). \\
+\textbf{B3.} Quydagi matritsalar to'plamining qaysi biri matritsalarni qo'shish va ko'paytirish amallarga qarata halqa bo'ladi .
+\(M_{2 \times 2}\mathbb{(R) =}\left\{ \begin{pmatrix}
+a & b \\
+0 & c
+\end{pmatrix}\ :\ a,b,c \in \mathbb{R} \right\}\). \\
+\textbf{C1.} Quydagi maydon kengaytmasining har birining bazisini toping. Har bir kengaytmaning darajasi qanday?
+\(\mathbb{Q}\) da \(\mathbb{Q}\left( \sqrt{3},\sqrt{5},\sqrt{7} \right)\) \\
+\textbf{C2.} Quydagi halqaning barcha ideallarini toping. Bul ideallardan qaysi-biri maksimal bo'ladi?
+\[\mathbb{Z}_{18}\] \\
+\textbf{C3.} Quyidagi akslantirishni gomomorfizm shartlariga tekshiring. \(f(x) = e^{x}\) \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}
