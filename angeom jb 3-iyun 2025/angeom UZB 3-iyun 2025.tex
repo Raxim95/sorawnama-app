@@ -1,0 +1,2035 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+% \usepackage{unicode-math}
+
+\usepackage{array}
+\usepackage[a4paper,
+left=7mm,
+right=5mm,
+top=7mm,]{geometry}
+\usepackage{amsmath}
+% \usepackage{amssymbol}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\onehalfspacing
+
+
+
+\renewcommand{\baselinestretch}{1} 
+
+\everymath{\displaystyle}
+\everydisplay{\displaystyle}
+% \linespread{1.25}
+
+\DeclareMathOperator{\sign}{sign}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{1-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{A1.} Giperbolaning ekssentrisiteti $\varepsilon=3$, $M$ nuqtasining bazi bir fokal radiusi 4 ga teng. $M$ nuqtadan mos direktrisagacha masofanii toping. \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $x^2-6 x y+9 y^2-12 x+36 y+20=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2-10 x-2 y-19=0$; \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2+y^2-3 z^2-2 x y-6 x z-6 y z+2 x+2 y+4 z=0$; \\
+\textbf{B3.} Ellipsdagi ekssentrisitetni aniqlang, agar: uning kichik o‘qi fokuslardan $60^{\circ}$ burchak ostida ko‘rinadi; \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+y^2+4 z^2+2 x y+4 x z+4 y z-6 z+1=0$. \\
+\textbf{C2.} Ellipsning yarim o‘qlari $a$, $b$ va markazi $C\left(x_0; y_0\right)$ nuqtada bo‘lib, simmetriya o‘qlari koordinata o‘qlariga parallel ekanligi ma’lum bo'lsa uning tenglamasini tuzing. \\
+\textbf{C3.} $x+m z-1=0$ tekislik ushbu $x^2+y^2-z^2=-1$ ikki pallali giperboloidni $m$ ning qanday qiymatlarida a) ellips bo‘yicha, b) giperbola bo‘yicha kesishi aniqlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{2-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Parabolaning tenglamasini tuzing agar: parabolaning uchidan fokusigacha bo'lgan masofa 3 ga teng va parabola $O x$ o'qiga nisbatan simmetrik bo'lib, $O y$ o'qiga urinsa; \\
+\textbf{A2.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $3 x^2-8 x y+7 y^2+8 x-15 y+20=0$; \\
+\textbf{A3.} $\frac{x^2}{16}+\frac{y^2}{7}=1$, ellipsida joylashgan va chap fokusigacha masofasi 2,5 ga teng nuqtani toping. \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B2.} Quyidagilarni bilgan holda giperbola tenglamasini tuzing: uning uchlari orasidagi masofa 24 ga teng va fokuslari $F_1 (-10; 2), F_2 (16; 2) $; \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-6 x y+y^2-x+2 y-14=0$; \\
+\textbf{C1.} $A x+B y+C=0$ to'g'ri chiziq $y^2=2 p x$ parabolaga urinishi uchun zaruriy va yetarli shartni toping. \\
+\textbf{C2.} Quyidagi ikki to‘g‘ri chiziqqa urinuvchi giperbolaning tenglamasi tuzilsin: $5x-6y-16=0$, $13x-10y-48=0$, bunda uning o‘qlari koordinata o‘qlari bilan ustma-ust tushadi. \\
+\textbf{C3.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{3-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A2.} $y^2=8 x$ paraboladagi fokal radius vektori 20 ga teng bo'lgan nuqta topilsin. \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $\frac{32}{5}$ va ось $2 b=6$; \\
+\textbf{B1.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $32 x^2+52 x y-7 y^2+180=0$; \\
+\textbf{B2.} Agar parabolaning fokusi $F (4;3) $ va direktrisa $y+1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B3.} O'qlari koordinata o'qlari bilan ustma - ust tushuvchi va $P(2,2) ; Q(3,1)$ nuqtalar orqali o'tuvchi ellips tenglamasi tuzilsin. \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $4 x y+3 y^2+16 x+12 y-36=0$; \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{4-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A2.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(2 ;-2)$ nuqtasi ellipsga tegishli va katta yarim o'qi $a=4$; \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $x^2-2 x y+y^2-12 x+12 y-14=0$ \\
+\textbf{B2.} Giperbolaning yarim o'qlarini toping, agar: asimptotalari $y= \pm 2 x$ tenglamalar bilan berilgan va fokuslari markazdan 5 birlik masofada; \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+6 x y+y^2-10 x-10=0$; \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $41 x^2+24 x y+34 y^2+34 x-112 y+129=0$; \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+\textbf{C3.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{5-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+y^2-6 x+6 y-3=0$; \\
+\textbf{A2.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $x^2-4 x y+4 y^2+7 x-12=0$; \\
+\textbf{A3.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $2 x^2+10 x y+12 y^2-7 x+18 y-15=0$; \\
+\textbf{B1.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $2 x^2+3 y^2+8 x-6 y+11=0$. \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2-2 y^2+z^2+4 x y-8 x z-4 y z-14 x-4 y+14 z+16=0$; \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2+8 x-16=0$, \\
+\textbf{C1.} $m$ ning qanday qiymatlarida $y=-x+m$ chiziq: 1) $\frac{x^2}{20}+\frac{y^2}{5}=1$ ellipsni kesib o'tadi; 2) ellipsga urinadi 3) ellipsni kesib o'tmaydi. \\
+\textbf{C2.} Ikki pallali $\frac{x^2}{3}+\frac{y^2}{4}-\frac{z^2}{25}=-1$ giperboloid $5 x+2 z+5=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{6-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-6 x+8 y+13=0$; \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $y=-3 \sqrt{x^2+1}$; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2-24 x y+16 y^2-20 x+110 y-50=0$; \\
+\textbf{B2.} Giperbolaning asimptotalari orasidagi burchagi topilsin, agar: ekssentrisiteti $e=2$; \\
+\textbf{B3.} Ellipsdagi ekssentrisitetni aniqlang, agar: ellips markazidan uning direktrisasiga tushirilgan perpendikulyar kesmasi ellipsning uchi bilan teng ikkiga bo‘linadi. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $5 x^2-y^2+z^2+4 x y+6 x z+2 x+4 y+6 z-8=0$. \\
+\textbf{C2.} Giperbolaning asimptotalaridan direktrisalari ajratgan kesmalar (giperbolaning markazidan hisoblanganda) giperbolaning haqiqiy yarim o'qiga teng ekanligi isbotlansin. Bu xossadan foydalanib, giperbolaning direktrisalari yasalsin. \\
+\textbf{C3.} $y^2=2 p x$ parabolaga $y=k x+b$ to‘g‘ri chiziq urinish shartini keltirib chiqaring. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{7-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: kichik o'qi 16 , а ekssentrisiteti $\varepsilon=\frac{3}{5}$; \\
+\textbf{A3.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Ox$ o'qiga simmetrik joylashgan va $A(9 ; 6)$ nuqtasidan o'tadi; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $4 x^2-y^2-4 x+4 y-3=0$; \\
+\textbf{B2.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $2 x^2-6 x y+5 y^2+22 x-36 y+11=0$. \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $7 x^2-24 x y-38 x+24 y+175=0$; \\
+\textbf{C1.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+2 y^2+3 z^2+4 x y+2 x z+2 y z-4 x+6 y-2 z+3=0$. \\
+\textbf{C3.} Parabolaning ix'tiyoriy urinmasi direktrisasini va o'qqa perpendikular bo'lgan fokal vatarni fokusdan teng uzoqlikdagi nuqtalarda kesishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{8-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{A1.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-20 x y+25 y^2-14 x+2 y-15=0$; \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: katta o'qi 8, direktrisalari orasidagi masofa 16 ; \\
+\textbf{B1.} $M_1 (2;-1)$ nuqta fokusi $F (1;0)$ bo‘lgan ellipsda yotadi. Bu fokusga mos direktrisa esa $2x-y-10=0$ tenglama bilan berilgan. Shu ellipsning tenglamasi tuzilsin. \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $4 x y+2 x+4 y-6 z-3=0$; \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{C1.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsga ichki chizilgan kvadrat tomonining uzunligi hisoblansin. \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{9-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $y=+\frac{2}{3} \sqrt{x^2-9}$ \\
+\textbf{A3.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $3 x^2-2 x y-3 y^2+12 y-15=0$. \\
+\textbf{B1.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $25 x^2-20 x y+4 y^2+3 x-y+11=0$; \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $x^2-6 x-4 y+29=0$, \\
+\textbf{B3.} $\frac{x^2}{16}-\frac{y^2}{8}=-1$ giperbolaga $2 x+4 y-5=0$ to‘g‘ri chiziqqa parallel urinmalar o‘tkazing va ular orasidagi $d$ masofani hisoblang. \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+\textbf{C2.} Agar giperbolaning yarim o‘qlari $a$ va $b$, markazi $C\left(x_0; y_0\right) $ va fokuslar quyidagi to‘g‘ri chiziqda joylashgan: 1) $O x$ o‘qiga parallel; 2) $O y$ o‘qiga parallel bo'lsa uning tenglamasini tuzing. \\
+\textbf{C3.} Har qanday elliptik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlarning hech biri nolga aylana olmasligini va ular bir xil ishorali sonlar ekanligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{10-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{A1.} Parabolaning tenglamasini tuzing agar: parabola $O x$ o'qiga nisbatan simmetrik bo'lib, $M(1 ;-4)$ nuqtadan va koordinatalar boshidan o'tadi; \\
+\textbf{A2.} $x^2=4 y$ parabola fokusining koordinatalarini aniqlang. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $9 x^2+24 x y+16 y^2-230 x+110 y-475=0$. \\
+\textbf{B2.} Ellips fokuslarining biridan katta o'qi uchlarigacha masofalar mos ravishda 7 va 1 ga teng. Bu ellips ning tenglamasini tuzing. \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} Elliptik tipli ($\delta>0$) tenglama $a_{11}$ va $\Delta$ bir xil ishorali son bo‘lgandagina mavhum ellips tenglamasi bo‘lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{11-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $25 x^2-10 x y+y^2+40 x-8 y+7=0$. \\
+\textbf{A3.} Fokuslari abssissa o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: $M_1(-5 ; 3)$ nuqta giperbolaga tegishli va ekssentrisiteti $\varepsilon=\sqrt{2}$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $x^2-5 x y+4 y^2+x+2 y-2=0$. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+12 x y+9 y^2-4 x-6 y+1=0$. \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2-6 x+14 y+49=0$, \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y+2 z=0$. \\
+\textbf{C2.} $y^2=4 x$ parabola bilan $\frac{x^2}{8}+\frac{y^2}{2}=1$ ellipsning umumiy urinmalarini aniqlang. \\
+\textbf{C3.} $\frac{x^2}{100}+\frac{y^2}{64}=1$ ellipsning $2 x-y+7=0,2 x-y-1=0$ vatarlarining o'rtalari orqali o'tadigan to'g'ri chiziq tenglamasini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{12-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(\sqrt{15} ;-1)$ nuqtasi ellipsga tegishli va fokuslari orasidagi masofa $2 c=8$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri ellipsni aniqlashini ko'rsating va uning yarim o‘qlarini toping: $8 x^2+4 x y+5 y^2+16 x+4 y-28=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda uning katta o‘qi 10 ga, fokuslari orasidagi masofa esa $c = 8$ ga teng; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z=2 x^2-4 y^2-6 x+8 y+1$; \\
+\textbf{B2.} Giperbolaning haqiqiy o'qiga perpendikular bo'lgan va giperbola fokusidan o'tgan vatar uzunligi topilsin. \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $6 x y-8 y^2+12 x-26 y-11=0$; \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaga uning $M_1\left(x_1; y_1\right) $ nuqtasidagi urinmasining tenglamasini tuzing. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+\textbf{C3.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{13-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2+5 x y+3 y^2-x+9 y-12=0$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A3.} Giperbolaning ekssentrisiteti $\varepsilon=2$ ga teng, $M$ nuqtasining bazi bir fokal radiusi 16 ga teng. $M$ nuqtasidan mos direktrisagacha masofani toping. \\
+\textbf{B1.} Giperbolaning asimptotalari orasidagi burchagi topilsin, agar: fokuslari orasidagi masofa direktrisalari orasidagi masofadan ikki marta katta. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+24 x y+16 y^2-18 x+226 y+209=0$; \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+4 y^2-z^2-10 x-16 y+6 z+16=0$; \\
+\textbf{C1.} $A\left(\frac{10}{3}; \frac{5}{3}\right)$ nuqtadan $\frac{x2}{20}+\frac{y2}{5}=1$ ellipsga urinmalar o‘tkazilgan. Ularning tenglamalarini tuzing. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $25 x^2-14 x y+25 y^2+64 x-64 y-224=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{14-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Parabolaning tenglamasini tuzing agar: parabolaning fokusi $(0,2)$ nuqtada va uchi koordiniatalar boshida yotadi; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $3 x^2+4 x y-12 x+16=0$; \\
+\textbf{A3.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $6 x^2+4 x y+y^2+4 x-2 y+2=0$; \\
+\textbf{B2.} Beshta nuqtadan o'tuvchi ikkinchi tartibli chiziqning tenglamasi tuzilsin: $(0,0),(0,1),(1,0),(2,-5),(-5,2)$. \\
+\textbf{B3.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning kichik o‘qi 2 ga teng va fokuslari $F_1 (-1;-1) $, $F_2 (1; 1) $; \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning ixtiyoriy nuqtasidan uning ikkita asimptotasigacha bo‘lgan masofalar ko‘paytmasi $\frac{a^2 b^2}{a^2+b^2}$ ga teng o‘zgarmas kattalik ekanligini isbotlang. \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{15-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{A1.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola o'ng yarim tekislikda va $Ox$ o'qiga simmetrik joylashgan, va parametri $p=3$; \\
+\textbf{A2.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: asimptota tenglamasi $y= \pm \frac{4}{3} x$ va direktrisalari orasidagi masofa $6 \frac{2}{5}$. \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $3 x^2-4 x y-2 y^2+3 x-12 y-7=0$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $4 x^2-12 x y+9 y^2-2 x+3 y-2=0$. \\
+\textbf{B2.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $2 x y+z^2-2 z+1=0$; \\
+\textbf{B3.} Ellipsning ekssentrisiteti $\varepsilon=\frac{1}{3}$, uning markazi koordinatalar boshi bilan ustma-ust tushadi, fokuslaridan biri $ (-2; 0) $. Abssissasi 2 ga teng bo‘lgan ellipsning $M_1$ nuqtasidan berilgan fokusga mos direktrisagacha bo‘lgan masofani ayiring. \\
+\textbf{C1.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-8 x z-4 y z-14 x-4 y+14 z+16=0$. \\
+\textbf{C3.} O‘qlari o‘zaro perpendikulyar bo‘lgan ikkita parabola to‘rtta nuqtada kesishsa, bu nuqtalar bitta aylanada yotishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{16-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} $A (-3;-5)$ nuqta fokusi $F (-1;-4)$ bo‘lgan ellipsda yotadi va unga mos direktrisa $x-2=0$ tenglama bilan berilgan. Shu ellipsning tenglamasi tuzilsin. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $8 x^2-12 x y+17 y^2+16 x-12 y+3=0$; \\
+\textbf{B1.} $A(5;9)$ nuqtadan $y^2=5x$ parabolaga o'tkazilgan urinmalarning urinish nuqtalarini tutashtiruvchi xordaning tenglamasini tuzing. \\
+\textbf{B2.} Giperbolaning yarim o'qlarini toping, agar: direktrisalari $x= \pm 3 \sqrt{2}$ tenglamalar bilan berilgan va asimptotalari orasidagi burchak - to'g'ri burchak; \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $9 x^2-4 x y-7 y^2-12=0$; \\
+\textbf{C1.} Ellips markazidan uning ixtiyoriy urinmasining fokal o‘q bilan kesishish nuqtasigacha va urinish nuqtasidan fokal o‘qqa tushirilgan perpendikulyar asosigacha bo‘lgan masofalar ko‘paytmasi o‘zgarmas kattalik bo‘lib, ellips katta yarim o‘qining kvadratiga tengligi isbotlansin. \\
+\textbf{C2.} Umumiy fokusga va ustma - ust tushgan, lekin qarama - qarshi yo'nalgan o'qlarga ega bo'lgan parabolalarning to'g'ri burchak ostida kesishishi isbotlansin. \\
+\textbf{C3.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{17-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $16 x^2-24 x y+9 y^2-160 x+120 y+425=0$. \\
+\textbf{B2.} $\frac{x^2}{16}-\frac{y^2}{9}=1$ giperbolada chap fokusgacha bo'lgan masofasi o'ng fokusgacha bo'lgan nuqta topilsin. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $3 x^2+6 x-8 y+6 z-7=0$; \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $19 x^2+6 x y+11 y^2+38 x+6 y+29=0$; \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $4 x^2+9 y^2+z^2-12 x y-6 y z+4 z x+4 x-6 y+2 z-5=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{18-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{A1.} Fokuslari abssissa o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: $M_1\left(-3 ; \frac{5}{2}\right)$ nuqtasi giperbolaga tegishli va direktrisalarining tenglamasi $x= \pm \frac{4}{3}$; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-12 x+6 y-11=0$; \\
+\textbf{A3.} Parabolaning tenglamasini tuzing agar: parabola $O y$ o'qiga nisbatan simmetrik bo'lib, $M(6,-2)$ nuqtadan va koordinatalar boshidan o'tadi. \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=x^2-8 x+15$, \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+2 x y+6 y^2+6 x-10 y+9=0$. \\
+\textbf{B3.} $\varepsilon=\frac{2}{5}$ ellipsning ekssentrisiteti, ellipsning $M$ nuqtasidan direktrisagacha bo‘lgan masofa 20 ga teng. $M$ nuqtadan shu direktrisa bilan bir tomonlama fokusgacha bo‘lgan masofani hisoblang. \\
+\textbf{C1.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} Giperbolaning bitta diametr uchlaridan o‘tkazilgan urinmalar parallel bo‘lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{19-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Ikki uchi $9 x^2+5 y^2=1$ ellipsning fokuslarida, qolgan ikki uchi uning kichik o'qining uchlarida joylashgan to'rtburchakning yuzini hisoblang. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $x^2+4 x y+3 y^2-6 x-12 y+9=0$. \\
+\textbf{A3.} $\frac{x^2}{32}+\frac{y^2}{18}=1$ elipsning $M(4,3)$ nuqtasida o'tkazilgan urinmasining tenglamasi tuzilsin. \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $2 x^2+4 x y+5 y^2-6 x-8 y-1=0$; \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-42 x y+49 y^2+3 x-2 y-24=0$. \\
+\textbf{B3.} $y^2=8x$ parabolaning $2x+2y-3=0$ to'g'ri chizig'iga parallel urinmasining tenglamasini tuzing. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $50 x^2-8 x y+35 y^2+100 x-8 y+67=0$; \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx+2$ to‘g‘ri chiziq: 1) $y^2=4x$ parabolani kesib o'tadi; 2) unga urinadi; 3) bu parabola tashqarisidan o‘tadi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{20-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $x^2-6 x y+8 y^2-4 y-4=0$; \\
+\textbf{A3.} Ekssentrisiteti $\varepsilon=\frac{13}{12}$, bir fokusi $F(0 ; 13)$ va unga mos direktrisasining tenglamasi $13 y-144=0$ bo'lgan giperbolaning tenglamasini tuzing. \\
+\textbf{B1.} $\frac{x^2}{16}+\frac{y^2}{9}=1$ ellipsning $x+y-1=0$ to'g'ri chiziqqa parallel bo'lgan urinmalarini aniqlang. \\
+\textbf{B2.} $\frac{x^2}{16}-\frac{y^2}{9}=1$ giperbolada fokal radiuslari o'zaro perpendikular bo'lgan nuqta topilsin. \\
+\textbf{B3.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+12 x y+4 y^2-24 x-16 y+3=0$; \\
+\textbf{C1.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+\textbf{C3.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{21-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola chap yarim tekislikda va $Ox$ o'qiga simmetrik joylashgan, va parametri $p=0,5$; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-6 x y-9 y^2+3 x-7 y+12=0$. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{B1.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+4 y^2+18 x-8 y+49=0$; \\
+\textbf{B2.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $2 x y+2 x+2 y+2 z-1=0$; \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+2 x y+6 y^2+6 x-10 y+9=0$. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+y^2+2 z^2-2 x y+2 y z+4 x-2 y=0$. \\
+\textbf{C2.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning asimptotalari va uning ixtiyoriy nuqtasidan asimptotalarga parallel qilib o‘tkazilgan to‘g‘ri chiziqlar bilan chegaralangan parallelogrammning yuzi o‘zgarmas son bo‘lib $\frac{a b}{2}$ ga teng bo‘lishini isbotlang. \\
+\textbf{C3.} $\frac{x^2}{30}+\frac{y^2}{24}=1$ ellipsga $4x-2y+23=0$ parallel bo‘lgan urinmalarni o‘tkazing va ular orasidagi masofani hisoblang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{22-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $25 x^2-20 x y+4 y^2-12 x+20 y-17=0$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A3.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{B1.} Teng tomonli giperbolaning ekssentrisiteti aniqlansin. \\
+\textbf{B2.} $\frac{x^2}{12}+\frac{y^2}{4}+\frac{z^2}{3}=1$ ellipsoidi va $2x-3y+4z-11=0$ tekisligining kesishish chizig‘i qanday chiziq ekanligini aniqlang va uning markazini toping. \\
+\textbf{B3.} $\varepsilon=\frac{2}{3}$ ellipsning ekssentrisiteti, $M$ ellips nuqtasining fokal radiusi 10 ga teng. $M$ nuqtadan shu fokusga mos direktrisagacha bo‘lgan masofani hisoblang. \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C3.} $A x+B y+C=0$ to'g'ri chiziq qanday zaruriy va yetarli shart bajarilganda $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellips bilan 1) kesishadi; 2) kesishmaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{23-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $4 x^2+4 x y+y^2-8 x-4 y-21=0$; \\
+\textbf{A2.} Teng tomonli giperbolaning ekssentrisiteti hisoblansin. \\
+\textbf{A3.} $\frac{x^2}{20}-\frac{y^2}{5}=-1$ giperbola va $y^2=3 x$ parabolaning kesishish nuqtalarini aniqlang. \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+6 x y+5 y^2-16 x-16 y-16=0$; \\
+\textbf{B3.} Berilgan parabola uchi $A(6;-3)$ va uning direktrisasining tenglamasi $3x-5y+1=0$ berilgan. Ushbu parabolaning $F$ fokusini toping. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $3 x^2+10 x y+3 y^2-2 x-14 y-13=0$; \\
+\textbf{C2.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbola va uning biror urinmasi berilgan: $P$-urinmaning $O x$ o‘qi bilan kesishish nuqtasi, $Q$ - urinish nuqtasining o‘sha o‘qdagi proyeksiyasi. $O P \cdot O Q=a^2$ ekanligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{24-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa 32 va $\varepsilon=\frac{1}{2}$. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+4 y^2+5 x-7 y+12=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{B1.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $x^2+4 x y+4 y^2+4 x+y-15=0 ;$ \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B3.} Agar giperbolaning ekssentrisiteti $\varepsilon=\sqrt{5}$, fokusi $F (2;-3) $ va unga mos direktrisasining tenglamasi $3 x-y+3=0$ ma’lum bo‘lsa, uning tenglamasini tuzing. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+10 y^2-2 z^2+12 x y+8 y z+12 x+4 y+8 z-1=0$. \\
+\textbf{C2.} Berilgan $y=k x+b$ to'g'ri chiziqqa parallel va $y^2=2 p x$ parabolaga urinadigan to'g'ri chiziqning tenglamasini yozing. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{25-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{A2.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $22 \frac{2}{13}$ va fokuslari orasidagi masofa $2 c=26$; \\
+\textbf{A3.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: katta yarim o'qi 10 , fokuslari orasidagi masofa $2 c=8$; \\
+\textbf{B1.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $16 x^2+16 x y+4 y^2-5 x+7 y=0$; \\
+\textbf{B2.} $x^2=16y$ parabolaning $2x+4y+7=0$ to'g'ri chizig'iga perpendikulyar bo'lgan urinmasining tenglamasini tuzing. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+4 y^2+9 z^2-6 x+8 y-18 z-14=0$; \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokuslaridan urinmasigacha bo'lgan masofalarning ko'paytmasi topilsin. \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $5 x^2-2 x y+5 y^2-4 x+20 y+20=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{26-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $x^2-4 x y+3 y^2=0$; \\
+\textbf{A2.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Oy$ o'qiga simmetrik joylashgan va $C(1 ; 1)$ nuqtasidan o’tadi. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{B1.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning fokuslari $F_1\left(-2; \frac{3}{2}\right), F_2\left(2;-\frac{3}{2}\right) $ va ekssentrisitet $\varepsilon=\frac{\sqrt{2}}{2}$; \\
+\textbf{B2.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2+24 x y-5 y^2=0$; \\
+\textbf{B3.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2-24 x y+16 y^2-20 x+110 y-50=0$; \\
+\textbf{C1.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning $M_1(x_1; y_1)$ nuqtasidagi urinmasining tenglamasini tuzing. \\
+\textbf{C3.} Umumiy o‘qqa va uchlari orasida joylashgan umumiy fokusga ega bo‘lgan ikkita parabola to‘g‘ri burchak ostida kesishishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{27-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{A2.} $y^2=-8 x$ parabola fokusining koordinatalarini aniqlang. \\
+\textbf{A3.} $\frac{x^2}{4}-\frac{y^2}{9}=1$ giperbolaning asimptotalaridan va $9 x+2 y-24=0$ to‘g‘ri chiziqdan hosil bo‘lgan uchburchak yuzini hisoblang. \\
+\textbf{B1.} $\frac{x^2}{2}-\frac{z^2}{3}=y$ giperbolik paraboloidi va $3x-3y+4z+2=0$ tekisligining kesish chizig‘i qanday chiziq ekanligini aniqlang va uning markazini toping. \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $x^2+2 x y+y^2-8 x+4=0$; \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=A x^2+B x+C$, \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $7 x^2+6 y^2+5 z^2-4 x y-4 y z-6 x-24 y+18 z+30=0$. \\
+\textbf{C2.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{28-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $x^2-6 x y-7 y^2+10 x-30 y+23=0$. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2+5 x y+3 y^2-x+9 y-12=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik, yarim o‘qlari 5 va 2 bo‘lgan ellipsning tenglamasi tuzilsin yarim o‘qlari 5 va 2; \\
+\textbf{B1.} $\frac{x^2}{25}+\frac{y^2}{15}=1$ ellipsning fokusi orqali uning katta o‘qiga perpendikulyar o‘tkazilgan. Bu perpendikulyarning ellips bilan kesishgan nuqtalaridan fokuslargacha bo‘lgan masofalar aniqlansin. \\
+\textbf{B2.} $x^2-y^2=8$ giperbolaga $M(3,-1)$ nuqtada urinadigan to'g'ri chiziq tenglamasi yozilsin. \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+6 x y+y^2-10 x-10=0$; \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+\textbf{C2.} $y^2=2 p x$ parabolaga uning $M_1\left(x_1; y_1\right) $ nuqtasidagi urinmasining tenglamasini tuzing. \\
+\textbf{C3.} Giperbola asimptotalarining tenglamalari $y= \pm \frac{1}{2} x$ va urinmalardan birining tenglamasi $5 x-6 y-8=0$ ma'lum bo'lsa, giperbola tenglamasini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{29-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+y^2-6 x+6 y-3=0$; \\
+\textbf{A2.} Parabola tenglamasini tuzing, uning uchi ($\alpha; \beta$) nuqtada joylashgan bo‘lib, parametri $p$ ga teng, o‘qi $Ox$ o‘qiga parallel va parabola cheksizlikka $Oy$ o‘qining manfiy yo‘nalishida cho‘ziladi. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1\left(2 ;-\frac{5}{3}\right)$ nuqtasi ellipsga tegishli va ekssentrisiteti $\varepsilon=\frac{2}{3}$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{B2.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2-6 x y+5 y^2-32=0$; \\
+\textbf{B3.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2-2 y^2+z^2+4 x y-10 x z+4 y z+2 x+4 y-10 z-1=0$; \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $11 x^2-20 x y-4 y^2-20 x-8 y+1=0$; \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} $x+m z-1=0$ tekislik ushbu $x^2+y^2-z^2=-1$ ikki pallali giperboloidni $m$ ning qanday qiymatlarida a) ellips bo‘yicha, b) giperbola bo‘yicha kesishi aniqlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{30-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A2.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} Fokuslari abssissa o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: asimptota tenglamalari $y= \pm \frac{3}{4} x$ va direktrisalarining tenglamalari $x= \pm \frac{16}{5}$. \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $16 x^2-24 x y+9 y^2-160 x+120 y+425=0$. \\
+\textbf{B2.} Ushbu $x^2-y^2=16$ giperbolaga $A (-1;-7)$ nuqtadan o‘tkazilgan urinmalar tenglamasi tuzilsin. \\
+\textbf{B3.} $5 x^2-3 x y+y^2-3 x+2 y-5=0$ chiziqning $x-2 y-1=0$ to'g'ri chiziq bilan kesishishidan hosil qilingan vatarning o'rtasidan o'tadigan diametr tenglamasi yozilsin. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-10 x z+4 y z+2 x+4 y-10 z-1=0$. \\
+\textbf{C2.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} Fokuslardan ellipsning istalgan urinmasigacha bo‘lgan masofalar ko‘paytmasi kichik yarim o‘qning kvadratiga tengligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{31-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $x^2-6 x y+10 y^2+10 x-32 y+26=0$. \\
+\textbf{A2.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: fokuslari orasidagi masofa 10 ga , haqiqiy o'qi esa 8 ga teng. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1 (-\sqrt{5}; 2) $ nuqtasi ellipsga tegishli va uning direktrisalari orasidagi masofa 10 ga teng. \\
+\textbf{B1.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning katta o‘qi 26 ga teng va fokuslari $F_1 (-10; 0), F2 (14; 0) $; \\
+\textbf{B2.} Parabola uchi $A(-2;-1)$ va uning direktrisasining tenglamasi $x+2y-1=0$ berilgan. Ushbu parabolaning tenglamasini tuzing. \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $2 x^2-6 x y+5 y^2+22 x-36 y+11=0$. \\
+\textbf{C1.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning $F(c, 0)$ fokusi orqali katta o'qiga perpendikular bo'lgan vatar o'tkazilgan. Bu vatar uzunligini toping. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $4 x^2+24 x y+11 y^2+64 x+42 y+51=0$; \\
+\textbf{C3.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{32-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} $y^2=24 x$ parabolaning $F$ fokusini va direktrisasinining tenglamasini toping. \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $3 x^2-4 x y-2 y^2+3 x-12 y-7=0$; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z=x^2+3 y^2-6 y+1$; \\
+\textbf{B2.} $\frac{x^2}{64}-\frac{y^2}{36}=1$ giperbolaning o‘ng fokusigacha bo‘lgan masofasi 4,5 ga teng bo‘lgan nuqtalari aniqlansin. \\
+\textbf{B3.} Ellipsdagi ekssentrisitetni aniqlang, agar: fokuslari orasidagi kesmaning o‘zi kichik o‘qning uchidan to‘g‘ri burchak ostida ko‘rinadi.; \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokusidan asimptotagacha bo‘lgan masofa $b$ ga tengligini isbotlang. \\
+\textbf{C2.} Umumiy fokusga va ustma - ust tushgan, lekin qarama - qarshi yo'nalgan o'qlarga ega bo'lgan parabolalarning to'g'ri burchak ostida kesishishi isbotlansin. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+2 y^2-5 z^2+2 x y-2 x-4 y-4 z+2=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{33-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $x^2+2 x y+2 y^2+6 y+9=0$; \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $4 x^2-4 x y+y^2-2 x-14 y+7=0$. \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-6 x y+y^2-x+2 y-14=0$; \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z^2=3 x+4 y+5$; \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+\textbf{C3.} Ikki pallali $\frac{x^2}{3}+\frac{y^2}{4}-\frac{z^2}{25}=-1$ giperboloid $5 x+2 z+5=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{34-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} $M$ nuqtasi $y^2=20 x$ parabolaga tegishli, agar uning abssissasi 7 ga teng bo'lsa fokal radiuslarini toping. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $5 x^2+4 x y+y^2-6 x-2 y+2=0$; \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $6 x^2+4 x y+y^2+4 x-2 y+2=0$; \\
+\textbf{B2.} Giperbolaning yarim o'qlarini toping, agar: fokuslari orasidagi masofa 8 ga va direktrisalari orasidagi masofa 6 ga teng; \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $x^2+4 x y+4 y^2+4 x+y-15=0 ;$ \\
+\textbf{C1.} $m$ ning qanday qiymatlarida $y=\frac{5}{2} x+m$ to‘g‘ri chiziq $\frac{x^2}{9}-\frac{y^2}{36}=1$ giperbolani 1) kesib o‘tishini; 2) unga urinishini; 3) tashqarisidan o‘tishini aniqlang. \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $5 x^2+2 y^2+5 z^2-4 x y-2 x y-4 y z+10 x-4 y-2 z+4=0$; \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{35-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-12 x+6 y-11=0$; \\
+\textbf{A2.} Fokuslari abssissa o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: $M_1\left(\frac{9}{2} ;-1\right)$ nuqtasi giperbolaga tegishli va asimptota tenglamalari $y= \pm \frac{2}{3} x$; \\
+\textbf{A3.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: yarim o'qlari 7 va 2 ; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $9 x^2+24 x y+16 y^2-40 x-30 y=0$; \\
+\textbf{B2.} Agar parabolaning fokusi $F(2;-1) $ va direktrisa $x-y-1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B3.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning fokuslari $F_1 (1; 3), F_2 (3; 1) $ va direktrisalar orasidagi masofa $12 \sqrt{2}$ ga teng. \\
+\textbf{C1.} Elliptik tipli ($\delta>0$) tenglama $\Delta=0$ bo‘lgandagina ikkita bir-birini kesuvchi mavhum to‘g‘ri chiziq bo‘lishini isbotlang. \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} $y^2=2 p x$ parabolaga uning $M_1\left(x_1; y_1\right) $ nuqtasidagi urinmasining tenglamasini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{36-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} $y^2=6 x$ parabola direktrisasi tenglamasini tuzing. \\
+\textbf{A2.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(4 ;-\sqrt{3})$ va $M_2(2 \sqrt{2} ; 3)$ nuqtalari ellipsga tegishli; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $9 x^2-4 x y-7 y^2-12=0$; \\
+\textbf{B2.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2-16 y^2-54 x-64 y-127=0$; \\
+\textbf{B3.} Ellipsning ekssentrisiteti $\varepsilon=\frac{1}{2}$, uning markazi koordinatalar boshi bilan ustma-ust tushadi, direktrisalardan biri $x=16$ tenglama bilan berilgan. Abssissasi -4 ga teng bo‘lgan ellipsning $M_1$ nuqtasidan berilgan direktrisa bilan bir tomonlama fokusgacha bo‘lgan masofani hisoblang. \\
+\textbf{C1.} $A x+B y+C=0$ to'g'ri chiziqning $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$, ellipsga urinma bo'lishi uchun zaruriy va yetarli sharti topilsin. \\
+\textbf{C2.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{37-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $25 x^2-10 x y+y^2+40 x-8 y+7=0$. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $3 x^2+4 x y+y^2-2 x-1=0$; \\
+\textbf{A3.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=10$ va ekssentrisiteti $\varepsilon=\frac{5}{3}$; \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2+y^2+4 z^2+2 x y+4 x z+4 y z-6 z+1=0$; \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=x^2+6 x$. \\
+\textbf{B3.} $\frac{x^2}{5}-\frac{y^2}{4}=1$ giperbolaga $(5,-4)$ nuqtada urinadigan to'g'ri chiziq tenglamasi yozilsin. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $7 x^2+6 x y-y^2+28 x+12 y+28=0$; \\
+\textbf{C2.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{38-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A2.} $\frac{x^2}{100}+\frac{y^2}{225}=1$ ellips va $y^2=24 x$ parabolaning kesishish nuqtalarini aniqlang. \\
+\textbf{A3.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $4 x^2+4 x y+y^2-8 x-4 y-21=0$; \\
+\textbf{B1.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $25 x^2-20 x y+4 y^2+3 x-y+11=0$; \\
+\textbf{B2.} Giperbolaning yarim o'qlarini toping, agar: asimptotalari $y= \pm \frac{5}{3} x$ tenglamalar bilan berilgan va giperbola $N(6,9)$ nuqtadan o'tadi. \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+2 x y+6 y^2+6 x-10 y+9=0$. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y+2 z=0$; \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{39-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $12 x^2+26 x y+12 y^2-52 x-48 y+73=0$ \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A3.} $\frac{x^2}{25}-\frac{y^2}{144}=1$ giperbolaning fokuslarini aniqlang. \\
+\textbf{B1.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $17 x^2-12 x y+8 y^2=0$; \\
+\textbf{B2.} Agar parabolaning fokusi $F (7; 2) $ va direktrisa $x-5=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B3.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2-2 y^2+z^2+4 x y-10 x z+4 y z+x+y-z=0$; \\
+\textbf{C1.} $y=k x+m$ to‘g‘ri chiziqning $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaga urinish shartini keltirib chiqaring. \\
+\textbf{C2.} Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx+2$ to‘g‘ri chiziq: 1) $y^2=4x$ parabolani kesib o'tadi; 2) unga urinadi; 3) bu parabola tashqarisidan o‘tadi. \\
+\textbf{C3.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning bitta diametrini uchlariga o‘tkazilgan urinmalar parallel bo‘lishini isbotlang (ellipsning diametri deb uning markazidan o‘tuvchi xordagaaytiladi). \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{40-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A2.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: katta o'qi 20, ekssentrisiteti $\varepsilon=\frac{3}{5}$; \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-20 x y+25 y^2-14 x+2 y-15=0$; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $x^2-2 x y+y^2-12 x+12 y-14=0$ \\
+\textbf{B2.} Agar ellipsning ekssentrisiteti $\varepsilon=\frac{1}{2}$ va fokusi $F(3 ; 0)$ va unga mos direktrisa tenglamasi $x+y-1=0$ ma’lum bo‘lsa, uning tenglamasi tuzilsin. \\
+\textbf{B3.} $\frac{x^2}{80}-\frac{y^2}{20}=1$ giperbolada $M_1 (10;-\sqrt{5}) $ nuqta berilgan. $M_1$ nuqtaning fokal radiuslari yotgan to‘g‘ri chiziqlarning tenglamalari tuzilsin. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+5 y^2+2 z^2-2 x y+2 y z-4 x z+2 x-10 y-2 z-1=0$. \\
+\textbf{C2.} $\frac{x^2}{100}+\frac{y^2}{64}=1$ ellipsning $2 x-y+7=0,2 x-y-1=0$ vatarlarining o'rtalari orqali o'tadigan to'g'ri chiziq tenglamasini tuzing. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{41-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola yuqori yarim tekislikda va $Oy$ o'qiga simmetrik joylashgan, va parametri $p=\frac{1}{4}$; \\
+\textbf{A2.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{A3.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=24$ ekssentrisiteti $\varepsilon=\frac{12}{13}$; \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2-10 x-2 y-19=0$; \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-42 x y+49 y^2+3 x-2 y-24=0$. \\
+\textbf{B3.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2-y^2+8 x-2 y+3=0$; \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $29 x^2-24 x y+36 y^2+82 x-96 y-91=0$; \\
+\textbf{C2.} $x+m z-1=0$ tekislik ushbu $x^2+y^2-z^2=-1$ ikki pallali giperboloidni $m$ ning qanday qiymatlarida a) ellips bo‘yicha, b) giperbola bo‘yicha kesishi aniqlansin. \\
+\textbf{C3.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{42-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $6 x^2-6 x y+9 y^2-4 x+18 y+14=0$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A3.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: haqiqiy o'qi 16 ga, asimptotasi bilan abssissa o'qi orasidagi $\varphi$. \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $3 x^2+3 y^2-6 x+4 y-1=0$; \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B3.} Ellipsdagi ekssentrisitetni aniqlang, agar: direktrisalar orasidagi masofa fokuslar orasidagi masofadan uch marta katta.; \\
+\textbf{C1.} $y^2=4 x$ parabola bilan $\frac{x^2}{8}+\frac{y^2}{2}=1$ ellipsning umumiy urinmalarini aniqlang. \\
+\textbf{C2.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaga uning $M_1\left(x_1; y_1\right) $ nuqtasidagi urinmasining tenglamasini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{43-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Parabola tenglamasini tuzing, uning uchi ($\alpha; \beta$) nuqtada joylashgan, parametri $p$ ga teng, o‘qi $Ox$ o‘qiga parallel va parabola cheksizlikka $Oy$ o‘qining musbat yo‘nalishida cho‘ziladi. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-6 x y-9 y^2+3 x-7 y+12=0$. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: kichik o'qi 6, direktrisalari orasidagi masofa 13 ; \\
+\textbf{B1.} $M_1 (1;-2) $ nuqta fokusi $F (-2; 2) $, unga mos direktrisa esa $2x-y-1=0$ tenglama bilan berilgan giperbolaga tegishli. Bu giperbolaning tenglamasi tuzilsin. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+12 x y+4 y^2-24 x-16 y+3=0$; \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $7 x^2+16 x y-23 y^2-14 x-16 y-218=0$; \\
+\textbf{C1.} Agar giperbolaning yarim o‘qlari $a$ va $b$, markazi $C\left(x_0; y_0\right) $ va fokuslar quyidagi to‘g‘ri chiziqda joylashgan: 1) $O x$ o‘qiga parallel; 2) $O y$ o‘qiga parallel bo'lsa uning tenglamasini tuzing. \\
+\textbf{C2.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $14 x^2+24 x y+21 y^2-4 x+18 y-139=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{44-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A2.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: $2 a=16$ va ekssentrisiteti $\varepsilon=\frac{5}{4}$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $17 x^2-18 x y-7 y^2+34 x-18 y+7=0$; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+2 y^2-3 z^2+2 x+4 y-6 z=0$; \\
+\textbf{B2.} $y^2=8x$ parabolaning $2x+2y-3=0$ to'g'ri chizig'iga parallel urinmasining tenglamasini tuzing. \\
+\textbf{B3.} Katta o'qi 2 birlikka teng, fokuslari $F_1(0,1), F_2(1,0)$ nuqtalarda bo'lgan ellipsning tenglamasi tuzilsin. \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+10 y^2-2 z^2+12 x y+8 y z+12 x+4 y+8 z-1=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{45-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $x^2-6 x y+9 y^2-12 x+36 y+20=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+6 x y+y^2-10 x-10=0$; \\
+\textbf{B2.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+y^2-z^2-2 x y+2 z-1=0$; \\
+\textbf{B3.} Quyidagilarni bilgan holda giperbola tenglamasini tuzing: Asimptotalar orasidagi burchak $90^{\circ}$ ga teng va fokuslar $F_1 (4;-4), F_2 (-2; 2) $. \\
+\textbf{C1.} $\frac{x^2}{30}+\frac{y^2}{24}=1$ ellipsga $4x-2y+23=0$ parallel bo‘lgan urinmalarni o‘tkazing va ular orasidagi masofani hisoblang. \\
+\textbf{C2.} Parabolaning ix'tiyoriy urinmasi direktrisasini va o'qqa perpendikular bo'lgan fokal vatarni fokusdan teng uzoqlikdagi nuqtalarda kesishini isbotlang. \\
+\textbf{C3.} Ikki pallali $\frac{x^2}{3}+\frac{y^2}{4}-\frac{z^2}{25}=-1$ giperboloid $5 x+2 z+5=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{46-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Po‘lat tros ikki uchidan osilgan; mahkamlash nuqtalari bir xil balandlikda joylashgan; ular orasidagi masofa 20 m ga teng. Uning mahkamlash nuqtasidan 2 m masofadagi egilish kattaligi, gorizontal bo‘yicha hisoblaganda, 14,4 sm ga teng. Trosni taxminan parabola yoyi shaklida deb hisoblab, mahkamlash nuqtalari orasidagi bu trosning egilish kattaligini aniqlang. \\
+\textbf{A2.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda uning kichik o‘qi 24 ga, fokuslari orasidagi masofa esa $c = 10$ ga teng; \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=10$ va kichik o'qi $2 b=8$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $x^2-2 x y+y^2-10 x-6 y+25=0$. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+12 x y+9 y^2-4 x-6 y+1=0$. \\
+\textbf{B3.} Ikkita uchi $x^2+5 y^2=20$ ellipsning fokuslarida yotuvchi, qolgan ikkitasi esa uning kichik o‘qi uchlari bilan ustma-ust tushuvchi to‘rtburchakning yuzi hisoblansin. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $7 x^2+60 x y+32 y^2-14 x-60 y+7=0$; \\
+\textbf{C2.} $A x+B y+C=0$ to'g'ri chiziq $y^2=2 p x$ parabolaga urinishi uchun zaruriy va yetarli shartni toping. \\
+\textbf{C3.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{47-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri ellipsni aniqlashini ko'rsating va uning yarim o‘qlarini toping: $13 x^2+10 x y+13 y^2+46 x+62 y+13=0$. \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-6 x+8 y+13=0$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{B2.} Agar parabolaning fokusi $F(2;-1) $ va direktrisa $x-y-1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B3.} Fokuslari $\frac{x^2}{100}+\frac{y^2}{64}=1$ ellipsning uchlarida yotuvchi, direktrisalari esa shu ellipsning fokuslaridan o‘tuvchi giperbolaning tenglamasi tuzilsin. \\
+\textbf{C1.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsga ichki chizilgan kvadrat tomonining uzunligi hisoblansin. \\
+\textbf{C2.} Giperbolaning bitta diametr uchlaridan o‘tkazilgan urinmalar parallel bo‘lishini isbotlang. \\
+\textbf{C3.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{48-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} $\frac{x^2}{36}+\frac{y^2}{20}=1$ ellips direktrisalarining tenglamalarini yozing. \\
+\textbf{A2.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Oy$ o'qiga simmetrik joylashgan va $D(4 ;-8)$ nuqtasidan o’tadi. \\
+\textbf{A3.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $5 x^2+14 x y+11 y^2+12 x-7 y+19=0$; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+24 x y+16 y^2-18 x+226 y+209=0$; \\
+\textbf{B2.} Agar parabolaning fokusi $F (7; 2) $ va direktrisa $x-5=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+y^2+2 z^2+2 x y+4 z=0$; \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-8 x z-4 y z-14 x-4 y+14 z+16=0$. \\
+\textbf{C2.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{49-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $\frac{8}{3}$ va ekssentrisiteti $\varepsilon=\frac{3}{2}$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $9 x^2-4 x y-7 y^2-12=0$; \\
+\textbf{B2.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2-6 x y+5 y^2+8=0$. \\
+\textbf{B3.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning fokuslari $F_1 (1; 3), F_2 (3; 1) $ va direktrisalar orasidagi masofa $12 \sqrt{2}$ ga teng. \\
+\textbf{C1.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokusidan asimptotagacha bo‘lgan masofa $b$ ga tengligini isbotlang. \\
+\textbf{C3.} Umumiy o‘qqa va uchlari orasida joylashgan umumiy fokusga ega bo‘lgan ikkita parabola to‘g‘ri burchak ostida kesishishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{50-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+4 y^2+5 x-7 y+12=0$; \\
+\textbf{A3.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=6$ direktrisalari orasidagi masofa $16 \frac{2}{3}$; \\
+\textbf{B1.} $\frac{x^2}{49}+\frac{y^2}{24}=1$ ellips bilan fokusdosh va ekssentrisiteti $e=\frac{5}{4}$ bo'lgan giperbolaning tenglamasi yozilsin. \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $16 x^2+16 x y+4 y^2-5 x+7 y=0$; \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2+8 x-16=0$, \\
+\textbf{C1.} Elliptik tipli ($\delta>0$) tenglama $a_{11}$ va $\Delta$ ning turli ishorali sonlar bo‘lgandagina ellipsni aniqlashi isbotlansin. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $7 x^2+6 y^2+5 z^2-4 x y-4 y z-6 x-24 y+18 z+30=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{51-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $5 x^2-6 x y+2 y^2-2 x+2=0$; \\
+\textbf{A2.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{A3.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: direktrisalari orasidagi masofa $\frac{32}{5}$ ga teng va ekssentrisiteti $e=\frac{5}{4}$; \\
+\textbf{B1.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+9 y^2-40 x+36 y+100=0$; \\
+\textbf{B2.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $2 x^2-6 x y+5 y^2+22 x-36 y+11=0$. \\
+\textbf{B3.} $\varepsilon=\frac{2}{3}$ ellipsning ekssentrisiteti, $M$ ellips nuqtasining fokal radiusi 10 ga teng. $M$ nuqtadan shu fokusga mos direktrisagacha bo‘lgan masofani hisoblang. \\
+\textbf{C1.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} Ellips markazidan uning ixtiyoriy urinmasining fokal o‘q bilan kesishish nuqtasigacha va urinish nuqtasidan fokal o‘qqa tushirilgan perpendikulyar asosigacha bo‘lgan masofalar ko‘paytmasi o‘zgarmas kattalik bo‘lib, ellips katta yarim o‘qining kvadratiga tengligi isbotlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{52-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} Parabolaning tenglamasini tuzing agar: fokusi $(5,0)$ nuqtada bo'lib, ordinatalar o'qi direktrisa bo'lsa; \\
+\textbf{A2.} Parabolaning uchi ($\alpha;\beta$) nuqta bilan ustma-ust tushishini bilgan holda uning tenglamasi tuzilsin. Parametri $p$ ga teng. Uning o'qi $O x$ o‘qiga parallel bo'lib, $O x$ o‘qining musbat yo‘nalishida cheksizlikga cho'zilgan; \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+4 y^2+5 x-7 y+12=0$; \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y-10 z=0$; \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x y+x z+y z+2 x+2 y-2 z=0$. \\
+\textbf{B3.} $\frac{x^2}{16}-\frac{y^2}{64}=1$ giperbolaga $10 x-3 y+9=0$ to‘g‘ri chiziqqa parallel bo‘lgan urinmalarning tenglamalarini tuzing. \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning asimptotalari va uning ixtiyoriy nuqtasidan asimptotalarga parallel qilib o‘tkazilgan to‘g‘ri chiziqlar bilan chegaralangan parallelogrammning yuzi o‘zgarmas son bo‘lib $\frac{a b}{2}$ ga teng bo‘lishini isbotlang. \\
+\textbf{C2.} Fokuslardan ellipsning istalgan urinmasigacha bo‘lgan masofalar ko‘paytmasi kichik yarim o‘qning kvadratiga tengligini isbotlang. \\
+\textbf{C3.} Berilgan $y=k x+b$ to'g'ri chiziqqa parallel va $y^2=2 p x$ parabolaga urinadigan to'g'ri chiziqning tenglamasini yozing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{53-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} $\frac{x^2}{225}-\frac{y^2}{64}=-1$ giperbolaning fokuslarini aniqlang. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $4 x^2+24 x y+11 y^2+64 x+42 y+51=0$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{B2.} Ellipsdagi ekssentrisitetni aniqlang, agar: fokuslari orasidagi kesmaning o‘zi kichik o‘qning uchidan to‘g‘ri burchak ostida ko‘rinadi.; \\
+\textbf{B3.} Parabola uchi $A(-2;-1)$ va uning direktrisasining tenglamasi $x+2y-1=0$ berilgan. Ushbu parabolaning tenglamasini tuzing. \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+y^2+4 z^2+2 x y+4 x z+4 y z-6 z+1=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{54-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} $C (-3; 2) $ ikkala koordinata o‘qiga urinuvchi ellipsning markazi. Bu ellipsning simmetriya o‘qlari koordinata o‘qlariga parallel ekanligini bilgan holda uning tenglamasi tuzilsin. \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: asimptota tenglamasi $y= \pm \frac{4}{3} x$ va fokuslari orasidagi masofa $2 c=20$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+8 x y+5 y^2-18 x-18 y+9=0$; \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $16 x^2+16 x y+4 y^2-5 x+7 y=0$; \\
+\textbf{B3.} Ikkita uchi $x^2+5 y^2=20$ ellipsning fokuslarida yotuvchi, qolgan ikkitasi esa uning kichik o‘qi uchlari bilan ustma-ust tushuvchi to‘rtburchakning yuzi hisoblansin. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $41 x^2+24 x y+9 y^2+24 x+18 y-36=0$. \\
+\textbf{C2.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{55-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2+5 x y+3 y^2-x+9 y-12=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: kichik o'qi 10 , ekssentrisiteti $\varepsilon=\frac{12}{13}$; \\
+\textbf{B1.} Quyidagilarni bilgan holda giperbola tenglamasini tuzing: fokuslar $F_1 (3; 4), F_2 (-3;-4)$ va direktrisalar orasidagi masofa 3,6; \\
+\textbf{B2.} Beshta nuqtadan o'tuvchi ikkinchi tartibli chiziqning tenglamasi tuzilsin: $(0,0),(0,1),(1,0),(2,-5),(-5,2)$. \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $6 x^2+4 x y+y^2+4 x-2 y+2=0$; \\
+\textbf{C1.} Giperbola asimptotalarining tenglamalari $y= \pm \frac{1}{2} x$ va urinmalardan birining tenglamasi $5 x-6 y-8=0$ ma'lum bo'lsa, giperbola tenglamasini tuzing. \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} O‘qlari o‘zaro perpendikulyar bo‘lgan ikkita parabola to‘rtta nuqtada kesishsa, bu nuqtalar bitta aylanada yotishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{56-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A2.} $y^2=4 x$ parabola fokusining koordinatalarini aniqlang. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri ellipsni aniqlashini ko'rsating va uning yarim o‘qlarini toping: $13 x^2+18 x y+37 y^2-26 x-18 y+3=0$; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $x^2-2 x y+y^2-12 x+12 y-14=0$ \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+12 x y-12 x-22 y-19=0$. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z=x^2+2 x y+y^2+1$; \\
+\textbf{C1.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+2 y^2-5 z^2+2 x y-2 x-4 y-4 z+2=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{57-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri ellipsni aniqlashini ko'rsating va uning yarim o‘qlarini toping: $41 x^2+24 x y+9 y^2+24 x+18 y-36=0$; \\
+\textbf{A3.} Ekssentrisiteti $\varepsilon=\frac{1}{2}$, fokusi $F(-4 ; 1)$ va shu fokus tarafdagi direktrisasi $y+3=0$ bo'lgan ellipsning tenglamasini tuzing. \\
+\textbf{B1.} $M_1 (2;-1)$ nuqta fokusi $F (1;0)$ bo‘lgan ellipsda yotadi. Bu fokusga mos direktrisa esa $2x-y-10=0$ tenglama bilan berilgan. Shu ellipsning tenglamasi tuzilsin. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2-24 x y+16 y^2-20 x+110 y-50=0$; \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+6 x y+y^2-10 x-10=0$; \\
+\textbf{C1.} Elliptik tipli ($\delta>0$) tenglama $a_{11}$ va $\Delta$ ning turli ishorali sonlar bo‘lgandagina ellipsni aniqlashi isbotlansin. \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $y=-x+m$ chiziq: 1) $\frac{x^2}{20}+\frac{y^2}{5}=1$ ellipsni kesib o'tadi; 2) ellipsga urinadi 3) ellipsni kesib o'tmaydi. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{58-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} $x+y-3=0$ to'g'ri chizig'i va $x^2=4 y$ parabolasining kesishish nuqtasini toping. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-6 x+8 y+13=0$; \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $2 x^2+y^2+2 z^2-2 x y-2 y z+x-4 y-3 z+2=0$; \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+4 x y+8 y^2-32 x-56 y+80=0$. \\
+\textbf{B3.} $\frac{x^2}{9}-\frac{y^2}{4}=1$ giperbolaning $M(5,1)$ nuqtada teng ikkiga bo'linadigan vatarining tenglamasi tuzilsin. \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+\textbf{C2.} $y^2=2 p x$ parabolaga $y=k x+b$ to‘g‘ri chiziq urinish shartini keltirib chiqaring. \\
+\textbf{C3.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{59-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: uning o'qlari $2 a=10$ va $2 b=8$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $2 x^2+3 x y-2 y^2+5 x+10 y=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $x^2-6 x-4 y+29=0$, \\
+\textbf{B2.} $x^2=16y$ parabolaning $2x+4y+7=0$ to'g'ri chizig'iga perpendikulyar bo'lgan urinmasining tenglamasini tuzing. \\
+\textbf{B3.} Quyidagilarni bilgan holda giperbola tenglamasini tuzing: uning uchlari orasidagi masofa 24 ga teng va fokuslari $F_1 (-10; 2), F_2 (16; 2) $; \\
+\textbf{C1.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $5 x^2-y^2+z^2+4 x y+6 x z+2 x+4 y+6 z-8=0$. \\
+\textbf{C3.} $m$ ning qanday qiymatlarida $y=\frac{5}{2} x+m$ to‘g‘ri chiziq $\frac{x^2}{9}-\frac{y^2}{36}=1$ giperbolani 1) kesib o‘tishini; 2) unga urinishini; 3) tashqarisidan o‘tishini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{60-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} $y^2=36 x$ parabolaning $A(2 ; 9)$ nuqtasidagi urinmasining tenglama tuzing. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-6 x y-9 y^2+3 x-7 y+12=0$. \\
+\textbf{A3.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: asimptotalari orasidagi burchak $60^{\circ}$ ga teng va $c=2 \sqrt{3}$ giperbolaning kanonik tenglamasi tuzilsin \\
+\textbf{B1.} Ellipsdagi ekssentrisitetni aniqlang, agar: uning kichik o‘qi fokuslardan $60^{\circ}$ burchak ostida ko‘rinadi; \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $x^2+2 x y+y^2-8 x+4=0$; \\
+\textbf{B3.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+2 x y+6 y^2+6 x-10 y+9=0$. \\
+\textbf{C1.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning $M_1(x_1; y_1)$ nuqtasidagi urinmasining tenglamasini tuzing. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $7 x^2+6 x y-y^2+28 x+12 y+28=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{61-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Ekssentrisiteti $\varepsilon=\frac{2}{3}$, fokusi $F(2 ; 1)$ va shu fokus tarafdagi direktrisasi $x-5=0$ bo'lgan ellipsning tenglamasini tuzing. \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A3.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $4 x^2+6 y^2+4 z^2+4 x z-8 y-4 z+3=0$; \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+12 x y+4 y^2-24 x-16 y+3=0$; \\
+\textbf{B3.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning kichik o‘qi 2 ga teng va fokuslari $F_1 (-1;-1) $, $F_2 (1; 1) $; \\
+\textbf{C1.} Giperbolaning asimptotalaridan direktrisalari ajratgan kesmalar (giperbolaning markazidan hisoblanganda) giperbolaning haqiqiy yarim o'qiga teng ekanligi isbotlansin. Bu xossadan foydalanib, giperbolaning direktrisalari yasalsin. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+\textbf{C3.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{62-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Ekssentrisiteti $\varepsilon=\frac{5}{4}$, bir fokusi $F(5 ; 0)$ va unga mos direktrisasining tenglamasi $5 x-16=0$ bo'lgan giperbolaning tenglamasini tuzing. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(-2 \sqrt{5} ; 2)$ nuqtasi ellipsga tegishli va kichik yarim o'qi $b=3$; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $3 x^2+3 y^2-3 z^2-6 x+4 y+4 z+3=0$; \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $6 x^2+4 x y+y^2+4 x-2 y+2=0$; \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $9 x^2+24 x y+16 y^2-40 x-30 y=0$; \\
+\textbf{C1.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $4 x y+3 y^2+16 x+12 y-36=0$; \\
+\textbf{C3.} Berilgan $y=k x+b$ to'g'ri chiziqqa parallel va $y^2=2 p x$ parabolaga urinadigan to'g'ri chiziqning tenglamasini yozing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{63-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{A1.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola pastgi yarim tekislikda va $Oy$ o'qiga simmetrik joylashgan, va parametri $p=3$. \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $x^2-6 x y+9 y^2-12 x+36 y+20=0$; \\
+\textbf{A3.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $3 x^2-8 x y+7 y^2+8 x-15 y+20=0$; \\
+\textbf{B1.} Berilgan parabola uchi $A(6;-3)$ va uning direktrisasining tenglamasi $3x-5y+1=0$ berilgan. Ushbu parabolaning $F$ fokusini toping. \\
+\textbf{B2.} Giperbolaning asimptotalari orasidagi burchagi topilsin, agar: fokuslari orasidagi masofa direktrisalari orasidagi masofadan ikki marta katta. \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-42 x y+49 y^2+3 x-2 y-24=0$. \\
+\textbf{C1.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+5 y^2+2 z^2-2 x y+2 y z-4 x z+2 x-10 y-2 z-1=0$. \\
+\textbf{C3.} $A\left(\frac{10}{3}; \frac{5}{3}\right)$ nuqtadan $\frac{x2}{20}+\frac{y2}{5}=1$ ellipsga urinmalar o‘tkazilgan. Ularning tenglamalarini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{64-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: uning yarim o'qlari $a=6, b=18$; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+y^2-6 x+6 y-3=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{B1.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+2 x y+y^2-z^2=0$; \\
+\textbf{B2.} Giperbolaning haqiqiy o'qiga perpendikular bo'lgan va giperbola fokusidan o'tgan vatar uzunligi topilsin. \\
+\textbf{B3.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2-y^2+8 x-2 y+3=0$; \\
+\textbf{C1.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbola va uning biror urinmasi berilgan: $P$-urinmaning $O x$ o‘qi bilan kesishish nuqtasi, $Q$ - urinish nuqtasining o‘sha o‘qdagi proyeksiyasi. $O P \cdot O Q=a^2$ ekanligini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning $F(c, 0)$ fokusi orqali katta o'qiga perpendikular bo'lgan vatar o'tkazilgan. Bu vatar uzunligini toping. \\
+\textbf{C3.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{65-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{A1.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Ox$ o'qiga simmetrik joylashgan va $B(-1 ; 3)$ nuqtasidan o'tadi; \\
+\textbf{A2.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $10 \frac{2}{3}$ va ekssentrisiteti $\varepsilon=\frac{3}{4}$. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $4 x^2+24 x y+11 y^2+64 x+42 y+51=0$; \\
+\textbf{B1.} $\frac{x^2}{16}+\frac{y^2}{9}=1$ ellipsning $x+y-1=0$ to'g'ri chiziqqa parallel bo'lgan urinmalarini aniqlang. \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+24 x y+16 y^2-18 x+226 y+209=0$; \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+2 y^2+3 z^2+4 x y+2 x z+2 y z-4 x+6 y-2 z+3=0$. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $25 x^2-14 x y+25 y^2+64 x-64 y-224=0$; \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{66-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $6 x^2-6 x y+9 y^2-4 x+18 y+14=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=x^2+6 x$. \\
+\textbf{B2.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{B3.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $2 x^2+y^2+2 z^2-2 x y-2 y z+4 x-2 y=0$; \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Ikki pallali $\frac{x^2}{3}+\frac{y^2}{4}-\frac{z^2}{25}=-1$ giperboloid $5 x+2 z+5=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} $y^2=2 p x$ parabolaga uning $M_1\left(x_1; y_1\right) $ nuqtasidagi urinmasining tenglamasini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{67-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{A1.} Parabola tenglamasini tuzing, uning uchi ($\alpha; \beta$) nuqtada joylashgan bo‘lib, parametri $p$ ga teng, o‘qi $Ox$ o‘qiga parallel va parabola cheksizlikka $Ox$ o‘qining manfiy yo‘nalishida cho‘ziladi. \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{A3.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: haqiqiy o'qi $a=5$ mavhum o'qi $b=3$; \\
+\textbf{B1.} Ellipsdagi ekssentrisitetni aniqlang, agar: direktrisalar orasidagi masofa fokuslar orasidagi masofadan uch marta katta.; \\
+\textbf{B2.} Ushbu $x^2-y^2=16$ giperbolaga $A (-1;-7)$ nuqtadan o‘tkazilgan urinmalar tenglamasi tuzilsin. \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $x^2+4 x y+4 y^2+4 x+y-15=0 ;$ \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+\textbf{C2.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokuslaridan urinmasigacha bo'lgan masofalarning ko'paytmasi topilsin. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-10 x z+4 y z+2 x+4 y-10 z-1=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{68-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} $\frac{x^2}{100}+\frac{y^2}{36}=1$ ellipsida joylashgan va o'ng fokusigacha masofasi 14 ga teng nuqtani toping. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $3 x^2-4 x y-2 y^2+3 x-12 y-7=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $5 x^2+4 x y+y^2-6 x-2 y+2=0$; \\
+\textbf{B1.} $A(5;9)$ nuqtadan $y^2=5x$ parabolaga o'tkazilgan urinmalarning urinish nuqtalarini tutashtiruvchi xordaning tenglamasini tuzing. \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+4 x y+8 y^2-32 x-56 y+80=0$. \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $9 x^2-4 x y-7 y^2-12=0$; \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning bitta diametrini uchlariga o‘tkazilgan urinmalar parallel bo‘lishini isbotlang (ellipsning diametri deb uning markazidan o‘tuvchi xordagaaytiladi). \\
+\textbf{C3.} Har qanday elliptik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlarning hech biri nolga aylana olmasligini va ular bir xil ishorali sonlar ekanligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{69-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{A2.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola pastgi yarim tekislikda va $Oy$ o'qiga simmetrik joylashgan, va parametri $p=3$. \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=6$ va ekssentrisiteti $\varepsilon=\frac{3}{2}$; \\
+\textbf{B1.} Giperbolaning yarim o'qlarini toping, agar: asimptotalari $y= \pm 2 x$ tenglamalar bilan berilgan va fokuslari markazdan 5 birlik masofada; \\
+\textbf{B2.} $5 x^2-3 x y+y^2-3 x+2 y-5=0$ chiziqning $x-2 y-1=0$ to'g'ri chiziq bilan kesishishidan hosil qilingan vatarning o'rtasidan o'tadigan diametr tenglamasi yozilsin. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $3 x^2+3 y^2+3 z^2-6 x+4 y-1=0$; \\
+\textbf{C1.} $A x+B y+C=0$ to'g'ri chiziq $y^2=2 p x$ parabolaga urinishi uchun zaruriy va yetarli shartni toping. \\
+\textbf{C2.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+\textbf{C3.} $x+m z-1=0$ tekislik ushbu $x^2+y^2-z^2=-1$ ikki pallali giperboloidni $m$ ning qanday qiymatlarida a) ellips bo‘yicha, b) giperbola bo‘yicha kesishi aniqlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{70-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $4 x^2+4 x y+y^2-8 x-4 y-21=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(8 ; 12)$ ellipsga tegishli va bu nuqtadan chap fokusigacha masofa $r_1=20$ ga teng; \\
+\textbf{B1.} Ellips fokuslarining biridan katta o'qi uchlarigacha masofalar mos ravishda 7 va 1 ga teng. Bu ellips ning tenglamasini tuzing. \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $25 x^2-20 x y+4 y^2+3 x-y+11=0$; \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+8 x y+5 y^2-18 x-18 y+9=0$; \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Ellipsning yarim o‘qlari $a$, $b$ va markazi $C\left(x_0; y_0\right)$ nuqtada bo‘lib, simmetriya o‘qlari koordinata o‘qlariga parallel ekanligi ma’lum bo'lsa uning tenglamasini tuzing. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{71-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-20 x y+25 y^2-14 x+2 y-15=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa 5 va fokuslari orasidagi masofa $2 c=4$; \\
+\textbf{B1.} Agar ellipsning ekssentrisiteti $\varepsilon=\frac{1}{2}$ va fokusi $F(3 ; 0)$ va unga mos direktrisa tenglamasi $x+y-1=0$ ma’lum bo‘lsa, uning tenglamasi tuzilsin. \\
+\textbf{B2.} $\frac{x^2}{5}-\frac{y^2}{4}=1$ giperbolaga $(5,-4)$ nuqtada urinadigan to'g'ri chiziq tenglamasi yozilsin. \\
+\textbf{B3.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+12 x y+9 y^2-4 x-6 y+1=0$. \\
+\textbf{C1.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C2.} Elliptik tipli ($\delta>0$) tenglama $a_{11}$ va $\Delta$ bir xil ishorali son bo‘lgandagina mavhum ellips tenglamasi bo‘lishini isbotlang. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+y^2+2 z^2-2 x y+2 y z+4 x-2 y=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{72-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} $16 x^2-9 y^2=144$ giperbola berilgan. Toping: 1) yarim o'qlarini; 2) fokuslarini; 3) ekssentrisitetini; 4) asimptota tenglamasi; 5) direktrisalari tenglamalarini. \\
+\textbf{A3.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Ox$ o'qiga simmetrik joylashgan va $A(9 ; 6)$ nuqtasidan o'tadi; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $7 x^2+16 x y-23 y^2-14 x-16 y-218=0$; \\
+\textbf{B2.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $2 x^2-6 x y+5 y^2+22 x-36 y+11=0$. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z^2=x^2+2 x y+y^2+1$; \\
+\textbf{C1.} Umumiy fokusga va ustma - ust tushgan, lekin qarama - qarshi yo'nalgan o'qlarga ega bo'lgan parabolalarning to'g'ri burchak ostida kesishishi isbotlansin. \\
+\textbf{C2.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning ixtiyoriy nuqtasidan uning ikkita asimptotasigacha bo‘lgan masofalar ko‘paytmasi $\frac{a^2 b^2}{a^2+b^2}$ ga teng o‘zgarmas kattalik ekanligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{73-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $5 x^2+14 x y+11 y^2+12 x-7 y+19=0$; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-12 x+6 y-11=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $3 x^2+4 x y-12 x+16=0$; \\
+\textbf{B1.} Agar parabolaning fokusi $F (4;3) $ va direktrisa $y+1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z^2=x^2+2 x y+y^2+1$; \\
+\textbf{C1.} $A x+B y+C=0$ to'g'ri chiziqning $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$, ellipsga urinma bo'lishi uchun zaruriy va yetarli sharti topilsin. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+\textbf{C3.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{74-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A2.} Parabolaning tenglamasini tuzing agar: parabola $O x$ o'qiga nisbatan simmetrik bo'lib, $M(1 ;-4)$ nuqtadan va koordinatalar boshidan o'tadi; \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=6$ va ekssentrisiteti $\varepsilon=\frac{3}{5}$; \\
+\textbf{B1.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=A x^2+B x+C$, \\
+\textbf{B2.} $x^2-y^2=8$ giperbolaga $M(3,-1)$ nuqtada urinadigan to'g'ri chiziq tenglamasi yozilsin. \\
+\textbf{B3.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $16 x^2-24 x y+9 y^2-160 x+120 y+425=0$. \\
+\textbf{C1.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} Elliptik tipli ($\delta>0$) tenglama $\Delta=0$ bo‘lgandagina ikkita bir-birini kesuvchi mavhum to‘g‘ri chiziq bo‘lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{75-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: ekssentrisiteti $e=\frac{12}{13}$ haqiqiy o'qi 48 ga teng. \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $25 x^2-10 x y+y^2+40 x-8 y+7=0$. \\
+\textbf{B1.} $\frac{x^2}{25}+\frac{y^2}{15}=1$ ellipsning fokusi orqali uning katta o‘qiga perpendikulyar o‘tkazilgan. Bu perpendikulyarning ellips bilan kesishgan nuqtalaridan fokuslargacha bo‘lgan masofalar aniqlansin. \\
+\textbf{B2.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2+24 x y-5 y^2=0$; \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2-6 x+14 y+49=0$, \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y+2 z=0$; \\
+\textbf{C2.} $y=k x+m$ to‘g‘ri chiziqning $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaga urinish shartini keltirib chiqaring. \\
+\textbf{C3.} Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx+2$ to‘g‘ri chiziq: 1) $y^2=4x$ parabolani kesib o'tadi; 2) unga urinadi; 3) bu parabola tashqarisidan o‘tadi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{76-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{A1.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $10 \frac{2}{3}$ va ekssentrisiteti $\varepsilon=\frac{3}{4}$. \\
+\textbf{A2.} $x^2=4 y$ parabola fokusining koordinatalarini aniqlang. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $8 x^2-12 x y+17 y^2+16 x-12 y+3=0$; \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $4 x^2+6 y^2+4 z^2+4 x z-8 y-4 z+3=0$; \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $6 x^2+4 x y+y^2+4 x-2 y+2=0$; \\
+\textbf{B3.} $\frac{x^2}{49}+\frac{y^2}{24}=1$ ellips bilan fokusdosh va ekssentrisiteti $e=\frac{5}{4}$ bo'lgan giperbolaning tenglamasi yozilsin. \\
+\textbf{C1.} $A x+B y+C=0$ to'g'ri chiziq qanday zaruriy va yetarli shart bajarilganda $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellips bilan 1) kesishadi; 2) kesishmaydi. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $4 x^2+9 y^2+z^2-12 x y-6 y z+4 z x+4 x-6 y+2 z-5=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{77-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A2.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: direktrisalari orasidagi masofa $7 \frac{1}{7}$ va ekssentrisiteti $\varepsilon=\frac{7}{5}$; \\
+\textbf{A3.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{B1.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $2 x^2+3 y^2+8 x-6 y+11=0$. \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-6 x y+y^2-x+2 y-14=0$; \\
+\textbf{B3.} Katta o'qi 2 birlikka teng, fokuslari $F_1(0,1), F_2(1,0)$ nuqtalarda bo'lgan ellipsning tenglamasi tuzilsin. \\
+\textbf{C1.} Ikki pallali $\frac{x^2}{3}+\frac{y^2}{4}-\frac{z^2}{25}=-1$ giperboloid $5 x+2 z+5=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C2.} $y^2=2 p x$ parabolaga $y=k x+b$ to‘g‘ri chiziq urinish shartini keltirib chiqaring. \\
+\textbf{C3.} Har qanday parabolik tenglama $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilishi mumkinligini isbotlang. Shuningdek, elliptik va giperbolik tenglamalarni bunday ko‘rinishda yozib bo‘lmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{78-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{A3.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik, yarim o‘qlari 5 va 2 bo‘lgan ellipsning tenglamasi tuzilsin yarim o‘qlari 5 va 2; \\
+\textbf{B1.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2-6 x y+5 y^2+8=0$. \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=x^2-8 x+15$, \\
+\textbf{B3.} $\frac{x^2}{16}-\frac{y^2}{8}=-1$ giperbolaga $2 x+4 y-5=0$ to‘g‘ri chiziqqa parallel urinmalar o‘tkazing va ular orasidagi $d$ masofani hisoblang. \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Quyidagi ikki to‘g‘ri chiziqqa urinuvchi giperbolaning tenglamasi tuzilsin: $5x-6y-16=0$, $13x-10y-48=0$, bunda uning o‘qlari koordinata o‘qlari bilan ustma-ust tushadi. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $5 x^2-2 x y+5 y^2-4 x+20 y+20=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{79-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri giperbolani aniqlashini ko'rsating va uning yarim o‘qlarini toping: $x^2-6 x y-7 y^2+10 x-30 y+23=0$. \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $x^2-2 x y+4 y^2+5 x-7 y+12=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: asimptota tenglamasi $y= \pm \frac{3}{4} x$ va direktrisalari orasidagi masofa $12 \frac{4}{5}$. \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+2 x y+6 y^2+6 x-10 y+9=0$. \\
+\textbf{B2.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning fokuslari $F_1\left(-2; \frac{3}{2}\right), F_2\left(2;-\frac{3}{2}\right) $ va ekssentrisitet $\varepsilon=\frac{\sqrt{2}}{2}$; \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z=x^2+3 y^2-6 y+1$; \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $x^2-3 x y-10 y^2+6 x-8 y=0$; \\
+\textbf{C2.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C3.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning $F(c, 0)$ fokusi orqali katta o'qiga perpendikular bo'lgan vatar o'tkazilgan. Bu vatar uzunligini toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{80-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{T2.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{A1.} $y^2=8 x$ paraboladagi fokal radius vektori 20 ga teng bo'lgan nuqta topilsin. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A3.} Parabola tenglamasini tuzing, uning uchi ($\alpha; \beta$) nuqtada joylashgan, parametri $p$ ga teng, o‘qi $Ox$ o‘qiga parallel va parabola cheksizlikka $Oy$ o‘qining musbat yo‘nalishida cho‘ziladi. \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+24 x y+16 y^2-18 x+226 y+209=0$; \\
+\textbf{B2.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $16 x^2+16 x y+4 y^2-5 x+7 y=0$; \\
+\textbf{B3.} Teng tomonli giperbolaning ekssentrisiteti aniqlansin. \\
+\textbf{C1.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $11 x^2-20 x y-4 y^2-20 x-8 y+1=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{81-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: katta o'qi 20, ekssentrisiteti $\varepsilon=\frac{3}{5}$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $x^2-6 x y+8 y^2-4 y-4=0$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: $M_1(6 ;-1)$ va $M_2(-8 ; 2 \sqrt{2})$ nuqtalar giperbolaga tegishli; \\
+\textbf{B1.} Ellipsning ekssentrisiteti $\varepsilon=\frac{1}{3}$, uning markazi koordinatalar boshi bilan ustma-ust tushadi, fokuslaridan biri $ (-2; 0) $. Abssissasi 2 ga teng bo‘lgan ellipsning $M_1$ nuqtasidan berilgan fokusga mos direktrisagacha bo‘lgan masofani ayiring. \\
+\textbf{B2.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+y^2+2 z^2+2 x y+4 z=0$; \\
+\textbf{C1.} Umumiy o‘qqa va uchlari orasida joylashgan umumiy fokusga ega bo‘lgan ikkita parabola to‘g‘ri burchak ostida kesishishini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokusidan asimptotagacha bo‘lgan masofa $b$ ga tengligini isbotlang. \\
+\textbf{C3.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y+2 z=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{82-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $3 x^2-4 x y-2 y^2+3 x-12 y-7=0$; \\
+\textbf{A3.} Ekssentrisiteti $\varepsilon=\frac{2}{3}$, fokusi $F(2 ; 1)$ va shu fokus tarafdagi direktrisasi $x-5=0$ bo'lgan ellipsning tenglamasini tuzing. \\
+\textbf{B1.} Quyidagi tenglamaning tipini aniqlang, koordinata o‘qlarini parallel ko‘chirish orqali sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang va eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+9 y^2-40 x+36 y+100=0$; \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=A x^2+B x+C$, \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y=x^2-8 x+15$, \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Parabolik tenglama $\Delta \neq 0$ bo‘lganda va faqat shundagina parabolani aniqlashi isbotlansin. Bu holda parabolaning parametri $p=\sqrt{\frac{-\Delta}{ (a_{11}+a_{33}) ^3}}$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $3 x^2+10 x y+3 y^2-2 x-14 y-13=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{83-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{A1.} Giperbola asimptotalarining tenglamalari $y= \pm \frac{5}{12} x$ va giperbolada yotuvchi $M(24,5)$ nuqta berilgan. Giperbola tenglamasi tuzilsin. \\
+\textbf{A2.} $y+6=0$ tekislik $\frac{x^2}{5}-\frac{y^2}{4}=6 z$ giperbolik paraboloidni parabola bo‘yicha kesib o‘tishini ko'rsating; parametri va uchini toping. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $4 x^2+6 x y+y^2-10 x-10=0$; \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2-24 x y+16 y^2-20 x+110 y-50=0$; \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+6 x y+5 y^2-16 x-16 y-16=0$; \\
+\textbf{C1.} Parabolaning ix'tiyoriy urinmasi direktrisasini va o'qqa perpendikular bo'lgan fokal vatarni fokusdan teng uzoqlikdagi nuqtalarda kesishini isbotlang. \\
+\textbf{C2.} $\frac{x^2}{100}+\frac{y^2}{64}=1$ ellipsning $2 x-y+7=0,2 x-y-1=0$ vatarlarining o'rtalari orqali o'tadigan to'g'ri chiziq tenglamasini tuzing. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning ixtiyoriy nuqtasidan uning ikkita asimptotasigacha bo‘lgan masofalar ko‘paytmasi $\frac{a^2 b^2}{a^2+b^2}$ ga teng o‘zgarmas kattalik ekanligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{84-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri kesishuvchi to'g'ri chiziqlarni (mavhun gierbolani) aniqlashini ko'rsating va tenglamalarini toping: $x^2-4 x y+3 y^2=0$; \\
+\textbf{A2.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $x^2-6 x y+9 y^2-12 x+36 y+20=0$; \\
+\textbf{A3.} Parabola tenglamasini tuzing, uning uchi ($\alpha; \beta$) nuqtada joylashgan bo‘lib, parametri $p$ ga teng, o‘qi $Ox$ o‘qiga parallel va parabola cheksizlikka $Oy$ o‘qining manfiy yo‘nalishida cho‘ziladi. \\
+\textbf{B1.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2+5 y^2+z^2+2 x y+6 x z+2 y z-2 x+6 y-10 z=0$; \\
+\textbf{B2.} Ellipsdagi ekssentrisitetni aniqlang, agar: ellips markazidan uning direktrisasiga tushirilgan perpendikulyar kesmasi ellipsning uchi bilan teng ikkiga bo‘linadi. \\
+\textbf{B3.} Giperbolaning yarim o'qlarini toping, agar: fokuslari orasidagi masofa 8 ga va direktrisalari orasidagi masofa 6 ga teng; \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $5 x^2+2 y^2+5 z^2-4 x y-2 x y-4 y z+10 x-4 y-2 z+4=0$; \\
+\textbf{C2.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{85-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $x=-\frac{4}{3} \sqrt{y^2+9} ;$ \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-6 x y-9 y^2+3 x-7 y+12=0$. \\
+\textbf{A3.} $\frac{x^2}{100}+\frac{y^2}{225}=1$ ellips va $y^2=24 x$ parabolaning kesishish nuqtalarini aniqlang. \\
+\textbf{B1.} O'qlari koordinata o'qlari bilan ustma - ust tushuvchi va $P(2,2) ; Q(3,1)$ nuqtalar orqali o'tuvchi ellips tenglamasi tuzilsin. \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2-6 x+14 y+49=0$, \\
+\textbf{B3.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $9 x^2+24 x y+16 y^2-230 x+110 y-475=0$. \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsning bitta diametrini uchlariga o‘tkazilgan urinmalar parallel bo‘lishini isbotlang (ellipsning diametri deb uning markazidan o‘tuvchi xordagaaytiladi). \\
+\textbf{C3.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{86-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} $\frac{x^2}{100}+\frac{y^2}{36}=1$ ellipsida joylashgan va o'ng fokusigacha masofasi 14 ga teng nuqtani toping. \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $x^2-6 x y+10 y^2+10 x-32 y+26=0$. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $16 x^2-24 x y+9 y^2-160 x+120 y+425=0$. \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2-2 y^2+z^2+4 x y-8 x z-4 y z-14 x-4 y+14 z+16=0$; \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $9 x^2-4 x y-7 y^2-12=0$; \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $29 x^2-24 x y+36 y^2+82 x-96 y-91=0$; \\
+\textbf{C2.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+10 y^2-2 z^2+12 x y+8 y z+12 x+4 y+8 z-1=0$. \\
+\textbf{C3.} $y^2=4 x$ parabola bilan $\frac{x^2}{8}+\frac{y^2}{2}=1$ ellipsning umumiy urinmalarini aniqlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{87-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} $y^2+z^2=x$ elliptik paraboloidning $x+2 y-z=0$ tekislik bilan kesimining koordinata tekisliklaridagi proyeksiyalari tenglamalari topilsin. \\
+\textbf{A2.} Diskriminantini hisoblash orqali quyidagi tenglamalarning har birining tipini aniqlang: $2 x^2+10 x y+12 y^2-7 x+18 y-15=0$; \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{.4}+\frac{y^2}{9}-\frac{z^2}{36}=1, \\ 9 x-6 y+2 z-28=0,\end{array}\right.$ \\
+\textbf{B1.} $M_1 (1;-2) $ nuqta fokusi $F (-2; 2) $, unga mos direktrisa esa $2x-y-1=0$ tenglama bilan berilgan giperbolaga tegishli. Bu giperbolaning tenglamasi tuzilsin. \\
+\textbf{B2.} Ellipsning ekssentrisiteti $\varepsilon=\frac{1}{2}$, uning markazi koordinatalar boshi bilan ustma-ust tushadi, direktrisalardan biri $x=16$ tenglama bilan berilgan. Abssissasi -4 ga teng bo‘lgan ellipsning $M_1$ nuqtasidan berilgan direktrisa bilan bir tomonlama fokusgacha bo‘lgan masofani hisoblang. \\
+\textbf{B3.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x^2+y^2-3 z^2-2 x y-6 x z-6 y z+2 x+2 y+4 z=0$; \\
+\textbf{C1.} $x+m z-1=0$ tekislik ushbu $x^2+y^2-z^2=-1$ ikki pallali giperboloidni $m$ ning qanday qiymatlarida a) ellips bo‘yicha, b) giperbola bo‘yicha kesishi aniqlansin. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning fokuslaridan urinmasigacha bo'lgan masofalarning ko'paytmasi topilsin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{88-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $25 x^2-10 x y+y^2+40 x-8 y+7=0$. \\
+\textbf{A2.} Parabolaning tenglamasini tuzing agar: parabola $O y$ o'qiga nisbatan simmetrik bo'lib, $M(6,-2)$ nuqtadan va koordinatalar boshidan o'tadi. \\
+\textbf{A3.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $y=+\frac{2}{5} \sqrt{x^2+25}$ \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $5 x^2+12 x y-12 x-22 y-19=0$. \\
+\textbf{B2.} Parabola uchi $A(-2;-1)$ va uning direktrisasining tenglamasi $x+2y-1=0$ berilgan. Ushbu parabolaning tenglamasini tuzing. \\
+\textbf{B3.} Giperbolaning yarim o'qlarini toping, agar: asimptotalari $y= \pm \frac{5}{3} x$ tenglamalar bilan berilgan va giperbola $N(6,9)$ nuqtadan o'tadi. \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $10 x y-2 y^2+6 x+4 y+21=0$ \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{89-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{A2.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: kichik o'qi 16 , а ekssentrisiteti $\varepsilon=\frac{3}{5}$; \\
+\textbf{A3.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2+5 x y+3 y^2-x+9 y-12=0$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{B2.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $4 x^2+12 x y+9 y^2-4 x-6 y+1=0$. \\
+\textbf{B3.} Quyidagilarni bilgan holda giperbola tenglamasini tuzing: fokuslar $F_1 (3; 4), F_2 (-3;-4)$ va direktrisalar orasidagi masofa 3,6; \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2+y^2+4 z^2+2 x y+4 x z+4 y z-6 z+1=0$. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $4 x^2+24 x y+11 y^2+64 x+42 y+51=0$; \\
+\textbf{C3.} $y=k x+m$ to‘g‘ri chiziqning $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaga urinish shartini keltirib chiqaring. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{90-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{4}-\frac{y^2}{3}=2 z \\ x-2 y+2=0 ;\end{array}\right.$ \\
+\textbf{A3.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: asimptota tenglamasi $y= \pm \frac{12}{5} x$ va uchlari orasidagi masofa 48; \\
+\textbf{B1.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $x^2-2 x y+y^2-12 x+12 y-14=0$ \\
+\textbf{B2.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $z^2=3 x+4 y+5$; \\
+\textbf{B3.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{C1.} O‘qlari o‘zaro perpendikulyar bo‘lgan ikkita parabola to‘rtta nuqtada kesishsa, bu nuqtalar bitta aylanada yotishini isbotlang. \\
+\textbf{C2.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C3.} $A\left(\frac{10}{3}; \frac{5}{3}\right)$ nuqtadan $\frac{x2}{20}+\frac{y2}{5}=1$ ellipsga urinmalar o‘tkazilgan. Ularning tenglamalarini tuzing. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{91-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Paraboloid (elliptik), Paraboloid (giperbolik), Konus, Silindr) \\
+\textbf{A1.} Fokuslari ordinata o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: katta yarim o'qi 10 , fokuslari orasidagi masofa $2 c=8$; \\
+\textbf{A2.} Uchi koordinatalar boshida bo‘lgan parabolaning tenglamasini tuzing, bunda: parabola $Oy$ o'qiga simmetrik joylashgan va $D(4 ;-8)$ nuqtasidan o’tadi. \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $2 x^2+3 x y-2 y^2+5 x+10 y=0$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $6 x y-8 y^2+12 x-26 y-11=0$; \\
+\textbf{B2.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $x^2-6 x-4 y+29=0$, \\
+\textbf{B3.} $\varepsilon=\frac{2}{5}$ ellipsning ekssentrisiteti, ellipsning $M$ nuqtasidan direktrisagacha bo‘lgan masofa 20 ga teng. $M$ nuqtadan shu direktrisa bilan bir tomonlama fokusgacha bo‘lgan masofani hisoblang. \\
+\textbf{C1.} $m$ va $n$ ning qanday qiymatlarida $m x^2+12 x y+9 y^2+4 x+n y-13=0$ tenglama: 1) markaziy chiziqni; 2) markazga ega bo'lmagan chiziq; 3) cheksiz ko‘p markazga ega bo‘lgan chiziqni ifodalaydi. \\
+\textbf{C2.} Agar ikkinchi darajali tenglama parabolik bo‘lib, $ (\alpha x+\beta y) ^2+2a_{13}x+2a_{23}y+a_{33}=0$ ko‘rinishda yozilgan bo‘lsa, uning chap tomonidagi diskriminant $\Delta=- (a_{13} \beta-a_{23} \alpha) ^2$ formula bilan aniqlanishini isbotlang. \\
+\textbf{C3.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbolaning asimptotalari va uning ixtiyoriy nuqtasidan asimptotalarga parallel qilib o‘tkazilgan to‘g‘ri chiziqlar bilan chegaralangan parallelogrammning yuzi o‘zgarmas son bo‘lib $\frac{a b}{2}$ ga teng bo‘lishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{92-variant}
+\newline
+
+\textbf{T1.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning kanonik tenglamalari (Ellipsoid, Giperboloid (1 pallali), Giperboloid (2 pallali)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-6 x y+y^2-50 x+50 y-275=0$. \\
+\textbf{A2.} Berilgan tenglama bilan qaysi chiziq aniqlanishini toping: $\left\{\begin{array}{l}\frac{x^2}{3}+\frac{y^2}{6}=2 z, \\ 3 x-y+6 z-14=0\end{array}\right.$ \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalar bilan qanday geometrik chakl aniqlanishini toping: $17 x^2-18 x y-7 y^2+34 x-18 y+7=0$; \\
+\textbf{B1.} Agar parabolaning fokusi $F(2;-1) $ va direktrisa $x-y-1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B2.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning katta o‘qi 26 ga teng va fokuslari $F_1 (-10; 0), F2 (14; 0) $; \\
+\textbf{B3.} Berilgan tenglama parabolik ekanligini ko'rsating; sodda shaklga keltiring; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $9 x^2+12 x y+4 y^2-24 x-16 y+3=0$; \\
+\textbf{C1.} Giperbolaning asimptotalari topilsin: $3 x^2+2 x y-y^2+8 x+10 y-14=0$; \\
+\textbf{C2.} Berilgan $y=k x+b$ to'g'ri chiziqqa parallel va $y^2=2 p x$ parabolaga urinadigan to'g'ri chiziqning tenglamasini yozing. \\
+\textbf{C3.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $41 x^2+24 x y+34 y^2+34 x-112 y+129=0$; \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{93-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamasini invariantlar yordamida kanonik ko‘rinishga keltirish \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(4 ;-\sqrt{3})$ va $M_2(2 \sqrt{2} ; 3)$ nuqtalari ellipsga tegishli; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-20 x y+25 y^2-14 x+2 y-15=0$; \\
+\textbf{A3.} $y^2=36 x$ parabolaning $A(2 ; 9)$ nuqtasidagi urinmasining tenglama tuzing. \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $x^2-5 x y+4 y^2+x+2 y-2=0$. \\
+\textbf{B2.} Lagranj usulidan foydalanib, tenglamalarni kvadratlar yig'indisi shakliga keltirib, quyidagi sirtlarning ko'rinishi aniqlansin: $x y+x z+y z+2 x+2 y-2 z=0$. \\
+\textbf{B3.} Fokuslari $\frac{x^2}{100}+\frac{y^2}{64}=1$ ellipsning uchlarida yotuvchi, direktrisalari esa shu ellipsning fokuslaridan o‘tuvchi giperbolaning tenglamasi tuzilsin. \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-8 x z-4 y z-14 x-4 y+14 z+16=0$. \\
+\textbf{C2.} $\frac{x^2}{81}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoid $4 x-3 y+12 z-54=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} Fokuslardan ellipsning istalgan urinmasigacha bo‘lgan masofalar ko‘paytmasi kichik yarim o‘qning kvadratiga tengligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{94-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq markazi (Markazli chiziqlar (ellips, giperbola), Markaz koordinatalari: simmetriya markazi) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{A1.} Fokuslari ordinata o‘qida, koordinatalar boshiga nisbatan simmetrik joylashgan giperbolaning tenglamasi tuzilsin, bunda: fokuslari orasidagi masofa $2 c=10$ va ekssentrisiteti $\varepsilon=\frac{5}{3}$; \\
+\textbf{A2.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2-24 x y+16 y^2-54 x-178 y+181=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri ellipsni aniqlashini ko'rsating va uning yarim o‘qlarini toping: $8 x^2+4 x y+5 y^2+16 x+4 y-28=0$; \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $2 x^2-6 x y+5 y^2+22 x-36 y+11=0$. \\
+\textbf{B2.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $5 x^2+4 x y+2 y^2+20 x+20 y-18=0$; \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-42 x y+49 y^2+3 x-2 y-24=0$. \\
+\textbf{C1.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $50 x^2-8 x y+35 y^2+100 x-8 y+67=0$; \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $y=\frac{5}{2} x+m$ to‘g‘ri chiziq $\frac{x^2}{9}-\frac{y^2}{36}=1$ giperbolani 1) kesib o‘tishini; 2) unga urinishini; 3) tashqarisidan o‘tishini aniqlang. \\
+\textbf{C3.} $A x+B y+C=0$ to'g'ri chiziq $y^2=2 p x$ parabolaga urinishi uchun zaruriy va yetarli shartni toping. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{95-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirt markazi, urinma tekisligi va diametral tekisligi (Markaz, Urinma tekislik, Diametral tekislik) \\
+\textbf{A1.} $z+1=0$ tekislik bir pallali $\frac{x^2}{32}-\frac{y^2}{18}+\frac{z^2}{2}=1$ giperboloidni giperbola bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A2.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1\left(2 ;-\frac{5}{3}\right)$ nuqtasi ellipsga tegishli va ekssentrisiteti $\varepsilon=\frac{2}{3}$; \\
+\textbf{A3.} Fokuslari abssissa o‘qida joylashgan, koordinatalar boshiga nisbatan simmetrik bo'lgan giperbolaning tenglamasi tuzilsin, bunda: uning o'qlari $2 a=10$ va $2 b=8$; \\
+\textbf{B1.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $2 x^2+4 x y+5 y^2-6 x-8 y-1=0$; \\
+\textbf{B2.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning kichik o‘qi 2 ga teng va fokuslari $F_1 (-1;-1) $, $F_2 (1; 1) $; \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $2 x y+2 x+2 y+2 z-1=0$; \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} Giperbolaning asimptotalari topilsin: $3 x^2+7 x y+4 y^2+5 x+2 y-6=0$; \\
+\textbf{C3.} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ ellipsga ichki chizilgan kvadrat tomonining uzunligi hisoblansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{96-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziq va to‘g‘ri chiziqning o‘zaro vaziyati (Kesishish nuqtalari, Urinma (tegish) holat) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Parabolaning tenglamasini tuzing agar: parabolaning fokusi $(0,2)$ nuqtada va uchi koordiniatalar boshida yotadi; \\
+\textbf{A2.} Quyidagi chiziqlardan qaysi biri markaziy (ya’ni yagona markazga ega), qaysi biri markazga ega emas, qaysi biri cheksiz ko‘p markazga ega ekanligini aniqlang: $4 x^2-4 x y+y^2-6 x+8 y+13=0$; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $x^2-2 x y+y^2+6 x-14 y+29=0$; \\
+\textbf{B1.} $\frac{x^2}{16}-\frac{y^2}{9}=1$ giperbolada fokal radiuslari o'zaro perpendikular bo'lgan nuqta topilsin. \\
+\textbf{B2.} $x^2=16y$ parabolaning $2x+4y+7=0$ to'g'ri chizig'iga perpendikulyar bo'lgan urinmasining tenglamasini tuzing. \\
+\textbf{B3.} Berilgan tenglamalarning parabolik ekanligini ko‘rsating va ularning har birini $(\alpha x+\beta y)^2+2 a_{13} x+2 a_{23} y+a_{33}=0$ ko‘rinishda yozing: $9 x^2-6 x y+y^2-x+2 y-14=0$; \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $x^2-2 y^2+z^2+4 x y-10 x z+4 y z+2 x+4 y-10 z-1=0$. \\
+\textbf{C2.} $m$ ning qanday qiymatlarida $x+m y-2=0$ tekislik $\frac{x^2}{2}+\frac{z^2}{3}=y$ elliptik paraboloidni a) ellips bo‘yicha, b) parabola bo‘yicha kesib o‘tishini aniqlang. \\
+\textbf{C3.} Har qanday parabolik tenglama uchun $a_{11}$ va $a_{22}$ koeffitsiyentlar turli ishorali sonlar bo‘la olmasligini va ular bir vaqtda nolga aylana olmasligini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{97-variant}
+\newline
+
+\textbf{T1.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{T2.} Ikkinchi tartibli sirtlarning umumiy tenglamasini kanonik ko‘rinishga invariantlar yordamida keltirish \\
+\textbf{A1.} $y^2=6 x$ parabola direktrisasi tenglamasini tuzing. \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} $\frac{x^2}{4}-\frac{y^2}{9}=1$ giperbolaning asimptotalaridan va $9 x+2 y-24=0$ to‘g‘ri chiziqdan hosil bo‘lgan uchburchak yuzini hisoblang. \\
+\textbf{B1.} Ushbu tenglamalar markaziy chiziqlarni ifodalashini ko‘rsating va har bir tenglamani koordinatalar boshini markazga ko‘chirgan holda o‘zgartiring: $3x^2-6xy+2y^2-4x+2y+1=0$. \\
+\textbf{B2.} ITECH turi, o'lchovlari va joylashishi aniqlansin: $4 x^2-4 x y+y^2-2 x-14 y+7=0$. \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $4 x^2-y^2-4 x+4 y-3=0$; \\
+\textbf{C1.} Ikkinchi darajali tenglama faqat va faqat $\Delta=0$ bo‘lgandagina aynigan chiziq tenglamasi bo‘lishini isbotlang. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $14 x^2+24 x y+21 y^2-4 x+18 y-139=0$; \\
+\textbf{C3.} O‘qlari o‘zaro perpendikulyar bo‘lgan ikkita parabola to‘rtta nuqtada kesishsa, bu nuqtalar bitta aylanada yotishini isbotlang. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{98-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Tekislikda ikkinchi tartibli chiziqlar (Ikkinchi tartibli tenglama, Kvadrat shakldagi tenglama, Konik chiziqlar (konuslar kesimi)) \\
+\textbf{A1.} Quyidagi chiziqlarning har biri cheksiz ko‘p markazga ega ekanligi ko'rsatilsin; ularning har biri uchun markazlarning geometrik o‘rni tenglamasi tuzilsin: $4 x^2+4 x y+y^2-8 x-4 y-21=0$; \\
+\textbf{A2.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(8 ; 12)$ ellipsga tegishli va bu nuqtadan chap fokusigacha masofa $r_1=20$ ga teng; \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $x^2+2 x y+2 y^2+6 y+9=0$; \\
+\textbf{B1.} $\frac{x^2}{64}-\frac{y^2}{36}=1$ giperbolaning o‘ng fokusigacha bo‘lgan masofasi 4,5 ga teng bo‘lgan nuqtalari aniqlansin. \\
+\textbf{B2.} Quyidagilarni bilgan holda ellips tenglamasini tuzing: uning fokuslari $F_1\left(-2; \frac{3}{2}\right), F_2\left(2;-\frac{3}{2}\right) $ va ekssentrisitet $\varepsilon=\frac{\sqrt{2}}{2}$; \\
+\textbf{B3.} Parabola uchining koordinatalari, parametri va o'qining yo'nalishi aniqlansin: $y^2+8 x-16=0$, \\
+\textbf{C1.} Quyidagi sirtlarning kanonik tenglamasi va joylashishini aniqlansin: $2 x^2+5 y^2+2 z^2-2 x y+2 y z-4 x z+2 x-10 y-2 z-1=0$. \\
+\textbf{C2.} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ giperbola va uning biror urinmasi berilgan: $P$-urinmaning $O x$ o‘qi bilan kesishish nuqtasi, $Q$ - urinish nuqtasining o‘sha o‘qdagi proyeksiyasi. $O P \cdot O Q=a^2$ ekanligini isbotlang. \\
+\textbf{C3.} Giperbolaning asimptotalari topilsin: $10 x^2+21 x y+9 y^2-41 x-39 y+4=0$. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{99-variant}
+\newline
+
+\textbf{T1.} Bir pallali giperboloid va giperbolik paraboloidning to‘g‘ri chiziqli yasovchilari (Giperboloid, Giperbolik paraboloid, Chiziqli yasovchilar) \\
+\textbf{T2.} Ikkinchi tartibli chiziq urinmasi, qo‘shma diametri tenglamasi (Urinma tenglama, Qo‘shma diametr: markazdan o‘tuvchi simmetriya o‘qlari) \\
+\textbf{A1.} Fokuslari abssissa o‘qida yotgan va koordinatalar boshiga nisbatan simmetrik bo‘lgan ellipsning tenglamasi tuzilsin, bunda: $M_1(-2 \sqrt{5} ; 2)$ nuqtasi ellipsga tegishli va kichik yarim o'qi $b=3$; \\
+\textbf{A2.} Quyidagi malumotlarga ko'ra giperbolaning kanonik tenglamasi tuzilsin: asimptotalari orasidagi burchak $60^{\circ}$ ga teng va $c=2 \sqrt{3}$ giperbolaning kanonik tenglamasi tuzilsin \\
+\textbf{A3.} Koordinatalar sistemasini almashtirmasdan, quyidagi tenglamalarning har biri parabolani aniqlashi ko'rsating va parametrini toping: $9 x^2+24 x y+16 y^2-120 x+90 y=0$; \\
+\textbf{B1.} Agar parabolaning fokusi $F (4;3) $ va direktrisa $y+1=0$ tenglamasi berilgan bo'lsa uning tenglamasini tuzing. \\
+\textbf{B2.} Ellipsning ekssentrisiteti $\varepsilon=\frac{1}{3}$, uning markazi koordinatalar boshi bilan ustma-ust tushadi, fokuslaridan biri $ (-2; 0) $. Abssissasi 2 ga teng bo‘lgan ellipsning $M_1$ nuqtasidan berilgan fokusga mos direktrisagacha bo‘lgan masofani ayiring. \\
+\textbf{B3.} $\frac{x^2}{9}-\frac{y^2}{4}=1$ giperbolaning $M(5,1)$ nuqtada teng ikkiga bo'linadigan vatarining tenglamasi tuzilsin. \\
+\textbf{C1.} $4 x^2-4 x y+y^2+6 x+1=0$ ITECH tenglamasi berilgan. Burchak koeffitsiyenti $k$ ning qanday qiymatlarida $y=kx$ to‘g‘ri chiziq: 1) bu chiziqni bir nuqtada kesib o‘tishi; 2) shu chiziqqa urinadi; 3) bu chiziqni ikki nuqtada kesib o‘tadi; 4) bu to‘g‘ri chiziq bilan umumiy nuqtaga ega emas bólishini aniqlang. \\
+\textbf{C2.} $\frac{x^2}{9}+\frac{z^2}{4}=2 y$ elliptik paraboloid $2 x-2 y-z-10=0$ tekislik bilan bitta umumiy nuqtaga ega ekanligini isbotlang va uning koordinatalarini toping. \\
+\textbf{C3.} $m$ ning qanday qiymatlarida $y=-x+m$ chiziq: 1) $\frac{x^2}{20}+\frac{y^2}{5}=1$ ellipsni kesib o'tadi; 2) ellipsga urinadi 3) ellipsni kesib o'tmaydi. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+\begin{tabular}{m{17cm}}
+\textbf{100-variant}
+\newline
+
+\textbf{T1.} Ikkinchi tartibli chiziqlarning umumiy tenglamalari (Umumiy tenglama) \\
+\textbf{T2.} Parabola va uning kanonik tenglamalari (Fokus (yo’naluvchi nuqta), Direktrisa (yo’naltiruvchi chiziq), O’q (simmetriya o’qi)) \\
+\textbf{A1.} Koordinatalar sistemasini almashtirmasdan quyidagi tenglamalarning har biri yagona nuqtani (mavhum ellipsni) aniqlashini ko'rsating va uning koordinatalarini toping: $5 x^2-6 x y+2 y^2-2 x+2=0$; \\
+\textbf{A2.} $x-2=0$ tekislik $\frac{x^2}{16}+\frac{y^2}{12}+\frac{z^2}{4}=1$ ellipsoidni ellips bo‘yicha kesib o‘tishini ko'rsating; uning yarim o‘qlari va uchlarini toping. \\
+\textbf{A3.} $\frac{x^2}{20}-\frac{y^2}{5}=-1$ giperbola va $y^2=3 x$ parabolaning kesishish nuqtalarini aniqlang. \\
+\textbf{B1.} Ushbu chiziqlar markaziy ekanligini ko'rsating va har bir chiziq uchun markaz koordinatalarini toping: $3x^2+5xy+y^2-8x-11y-7=0$. \\
+\textbf{B2.} Berilgan tenglamani sodda shaklga keltiring; tipini aniqlang; qanday geometrik obrazni ifodalashini aniqlang, eski hamda yangi koordinata o‘qlariga nisbatan chizmada tasvirlang: $32x^2+52xy-7y^2+180=0$.: $5 x^2-6 x y+5 y^2-32=0$; \\
+\textbf{B3.} Parallel ko'chirish va burish almashtirishlari yoki hadlarni gruppalash yordamida quyidagi sirtlarning ko'rinishi va joylashishi aniqlansin: $x^2+2 y^2-3 z^2+2 x+4 y-6 z=0$; \\
+\textbf{C1.} $m$ ning qanday qiymatida $x-2 y-2 z+m=0$ tekislik $\frac{x^2}{144}+\frac{y^2}{36}+\frac{z^2}{9}=1$ ellipsoidga urinishi aniqlansin. \\
+\textbf{C2.} Berilgan tenglama kanonik ko‘rinishga keltirilsin; tipi aniqlansin; qanday geometrik obrazni ifodalashi aniqlansin; eski va yangi koordinatalar sistemasida geometrik obrazi tasvirlansin: $41 x^2+24 x y+9 y^2+24 x+18 y-36=0$. \\
+\textbf{C3.} Ellips markazidan uning ixtiyoriy urinmasining fokal o‘q bilan kesishish nuqtasigacha va urinish nuqtasidan fokal o‘qqa tushirilgan perpendikulyar asosigacha bo‘lgan masofalar ko‘paytmasi o‘zgarmas kattalik bo‘lib, ellips katta yarim o‘qining kvadratiga tengligi isbotlansin. \\
+
+\end{tabular}
+\vspace{1cm}
+
+
+
+\end{document}
